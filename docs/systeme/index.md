@@ -26,4 +26,13 @@ Windows Server, Active Directory, GPO, Linux, virtualisation, sauvegarde. Suis l
 
     - :material-wrench-outline: [Préparer une VM clonée depuis un template](tuto-preparer-clone-vm.md) <span class="kb-badge kb-bases">Bases</span>
 
+-   :material-numeric-2-circle-outline:{ .lg .middle } __Comptes et droits Linux__
+
+    ---
+
+    Gérer utilisateurs, groupes, permissions (chmod, chown) et sudo.
+
+    - :material-book-open-variant: [Comptes, droits et permissions Linux](concept-permissions-linux.md) <span class="kb-badge kb-bases">Bases</span>
+    - :material-wrench-outline: [Gérer utilisateurs, groupes et permissions](tuto-permissions-linux.md) <span class="kb-badge kb-bases">Bases</span>
+
 </div>

@@ -5,7 +5,7 @@ URL : https://vincentfrag.github.io/Base-de-connaissances/
 
 ## Arborescence
 - `docs/reseau/`, `docs/systeme/`, `docs/transverse/` : un dossier par bloc, chacun avec un `index.md`
-- **Organisation par thème** : chaque bloc est découpé en thèmes numérotés (ex. Réseau : Fondamentaux, DHCP et DNS, VLAN, Dépannage, S'entraîner).
+- **Organisation par thème** : chaque bloc est découpé en thèmes numérotés (ex. Réseau : Fondamentaux, DHCP et DNS, VLAN, Accès distant, Dépannage, S'entraîner — « S'entraîner » toujours en dernier).
   - `index.md` du bloc : légende + `grid cards` (une carte par thème : icône numérotée, titre, une phrase, liste de liens avec icône de type `:material-book-open-variant:` Comprendre / `:material-wrench-outline:` Pratiquer / `:material-flask-outline:` TP / `:material-clipboard-text-outline:` Mémo, et badge `<span class="kb-badge kb-bases">Bases</span>` ou `kb-inter` Intermédiaire)
   - `nav` de `mkdocs.yml` : une sous-section par thème ; pour un couple concept/tuto, libellés courts « Comprendre » et « Mettre en pratique »
 - Noms de fichiers : `concept-<sujet>.md`, `tuto-<sujet>.md`, `memo-<sujet>.md`, `tp-<sujet>.md`

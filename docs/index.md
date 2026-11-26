@@ -13,7 +13,7 @@ Fiches, tutos et TP d'**administration systèmes et réseaux**, du niveau début
 
     ---
 
-    Adressage, sous-réseaux, DHCP, DNS, VLAN, dépannage.
+    Adressage, sous-réseaux, DHCP, DNS, VLAN, SSH, dépannage.
 
     [:octicons-arrow-right-24: Commencer](reseau/index.md)
 

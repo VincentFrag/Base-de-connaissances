@@ -28,7 +28,7 @@ Un immeuble de bureaux. Chaque pièce (fichier ou dossier) a **un responsable** 
 
 ```text
 $ ls -l rapport.txt
--rw-r----- 1 vincent compta 1204 nov. 26 10:12 rapport.txt
+-rw-r----- 1 alice compta 1204 nov. 26 10:12 rapport.txt
 │└┬┘└┬┘└┬┘   └──┬──┘ └──┬─┘
 │ │  │  │       │       └─ groupe
 │ │  │  │       └───────── propriétaire

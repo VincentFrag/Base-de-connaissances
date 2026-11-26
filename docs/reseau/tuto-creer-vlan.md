@@ -191,3 +191,4 @@ ping 192.168.20.10      # un serveur du VLAN 20
 - 🧠 [Les VLAN](concept-vlan.md)
 - 🛠️ [Calculer et découper un réseau en sous-réseaux](tuto-sous-reseaux.md)
 - 🛠️ [Diagnostiquer un problème de connexion](tuto-diagnostic-connexion.md)
+- 🛠️ [Filtrer et faire du NAT avec pfSense](tuto-pfsense-pare-feu-nat.md) : la suite, pour restreindre les flux entre VLAN

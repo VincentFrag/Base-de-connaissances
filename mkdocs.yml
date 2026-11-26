@@ -83,6 +83,9 @@ nav:
       - Dépannage:
           - "Diagnostiquer une connexion": reseau/tuto-diagnostic-connexion.md
           - "Mémo commandes réseau": reseau/memo-commandes-reseau.md
+      - Pare-feu et NAT:
+          - "Comprendre": reseau/concept-pare-feu-nat.md
+          - "Mettre en pratique": reseau/tuto-pfsense-pare-feu-nat.md
       - S'entraîner:
           - "TP : PME multi-VLAN": reseau/tp-pme-multi-vlan.md
   - Système:

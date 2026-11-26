@@ -13,6 +13,10 @@ Les fondations : sans réseau qui fonctionne, rien d'autre ne fonctionne.
 7. 🛠️ [Créer et configurer des VLAN](tuto-creer-vlan.md) 🟢🟡
 8. 🛠️ [Diagnostiquer un problème de connexion de A à Z](tuto-diagnostic-connexion.md) 🟢
 
+## TP
+
+- 🧪 [Le réseau multi-VLAN d'une PME](tp-pme-multi-vlan.md) 🟡 : sous-réseaux, VLAN, routage, DHCP, DNS, ACL
+
 ## Mémos
 
 - 📋 [Commandes réseau Windows & Linux](memo-commandes-reseau.md)

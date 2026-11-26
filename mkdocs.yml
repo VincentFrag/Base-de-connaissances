@@ -35,6 +35,9 @@ theme:
     - content.tabs.link
     - toc.follow
 
+extra_css:
+  - stylesheets/extra.css
+
 plugins:
   - search:
       lang: fr
@@ -71,6 +74,7 @@ nav:
       - "🛠️ Créer et configurer des VLAN": reseau/tuto-creer-vlan.md
       - "🛠️ Diagnostiquer une connexion": reseau/tuto-diagnostic-connexion.md
       - "📋 Mémo commandes réseau": reseau/memo-commandes-reseau.md
+      - "🧪 TP : PME multi-VLAN": reseau/tp-pme-multi-vlan.md
   - Système:
       - systeme/index.md
   - Transverse:

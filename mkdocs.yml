@@ -86,6 +86,8 @@ nav:
           - "Comprendre SSH": reseau/concept-ssh.md
           - "SSH par le nom d'une VM": reseau/tuto-ssh-nom-vm.md
           - "SSH par rebond (réseau interne)": reseau/tuto-ssh-rebond.md
+          - "Comprendre les VPN": reseau/concept-vpn.md
+          - "VPN WireGuard vers le homelab": reseau/tuto-wireguard-acces-distant.md
       - Dépannage:
           - "Diagnostiquer une connexion": reseau/tuto-diagnostic-connexion.md
           - "Mémo commandes réseau": reseau/memo-commandes-reseau.md

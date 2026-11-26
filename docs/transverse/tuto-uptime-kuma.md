@@ -304,6 +304,8 @@ Dans l'interface : toutes les sondes en vert, une notification de test reçue, l
 ## Voir aussi
 
 - 🧠 [La supervision : métriques, logs et alertes](concept-supervision.md)
+- 🛠️ [Superviser ses VM avec Zabbix](tuto-zabbix.md) : l'étape suivante, pour voir CPU, RAM et disques
+- 🛠️ [Superviser ses VM avec Centreon](tuto-centreon.md) : la supervision par SNMP, très répandue en entreprise
 - 🛠️ [Sauvegarder et restaurer ses VM avec Proxmox](tuto-proxmox-backup.md)
 - 🛠️ [Diagnostiquer une connexion](../reseau/tuto-diagnostic-connexion.md)
 - 🛠️ [SSH par rebond](../reseau/tuto-ssh-rebond.md)

@@ -63,9 +63,9 @@ Et pour les ressources internes (CPU, disque), il faut **un agent** installé su
 | **Uptime Kuma** | Disponibilité : ping, HTTP, TCP, DNS, signal *push*, page de statut, alertes faciles | 1 conteneur, 10 min | Homelab, petite structure : **le meilleur point de départ** |
 | **Zabbix** | Tout : agents, CPU/RAM/disque, SNMP, modèles prêts pour Linux, Windows, Proxmox | Serveur + base de données + agents, 1 à 2 h | Entreprise, BTS/CESI, quand on veut les ressources |
 | **Prometheus + Grafana** | Métriques très fines et beaux graphiques | Plusieurs briques à assembler | Conteneurs, Kubernetes, profils DevOps |
-| **Centreon / Nagios** | Supervision « historique » très répandue en entreprise | Lourd | Pour reconnaître l'outil en stage |
+| **Centreon** (héritier de Nagios) | Supervision par SNMP ou agent, très répandue en France (entreprises, collectivités) | Serveur central + base, 2 h | Pour le croiser en stage ou en entreprise |
 
-**Notre choix :** on commence par **Uptime Kuma**, simple et visuel, qui couvre déjà 80 % du besoin (« est-ce que c'est en ligne ? »). Zabbix est l'étape suivante quand on veut suivre l'espace disque et la RAM de chaque VM.
+**Le parcours proposé :** on commence par **Uptime Kuma**, simple et visuel, qui couvre déjà 80 % du besoin (« est-ce que c'est en ligne ? »). Puis **Zabbix** pour suivre l'intérieur des VM (CPU, RAM, disques) avec des agents, et **Centreon**, très répandu dans les entreprises françaises, pour découvrir la supervision par SNMP.
 
 ## À quoi ça sert concrètement
 
@@ -86,5 +86,7 @@ Et pour les ressources internes (CPU, disque), il faut **un agent** installé su
 ## Pour aller plus loin
 
 - 🛠️ **[Superviser ses VM avec Uptime Kuma](tuto-uptime-kuma.md)** : la mise en pratique (installation, sondes ping/HTTP/TCP/DNS, alertes, signal de sauvegarde)
+- 🛠️ [Superviser ses VM avec Zabbix](tuto-zabbix.md) : agents Linux et Windows, modèles, API Proxmox
+- 🛠️ [Superviser ses VM avec Centreon](tuto-centreon.md) : SNMP, connecteurs de supervision, export de configuration
 - 🧠 [Les sauvegardes et la règle 3-2-1](concept-sauvegardes.md) : la supervision sert aussi à vérifier qu'elles tournent
 - 🛠️ [Diagnostiquer une connexion](../reseau/tuto-diagnostic-connexion.md) : quand l'alerte tombe, par où commencer

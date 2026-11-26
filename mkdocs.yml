@@ -106,4 +106,6 @@ nav:
           - "Mettre en pratique": transverse/tuto-proxmox-backup.md
       - Supervision:
           - "Comprendre": transverse/concept-supervision.md
-          - "Mettre en pratique": transverse/tuto-uptime-kuma.md
+          - "Avec Uptime Kuma": transverse/tuto-uptime-kuma.md
+          - "Avec Zabbix": transverse/tuto-zabbix.md
+          - "Avec Centreon": transverse/tuto-centreon.md

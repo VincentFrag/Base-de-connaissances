@@ -104,3 +104,6 @@ nav:
       - Sauvegarde:
           - "Comprendre": transverse/concept-sauvegardes.md
           - "Mettre en pratique": transverse/tuto-proxmox-backup.md
+      - Scripting et automatisation:
+          - "Mémo Bash et PowerShell": transverse/memo-bash-powershell.md
+          - "Planifier une tâche": transverse/tuto-taches-planifiees.md

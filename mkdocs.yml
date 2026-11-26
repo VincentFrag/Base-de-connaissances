@@ -65,16 +65,21 @@ nav:
   - Accueil: index.md
   - Réseau:
       - reseau/index.md
-      - "🧠 Le modèle OSI et TCP/IP": reseau/concept-modele-osi-tcpip.md
-      - "🧠 Adressage IP et masque": reseau/concept-adressage-ip.md
-      - "🛠️ Découper en sous-réseaux": reseau/tuto-sous-reseaux.md
-      - "🧠 DHCP et DNS": reseau/concept-dhcp-dns.md
-      - "🛠️ Installer DHCP et DNS": reseau/tuto-dhcp-dns.md
-      - "🧠 Les VLAN": reseau/concept-vlan.md
-      - "🛠️ Créer et configurer des VLAN": reseau/tuto-creer-vlan.md
-      - "🛠️ Diagnostiquer une connexion": reseau/tuto-diagnostic-connexion.md
-      - "📋 Mémo commandes réseau": reseau/memo-commandes-reseau.md
-      - "🧪 TP : PME multi-VLAN": reseau/tp-pme-multi-vlan.md
+      - Fondamentaux:
+          - "Le modèle OSI et TCP/IP": reseau/concept-modele-osi-tcpip.md
+          - "Adressage IP et masque": reseau/concept-adressage-ip.md
+          - "Découper en sous-réseaux": reseau/tuto-sous-reseaux.md
+      - DHCP et DNS:
+          - "Comprendre": reseau/concept-dhcp-dns.md
+          - "Mettre en pratique": reseau/tuto-dhcp-dns.md
+      - VLAN:
+          - "Comprendre": reseau/concept-vlan.md
+          - "Mettre en pratique": reseau/tuto-creer-vlan.md
+      - Dépannage:
+          - "Diagnostiquer une connexion": reseau/tuto-diagnostic-connexion.md
+          - "Mémo commandes réseau": reseau/memo-commandes-reseau.md
+      - S'entraîner:
+          - "TP : PME multi-VLAN": reseau/tp-pme-multi-vlan.md
   - Système:
       - systeme/index.md
   - Transverse:

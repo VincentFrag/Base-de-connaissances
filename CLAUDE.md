@@ -11,6 +11,7 @@ URL : https://vincentfrag.github.io/Base-de-connaissances/
 - 🧠 Fiche concept (1 page max) : encadré « En une phrase », analogie, explication avec tableaux, « À quoi ça sert concrètement », encadré « Pièges fréquents », liens « Pour aller plus loin »
 - 🛠️ Tuto de A à Z : encadré « Objectif », niveau et durée, prérequis (liens vers les fiches concept), étapes numérotées avec commandes (onglets `=== "Windows"` / `=== "Linux"` si besoin), tableau « ce que tu vois / ce que ça veut dire / action », vérification finale, dépannage courant
 - 📋 Mémo : tableaux commande par besoin (colonnes Windows / Linux si pertinent)
+- **Règle : toute fiche concept doit avoir son tuto pratique associé** (ex. concept-vlan → tuto-creer-vlan), avec les commandes réelles par plateforme en onglets (Cisco IOS, pfSense, Windows Server/PowerShell, Linux). La fiche concept renvoie vers son tuto en premier dans « Pour aller plus loin ».
 - Niveaux : 🟢 Bases · 🟡 Intermédiaire. Front matter : `title` et `tags`.
 
 ## Publier un article

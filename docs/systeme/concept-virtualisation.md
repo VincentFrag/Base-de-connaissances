@@ -19,7 +19,7 @@ Un serveur physique, c'est un **immeuble**. L'hyperviseur est le **syndic** : il
 
 | Mot | Ce que ça désigne |
 |---|---|
-| **Hôte** | La machine physique (ex. le serveur Proxmox `pve`) |
+| **Hôte** | La machine physique (ex. le serveur Proxmox `pve01`) |
 | **Invité** / **VM** | Le système qui tourne dans la machine virtuelle (ex. une Debian) |
 | **Hyperviseur** | Le logiciel qui crée les VM et leur partage le matériel |
 | **vCPU, vRAM, disque virtuel** | Les ressources « prêtées » à la VM, prises sur celles de l'hôte |
@@ -76,7 +76,7 @@ Un **template** est une VM « modèle » figée : déjà installée et configur�
 - Mieux utiliser le matériel : un serveur physique héberge des dizaines de services.
 
 !!! warning "Pièges fréquents"
-    - **Confondre l'hôte et la VM** : une commande tapée dans le *Shell* du nœud `pve` modifie l'hyperviseur, pas la VM. Vérifie toujours l'invite (`root@pve` ≠ `root@srv-fic`).
+    - **Confondre l'hôte et la VM** : une commande tapée dans le *Shell* du nœud `pve01` modifie l'hyperviseur, pas la VM. Vérifie toujours l'invite (`root@pve01` ≠ `root@srv-files01`).
     - **Démarrer plusieurs clones non personnalisés** en même temps : ils ont tous la même IP.
     - **Supprimer un template** utilisé par des clones liés : Proxmox refuse, et c'est tant mieux.
     - **Un snapshot n'est pas une sauvegarde** : il vit sur le même disque que la VM. Si le disque meurt, tout part avec.

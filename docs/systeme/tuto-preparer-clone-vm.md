@@ -15,7 +15,7 @@ tags: [système, tuto, proxmox, virtualisation, template, clone, debian]
 
 - Savoir ce qu'est un template et un clone : 🧠 [Virtualisation et hyperviseurs](concept-virtualisation.md)
 - Un hôte Proxmox avec un **template** Debian (VM convertie en modèle : clic droit → *Convert to template*)
-- Le template configuré en IP fixe (ici `10.10.10.21`, nom `debian-template`)
+- Le template configuré en IP fixe (ici `10.0.0.200`, nom `debian-template`)
 
 ## Pourquoi « personnaliser » un clone ?
 
@@ -32,12 +32,12 @@ Un clone est une **copie exacte** du modèle. Sans retouche, chaque clone a :
 
 | VM | IP |
 |---|---|
-| `debian-template` (modèle) | `10.10.10.21` |
-| `srv-fic` | `10.10.10.40` |
-| `lb` | `10.10.10.50` |
-| `web1` | `10.10.10.51` |
+| `debian-template` (modèle) | `10.0.0.200` |
+| `srv-files01` | `10.0.0.20` |
+| `srv-lb01` | `10.0.0.30` |
+| `srv-web01` | `10.0.0.31` |
 
-Réseau `10.10.10.0/24` · passerelle `10.10.10.1` · DNS `10.10.10.5` (`srv-ad.lab.local`)
+Réseau `10.0.0.0/24` · passerelle `10.0.0.1` · DNS `10.0.0.10` (`srv-dc01.lab.local`)
 
 ---
 
@@ -45,7 +45,7 @@ Réseau `10.10.10.0/24` · passerelle `10.10.10.1` · DNS `10.10.10.5` (`srv-ad.
 
 1. Clic droit sur le template → **Clone**.
 2. *Mode* : **Full Clone** (copie indépendante du modèle).
-3. *Name* : par exemple `srv-fic`, **sans espace ni parenthèse**.
+3. *Name* : par exemple `srv-files01`, **sans espace ni parenthèse**.
 4. *Target Storage* : le stockage des VM (ex. `local-zfs`).
 
 ## Étape 2 — Vérifier la carte réseau
@@ -53,24 +53,24 @@ Réseau `10.10.10.0/24` · passerelle `10.10.10.1` · DNS `10.10.10.5` (`srv-ad.
 Dans la VM clonée : **Hardware → Network Device** (double-clic) :
 
 - la case **Disconnect** doit être **décochée** ;
-- le **Bridge** doit être le même que celui des autres VM du lab (ex. `vmbr1`) ;
+- le **Bridge** doit être le même que celui des autres VM du lab (ex. `vmbr2`) ;
 - la case **Firewall** : si elle est cochée, le pare-feu Proxmox s'applique à la VM (on voit alors un pont `fwbr…` côté hôte). Ce n'est pas bloquant en soi, mais si un service reste injoignable alors que tout tourne dans la VM, c'est un suspect à éliminer en la décochant.
 
 !!! warning "Un clone à la fois"
-    Démarre les clones **un par un** : tant qu'ils ne sont pas personnalisés, ils ont tous l'IP du template (`10.10.10.21`).
+    Démarre les clones **un par un** : tant qu'ils ne sont pas personnalisés, ils ont tous l'IP du template (`10.0.0.200`).
 
 ## Étape 3 — Personnaliser la VM
 
 Démarre la VM, ouvre **sa** Console dans Proxmox (la VM dans la colonne de gauche → **Console**), connecte-toi avec ton utilisateur puis passe root avec `su -`.
 
 !!! danger "Vérifie l'invite avant de taper quoi que ce soit"
-    L'invite doit afficher le nom de la VM (`root@debian-template` ou `root@srv-fic`), **pas `root@pve`**. Sinon, tu es sur l'**hôte Proxmox** : ouvrir la console via le nœud (`pve` → *Shell*) au lieu de la VM est une erreur fréquente, et ces commandes modifieraient l'hôte.
+    L'invite doit afficher le nom de la VM (`root@debian-template` ou `root@srv-files01`), **pas `root@pve01`**. Sinon, tu es sur l'**hôte Proxmox** : ouvrir la console via le nœud (`pve01` → *Shell*) au lieu de la VM est une erreur fréquente, et ces commandes modifieraient l'hôte.
 
 
 ```bash
 # 1. Nom d'hôte
-hostnamectl set-hostname srv-fic
-sed -i 's/debian-template/srv-fic/g' /etc/hosts
+hostnamectl set-hostname srv-files01
+sed -i 's/debian-template/srv-files01/g' /etc/hosts
 
 # 2. Adresse IP : modifier la ligne « address »
 nano /etc/network/interfaces
@@ -81,8 +81,8 @@ Exemple du bloc à obtenir dans `/etc/network/interfaces` :
 ```text
 auto ens18
 iface ens18 inet static
-    address 10.10.10.40/24
-    gateway 10.10.10.1
+    address 10.0.0.20/24
+    gateway 10.0.0.1
 ```
 
 ```bash
@@ -105,18 +105,18 @@ reboot
 ## ✅ Vérification
 
 ```bash
-hostname                        # srv-fic
+hostname                        # srv-files01
 systemctl is-active ssh         # active
-ip a                            # 10.10.10.40/24, interface « UP »
-cat /etc/resolv.conf            # nameserver 10.10.10.5
-ping -c 2 10.10.10.1            # la passerelle
-ping -c 2 srv-ad.lab.local      # le DNS interne
+ip a                            # 10.0.0.20/24, interface « UP »
+cat /etc/resolv.conf            # nameserver 10.0.0.10
+ping -c 2 10.0.0.1            # la passerelle
+ping -c 2 srv-dc01.lab.local      # le DNS interne
 ```
 
 | Ce que tu vois | Ce que ça veut dire | Action |
 |---|---|---|
 | `NO-CARRIER` / `state DOWN` dans `ip a` | La carte réseau est débranchée | Proxmox : décocher **Disconnect** (étape 2) |
-| L'IP est encore `10.10.10.21` | Fichier non modifié ou pas de redémarrage | Revoir `/etc/network/interfaces`, puis `reboot` |
+| L'IP est encore `10.0.0.200` | Fichier non modifié ou pas de redémarrage | Revoir `/etc/network/interfaces`, puis `reboot` |
 | Passerelle OK, nom DNS KO | Mauvais DNS | Vérifier `nameserver` dans `/etc/resolv.conf` |
 | Rien ne répond, même la passerelle | Mauvais bridge | Proxmox : même **Bridge** que les autres VM |
 | `systemctl status ssh` en échec | Clés d'hôte supprimées mais pas régénérées | `ssh-keygen -A` puis `systemctl restart ssh` |
@@ -136,7 +136,7 @@ ping -c 2 srv-ad.lab.local      # le DNS interne
     Vérifie la case **Firewall** de la carte réseau (*Hardware → Network Device*) : le pare-feu Proxmox filtre peut-être le trafic. Décoche-la pour tester.
 
 !!! question "« REMOTE HOST IDENTIFICATION HAS CHANGED » en me connectant en SSH ?"
-    C'est normal après l'étape 3 : les clés d'hôte ont changé. Sur ton PC : `ssh-keygen -R 10.10.10.40`.
+    C'est normal après l'étape 3 : les clés d'hôte ont changé. Sur ton PC : `ssh-keygen -R 10.0.0.20`.
 
 !!! question "Deux VM se « volent » la même adresse ?"
     Un clone a été démarré avant que le précédent soit personnalisé. Éteins-en un, corrige l'IP de l'autre, puis redémarre.

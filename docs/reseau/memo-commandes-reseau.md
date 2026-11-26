@@ -42,7 +42,7 @@ tags: [réseau, mémo, commandes]
 
 | Besoin | Windows | Linux |
 |---|---|---|
-| Ports en écoute | `netstat -ano \| findstr LISTEN` | `ss -tulpn` |
+| Ports en écoute | <code>netstat -ano &#124; findstr LISTEN</code> | `ss -tulpn` |
 | Connexions actives | `netstat -ano` | `ss -tan` |
 | Qui utilise un port | `Get-NetTCPConnection -LocalPort 443` | `sudo ss -tlpn 'sport = :443'` |
 | Table ARP (IP ↔ MAC) | `arp -a` | `ip neigh` |

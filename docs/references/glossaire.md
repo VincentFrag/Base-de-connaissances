@@ -77,6 +77,9 @@ tags: [référence, glossaire, vocabulaire]
 **Cluster** · 📦
 : Plusieurs serveurs qui travaillent ensemble comme un seul, pour la puissance ou la haute disponibilité.
 
+**Cmdlet** · 🖥️
+: Commande PowerShell, toujours nommée *Verbe-Nom* (`Get-Service`, `Restart-Service`). Elle renvoie des objets, pas du texte. :material-arrow-right: [Mémo commandes Linux et PowerShell](memo-commandes-linux-powershell.md)
+
 **Compte de service** · 🖥️🔒
 : Compte dédié à une application ou un script (ex. `svc-backup`), jamais à une personne. Il n'a que les droits nécessaires à sa tâche. :material-arrow-right: [Nommage et documentation](../pratiques/memo-nommage-documentation.md)
 
@@ -85,6 +88,9 @@ tags: [référence, glossaire, vocabulaire]
 
 **Contrôleur de domaine** (*DC*) · 🖥️
 : Serveur qui héberge l'Active Directory et authentifie les utilisateurs du domaine (ex. `srv-dc01`). :material-arrow-right: [Active Directory](../systeme/concept-active-directory.md)
+
+**CRLF** · 🖥️
+: Fin de ligne Windows (retour chariot + saut de ligne), là où Linux n'utilise que LF. Un script `.sh` en CRLF échoue avec `$'\r': command not found` ; corriger avec `sed -i 's/\r$//'`.
 
 **cron** · 🖥️
 : Planificateur de tâches de Linux : lance une commande à heure fixe (ex. une sauvegarde chaque nuit).
@@ -119,6 +125,9 @@ tags: [référence, glossaire, vocabulaire]
 
 **Ethernet** · 🌐
 : Technologie standard des réseaux locaux filaires (câbles RJ45, trames, adresses MAC).
+
+**Expression régulière** (*regex*) · 🖥️
+: Motif qui décrit du texte à chercher : `^#` (ligne qui commence par #), `error|fail` (l'un ou l'autre). Utilisée par `grep`, `sed`, `awk` et `-replace` en PowerShell. :material-arrow-right: [Mémo commandes Linux et PowerShell](memo-commandes-linux-powershell.md)
 
 ## F
 
@@ -174,6 +183,9 @@ tags: [référence, glossaire, vocabulaire]
 
 **Journal des changements** (*changelog*) · 🖥️
 : Registre daté de toutes les modifications faites sur l'infrastructure : qui, quoi, pourquoi, comment revenir en arrière. Premier endroit à lire quand quelque chose casse. :material-arrow-right: [Nommage et documentation](../pratiques/memo-nommage-documentation.md)
+
+**JSON** · 🌍
+: Format texte d'échange de données (`{"nom": "alice"}`), utilisé par la plupart des API web. `Invoke-RestMethod` le convertit en objets PowerShell.
 
 ## K
 
@@ -274,6 +286,9 @@ tags: [référence, glossaire, vocabulaire]
 **Ping** · 🌐
 : Commande qui vérifie qu'une machine répond (ICMP). :material-arrow-right: [Mémo commandes réseau](../reseau/memo-commandes-reseau.md)
 
+**Pipeline** (tube, `|`) · 🖥️
+: Envoie le résultat d'une commande à la suivante : `ps aux | grep nginx`. En Bash il transporte du texte, en PowerShell des objets. :material-arrow-right: [Mémo commandes Linux et PowerShell](memo-commandes-linux-powershell.md#enchainer-et-rediriger)
+
 **Port** · 🌐
 : Numéro qui identifie un service sur une machine (22 pour SSH, 443 pour HTTPS). :material-arrow-right: [Mémo ports et protocoles](memo-ports-protocoles.md)
 
@@ -316,6 +331,9 @@ tags: [référence, glossaire, vocabulaire]
 
 **Sauvegarde 3-2-1** · 💾
 : 3 copies des données, sur 2 supports différents, dont 1 hors site. :material-arrow-right: [Sauvegardes](../transverse/concept-sauvegardes.md)
+
+**SCP** (*Secure Copy*) · 🌐🔒
+: Copie de fichiers entre machines à travers SSH : `scp fichier admin@10.0.0.31:/tmp/`. :material-arrow-right: [Mémo commandes Linux et PowerShell](memo-commandes-linux-powershell.md#scp-et-rsync-copier-par-ssh)
 
 **SID** · 🖥️
 : Security Identifier : identifiant unique d'un compte, d'un groupe ou d'une machine Windows. Deux clones Windows non passés par `sysprep` ont le même SID machine.
@@ -360,6 +378,11 @@ tags: [référence, glossaire, vocabulaire]
 
 **TTL** · 🌐
 : Durée de vie : en IP, nombre de routeurs qu'un paquet peut traverser ; en DNS, durée de mise en cache d'une réponse.
+
+## U
+
+**URL** · 🌍
+: Adresse d'une ressource web : protocole, nom, port, chemin (`https://pve01:8006/`).
 
 ## V
 

@@ -29,7 +29,7 @@ Ne jamais publier les vrais noms d'hôtes, domaine, IP, noms de VM ou comptes du
 | Serveur de fichiers | `srv-files01` | `10.0.0.20` |
 | Répartiteur de charge | `srv-lb01` | `10.0.0.30` |
 | Serveurs web | `srv-web01`, `srv-web02` | `10.0.0.31`, `10.0.0.32` |
-| Template Debian | `debian-template` | `10.0.0.200` |
+| Template Debian | `tpl-debian01` | `10.0.0.200` |
 | Postes clients | `PC-01`, `PC-02`… | DHCP |
 
 Réseau interne `10.0.0.0/24` sur le pont `vmbr2` · compte d'admin des VM `admin` · utilisateurs d'exemple `alice`, `bruno`, `chloe`. Nouvelle machine : suivre le même schéma (`srv-<rôle>01`, IP libre du plan). Les plans VLAN pédagogiques (192.168.10.0/24, 192.168.20.0/24) restent valables.

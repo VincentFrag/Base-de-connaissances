@@ -14,7 +14,7 @@ tags: [système, tuto, proxmox, virtualisation, template, clone, debian]
 ## Prérequis
 
 - Un hôte Proxmox avec un **template** Debian (VM convertie en modèle : clic droit → *Convert to template*)
-- Le template configuré en IP fixe (ici `10.0.0.200`, nom `debian-template`)
+- Le template configuré en IP fixe (ici `10.0.0.200`, nom `tpl-debian01`)
 
 ## Pourquoi « personnaliser » un clone ?
 
@@ -31,7 +31,7 @@ Un clone est une **copie exacte** du modèle. Sans retouche, chaque clone a :
 
 | VM | IP |
 |---|---|
-| `debian-template` (modèle) | `10.0.0.200` |
+| `tpl-debian01` (modèle) | `10.0.0.200` |
 | `srv-files01` | `10.0.0.20` |
 | `srv-lb01` | `10.0.0.30` |
 | `srv-web01` | `10.0.0.31` |
@@ -63,13 +63,13 @@ Dans la VM clonée : **Hardware → Network Device** (double-clic) :
 Démarre la VM, ouvre **sa** Console dans Proxmox (la VM dans la colonne de gauche → **Console**), connecte-toi avec ton utilisateur puis passe root avec `su -`.
 
 !!! danger "Vérifie l'invite avant de taper quoi que ce soit"
-    L'invite doit afficher le nom de la VM (`root@debian-template` ou `root@srv-files01`), **pas `root@pve01`**. Sinon, tu es sur l'**hôte Proxmox** : ouvrir la console via le nœud (`pve01` → *Shell*) au lieu de la VM est une erreur fréquente, et ces commandes modifieraient l'hôte.
+    L'invite doit afficher le nom de la VM (`root@tpl-debian01` ou `root@srv-files01`), **pas `root@pve01`**. Sinon, tu es sur l'**hôte Proxmox** : ouvrir la console via le nœud (`pve01` → *Shell*) au lieu de la VM est une erreur fréquente, et ces commandes modifieraient l'hôte.
 
 
 ```bash
 # 1. Nom d'hôte
 hostnamectl set-hostname srv-files01
-sed -i 's/debian-template/srv-files01/g' /etc/hosts
+sed -i 's/tpl-debian01/srv-files01/g' /etc/hosts
 
 # 2. Adresse IP : modifier la ligne « address »
 nano /etc/network/interfaces

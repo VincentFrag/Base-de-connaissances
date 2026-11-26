@@ -64,6 +64,7 @@ nav:
       - reseau/index.md
       - "🧠 Le modèle OSI et TCP/IP": reseau/concept-modele-osi-tcpip.md
       - "🧠 Adressage IP et masque": reseau/concept-adressage-ip.md
+      - "🧠 DHCP et DNS": reseau/concept-dhcp-dns.md
       - "🛠️ Diagnostiquer une connexion": reseau/tuto-diagnostic-connexion.md
       - "📋 Mémo commandes réseau": reseau/memo-commandes-reseau.md
   - Système:

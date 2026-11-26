@@ -30,11 +30,14 @@ Ton PC ne voit pas le réseau interne des VM, mais l'hôte Proxmox, lui, est bra
 
 Tout reste chiffré de bout en bout : l'hôte de rebond transporte la connexion mais ne la déchiffre pas.
 
+!!! info "Pourquoi Proxmox peut servir de rebond"
+    L'hôte Proxmox a une adresse **sur chacun des deux réseaux** : `192.168.1.20` côté PC, et `10.0.0.1` sur le pont interne des VM (ex. `vmbr2`), où il sert aussi de **passerelle**. C'est cette double patte qui lui permet de joindre les VM. Pour le vérifier sur l'hôte : `ip -br a`.
+
 ## Le lab d'exemple
 
 | Machine | Rôle | IP |
 |---|---|---|
-| `pve01` | Hôte Proxmox (rebond) | `192.168.1.20` |
+| `pve01` | Hôte Proxmox (rebond et passerelle) | `192.168.1.20` et `10.0.0.1` |
 | `srv-dc01` | Contrôleur de domaine / DNS (`lab.local`) | `10.0.0.10` |
 | `srv-files01` | Serveur de fichiers | `10.0.0.20` |
 | `srv-lb01` | Répartiteur de charge (HAProxy) | `10.0.0.30` |
@@ -177,7 +180,7 @@ ssh -v srv-lb01
 | Ce que tu vois | Ce que ça veut dire | Action |
 |---|---|---|
 | `port 22: Permission denied` **avant** toute demande de mot de passe, en direct | Le PC ne joint pas la VM : souvent une **autre carte réseau** du PC sur la même plage | Passer par le rebond, et voir le dépannage ci-dessous |
-| `Connection refused` | La VM répond, mais pas de serveur SSH | Sur la VM : `apt install -y openssh-server` |
+| `Connection refused` | Le rebond a marché (Proxmox a répondu), mais le **service SSH ne tourne pas** sur la VM | Dans la console **de la VM** : `systemctl status ssh` ; si clés d'hôte absentes → `ssh-keygen -A` puis `systemctl restart ssh` ; si service absent → `apt install -y openssh-server` |
 | `Connection timed out` pendant le saut vers la VM | L'hôte de rebond ne joint pas la VM | Depuis `pve01` : `ping` de la VM, vérifier son bridge réseau |
 | `Could not resolve hostname pve01` | L'alias `pve01` n'existe pas dans la config | Vérifier le bloc `Host pve01` et l'orthographe |
 | `REMOTE HOST IDENTIFICATION HAS CHANGED` | VM clonée, réinstallée ou IP réattribuée | `ssh-keygen -R 10.0.0.30` puis reconnexion |
@@ -193,6 +196,9 @@ ssh -v srv-lb01
 
 !!! question "Une VM clonée ne répond pas, ou reprend l'IP d'une autre ?"
     Un clone reprend l'IP, le nom et les clés SSH de son modèle. Voir 🛠️ [Préparer une VM clonée depuis un template](../systeme/tuto-preparer-clone-vm.md).
+
+!!! question "Comment savoir à quel saut ça bloque ?"
+    Lance `ssh -v srv-web01` et regarde où s'arrêtent les messages : si la connexion à `pve01` s'établit puis qu'une erreur arrive sur `10.0.0.31`, le problème est **sur la VM** (service SSH, pare-feu), pas sur le rebond. Pense aussi à la case **Firewall** de la carte réseau de la VM dans Proxmox.
 
 !!! question "`ProxyJump` n'est pas reconnu ?"
     Client OpenSSH trop ancien (avant la version 7.3). Vérifie avec `ssh -V`, et mets à jour.

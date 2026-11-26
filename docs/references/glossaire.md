@@ -223,6 +223,9 @@ tags: [référence, glossaire, vocabulaire]
 **NFS** · 💾
 : Protocole de partage de fichiers en réseau propre au monde Linux/Unix (port 2049).
 
+**NTFS** · 🖥️💾
+: Système de fichiers de Windows. Ses droits (lecture, modification, contrôle total), hérités de dossier en dossier, s'ajoutent à ceux du partage SMB : l'accès réel est le plus restrictif des deux. :material-arrow-right: [TP infra PME](../systeme/tp-infra-pme-proxmox.md)
+
 **NTP** · 🌐
 : Protocole qui synchronise l'heure des machines. Indispensable pour Kerberos et les journaux.
 
@@ -291,8 +294,14 @@ tags: [référence, glossaire, vocabulaire]
 
 ## S
 
+**Samba** · 💾🖥️
+: Logiciel libre qui fait parler SMB à Linux : partager des dossiers avec des postes Windows, et même rejoindre un domaine Active Directory. :material-arrow-right: [TP infra PME](../systeme/tp-infra-pme-proxmox.md)
+
 **Sauvegarde 3-2-1** · 💾
 : 3 copies des données, sur 2 supports différents, dont 1 hors site. :material-arrow-right: [Sauvegardes](../transverse/concept-sauvegardes.md)
+
+**SID** · 🖥️
+: Security Identifier : identifiant unique d'un compte, d'un groupe ou d'une machine Windows. Deux clones Windows non passés par `sysprep` ont le même SID machine.
 
 **SMB / CIFS** · 💾
 : Protocole de partage de fichiers et d'imprimantes de Windows (port 445).
@@ -336,6 +345,9 @@ tags: [référence, glossaire, vocabulaire]
 : Durée de vie : en IP, nombre de routeurs qu'un paquet peut traverser ; en DNS, durée de mise en cache d'une réponse.
 
 ## V
+
+**VSS** (clichés instantanés) · 💾
+: Volume Shadow Copy Service : copies ponctuelles d'un volume Windows, qui permettent de récupérer un fichier via *Versions précédentes*.
 
 **Virtualisation** · 📦
 : Faire tourner plusieurs machines virtuelles sur une seule machine physique. :material-arrow-right: [Virtualisation](../systeme/concept-virtualisation.md)

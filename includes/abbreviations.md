@@ -38,6 +38,7 @@
 *[NAT]: Network Address Translation : traduction d'adresses privées vers publiques
 *[NFS]: Network File System : partage de fichiers Linux/Unix (port 2049)
 *[NS]: Enregistrement DNS des serveurs qui font autorité sur une zone
+*[NTFS]: Système de fichiers de Windows, avec ses propres droits d'accès
 *[NTP]: Network Time Protocol : synchronisation de l'heure
 *[OS]: Système d'exploitation
 *[OSI]: Modèle en 7 couches du fonctionnement d'un réseau
@@ -52,6 +53,7 @@
 *[RTO]: Recovery Time Objective : temps acceptable pour redémarrer
 *[SAN]: Réseau de stockage qui fournit des disques bruts
 *[SFTP]: Transfert de fichiers chiffré par SSH
+*[SID]: Security Identifier : identifiant unique d'un compte ou d'une machine Windows
 *[SMB]: Server Message Block : partage de fichiers Windows (port 445)
 *[SMTP]: Simple Mail Transfer Protocol : envoi de mails
 *[SNMP]: Protocole de supervision des équipements (port 161)
@@ -67,6 +69,7 @@
 *[TTL]: Time To Live : durée de vie d'un paquet ou d'une réponse DNS en cache
 *[UDP]: User Datagram Protocol : transport rapide, sans vérification de livraison
 *[UEFI]: Version moderne du BIOS
+*[VSS]: Volume Shadow Copy Service : clichés instantanés d'un volume Windows
 *[VLAN]: Virtual LAN : réseau local virtuel isolé sur un même switch
 *[VM]: Machine virtuelle
 *[VNC]: Prise en main graphique à distance

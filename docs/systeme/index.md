@@ -54,4 +54,12 @@ Windows Server, Active Directory, GPO, Linux, virtualisation, sauvegarde. Suis l
     - :material-book-open-variant: [Image, conteneur, volume, réseau](concept-docker.md) <span class="kb-badge kb-bases">Bases</span>
     - :material-wrench-outline: [Déployer un service avec Docker Compose](tuto-docker-compose-proxmox.md) <span class="kb-badge kb-inter">Intermédiaire</span>
 
+-   :material-flask-outline:{ .lg .middle } __S'entraîner__
+
+    ---
+
+    Mettre tout bout à bout sur un cas réel, avec indices et solutions.
+
+    - :material-flask-outline: [TP : monter l'infra d'une PME sur Proxmox](tp-infra-pme-proxmox.md) <span class="kb-badge kb-inter">Intermédiaire</span>
+
 </div>

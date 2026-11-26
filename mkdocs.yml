@@ -110,6 +110,8 @@ nav:
       - Conteneurs Docker:
           - "Comprendre": systeme/concept-docker.md
           - "Mettre en pratique": systeme/tuto-docker-compose-proxmox.md
+      - S'entraîner:
+          - "TP : infra PME sur Proxmox": systeme/tp-infra-pme-proxmox.md
   - Transverse:
       - transverse/index.md
       - Sauvegarde:

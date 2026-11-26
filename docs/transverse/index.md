@@ -27,7 +27,7 @@ Ce qui concerne toute l'infrastructure, quel que soit le système ou le réseau 
     - :material-book-open-variant: [Comprendre les sauvegardes et la règle 3-2-1](concept-sauvegardes.md) <span class="kb-badge kb-bases">Bases</span>
     - :material-wrench-outline: [Sauvegarder et restaurer ses VM avec Proxmox](tuto-proxmox-backup.md) <span class="kb-badge kb-inter">Intermédiaire</span>
 
--   :material-numeric-2-circle-outline:{ .lg .middle } __Scripting et automatisation__
+-   :material-numeric-3-circle-outline:{ .lg .middle } __Scripting et automatisation__
 
     ---
 

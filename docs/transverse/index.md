@@ -38,4 +38,13 @@ Ce qui concerne toute l'infrastructure, quel que soit le système ou le réseau 
     - :material-wrench-outline: [Superviser ses VM avec Zabbix](tuto-zabbix.md) <span class="kb-badge kb-inter">Intermédiaire</span>
     - :material-wrench-outline: [Superviser ses VM avec Centreon](tuto-centreon.md) <span class="kb-badge kb-inter">Intermédiaire</span>
 
+-   :material-numeric-3-circle-outline:{ .lg .middle } __Scripting et automatisation__
+
+    ---
+
+    Écrire de petits scripts d'admin et les faire tourner tout seuls, sous Linux comme sous Windows.
+
+    - :material-clipboard-text-outline: [Mémo scripting Bash & PowerShell](memo-bash-powershell.md) <span class="kb-badge kb-bases">Bases</span>
+    - :material-wrench-outline: [Automatiser une tâche avec cron et le Planificateur de tâches](tuto-taches-planifiees.md) <span class="kb-badge kb-inter">Intermédiaire</span>
+
 </div>

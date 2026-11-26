@@ -34,6 +34,7 @@ Les habitudes qui font un bon admin systèmes et réseaux, quel que soit l'outil
 
     - :material-clipboard-text-outline: [Mémo commandes du quotidien](memo-commandes-quotidien.md) <span class="kb-badge kb-bases">Bases</span>
     - :material-clipboard-text-outline: [Mémo commandes réseau](../reseau/memo-commandes-reseau.md) <span class="kb-badge kb-bases">Bases</span>
+    - :material-clipboard-text-outline: [Mémo Bash et PowerShell](../transverse/memo-bash-powershell.md) <span class="kb-badge kb-bases">Bases</span>
 
 -   :material-numeric-3-circle-outline:{ .lg .middle } __Check-lists__
 

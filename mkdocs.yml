@@ -125,6 +125,9 @@ nav:
           - "Avec Uptime Kuma": transverse/tuto-uptime-kuma.md
           - "Avec Zabbix": transverse/tuto-zabbix.md
           - "Avec Centreon": transverse/tuto-centreon.md
+      - Scripting et automatisation:
+          - "Mémo Bash et PowerShell": transverse/memo-bash-powershell.md
+          - "Planifier une tâche": transverse/tuto-taches-planifiees.md
   - Bonnes pratiques:
       - pratiques/index.md
       - Réflexes:

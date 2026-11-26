@@ -122,4 +122,4 @@ Pour le détail des droits Linux : 🛠️ [Gérer utilisateurs, groupes et perm
 | État des stockages | `pvesm status` |
 
 !!! info "Pour écrire des scripts"
-    Variables, conditions, boucles et fonctions en Bash et PowerShell côte à côte : voir le mémo Bash / PowerShell dans l'onglet Transverse, thème « Scripting et automatisation ».
+    Variables, conditions, boucles et fonctions en Bash et PowerShell côte à côte : 📋 [Mémo Bash et PowerShell](../transverse/memo-bash-powershell.md). Pour lancer un script à heure fixe : 🛠️ [Planifier une tâche](../transverse/tuto-taches-planifiees.md).

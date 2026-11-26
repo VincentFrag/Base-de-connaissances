@@ -88,3 +88,25 @@
 /* Icônes de type devant les articles */
 .md-nav__link .md-nav__icon.md-icon,
 .md-nav__link > .md-icon { opacity: .75; }
+
+/* Mode jour : fond crème, plus doux pour la lecture (le mode sombre n'est pas touché) */
+[data-md-color-scheme="default"] {
+  --md-default-bg-color: #faf6ee;              /* fond de page crème */
+  --md-default-fg-color: #2e2a24;              /* texte brun très foncé (contraste ~13:1) */
+  --md-default-fg-color--light: #5f584e;       /* texte secondaire (contraste ~6:1) */
+  --md-default-fg-color--lighter: #a39b8e;     /* éléments décoratifs */
+  --md-default-fg-color--lightest: #e5ddcf;    /* bordures, séparateurs */
+  --md-code-bg-color: #f1eadc;                 /* blocs et code en ligne */
+  --md-code-fg-color: #3b3a36;
+  --md-admonition-bg-color: #fdfaf4;           /* encadrés légèrement plus clairs que la page */
+  --md-typeset-table-color: #e2d9c9;           /* bordures de tableaux */
+  --md-typeset-kbd-color: #fdfaf4;
+}
+/* En-têtes de tableaux et cartes assortis au crème */
+[data-md-color-scheme="default"] .md-typeset table:not([class]) th {
+  background-color: #f3ecdf;
+}
+[data-md-color-scheme="default"] .md-typeset .grid.cards > ul > li,
+[data-md-color-scheme="default"] .md-typeset .grid > .card {
+  background-color: #fdfaf4;
+}

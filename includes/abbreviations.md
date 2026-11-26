@@ -9,6 +9,7 @@
 *[CIDR]: Notation du masque en nombre de bits (/24 = 255.255.255.0)
 *[CNAME]: Enregistrement DNS d'alias vers un autre nom
 *[CPU]: Processeur
+*[CRLF]: Fin de ligne Windows (retour chariot + saut de ligne)
 *[DC]: Domain Controller : serveur qui héberge l'Active Directory
 *[DHCP]: Dynamic Host Configuration Protocol : distribue automatiquement IP, masque, passerelle et DNS
 *[DMZ]: Zone réseau isolée pour les serveurs exposés à Internet
@@ -25,6 +26,7 @@
 *[IMAP]: Protocole de lecture des mails (ils restent sur le serveur)
 *[IP]: Internet Protocol : adressage et acheminement des paquets
 *[ISO]: Image d'un disque d'installation
+*[JSON]: Format texte d'échange de données, utilisé par les API web
 *[LAN]: Local Area Network : réseau local
 *[LDAP]: Protocole d'accès à un annuaire (port 389)
 *[LDAPS]: LDAP chiffré (port 636)
@@ -52,6 +54,7 @@
 *[RPO]: Recovery Point Objective : quantité de données qu'on accepte de perdre
 *[RTO]: Recovery Time Objective : temps acceptable pour redémarrer
 *[SAN]: Réseau de stockage qui fournit des disques bruts
+*[SCP]: Secure Copy : copie de fichiers à travers SSH
 *[SFTP]: Transfert de fichiers chiffré par SSH
 *[SID]: Security Identifier : identifiant unique d'un compte ou d'une machine Windows
 *[SMB]: Server Message Block : partage de fichiers Windows (port 445)
@@ -69,6 +72,7 @@
 *[TTL]: Time To Live : durée de vie d'un paquet ou d'une réponse DNS en cache
 *[UDP]: User Datagram Protocol : transport rapide, sans vérification de livraison
 *[UEFI]: Version moderne du BIOS
+*[URL]: Adresse d'une ressource web (https://nom:port/chemin)
 *[VSS]: Volume Shadow Copy Service : clichés instantanés d'un volume Windows
 *[VLAN]: Virtual LAN : réseau local virtuel isolé sur un même switch
 *[VM]: Machine virtuelle

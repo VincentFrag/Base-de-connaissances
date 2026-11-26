@@ -7,7 +7,7 @@ tags: [bonnes pratiques, mémo, commandes, linux, windows, powershell]
 # 📋 Mémo commandes du quotidien
 
 !!! abstract "Usage"
-    Les commandes qu'un admin tape tous les jours pour savoir **comment va une machine**, classées par besoin. Pour le réseau, voir 📋 [Mémo commandes réseau](../reseau/memo-commandes-reseau.md) ; pour les ports, 📋 [Mémo ports et protocoles](../references/memo-ports-protocoles.md).
+    Les commandes qu'un admin tape tous les jours pour savoir **comment va une machine**, classées par besoin. Pour le réseau, voir 📋 [Mémo commandes réseau](../reseau/memo-commandes-reseau.md) ; pour les ports, 📋 [Mémo ports et protocoles](../references/memo-ports-protocoles.md). Pour le détail des options d'une commande (`grep -v`, `sed -i`, `tar -czf`…), 📋 [Mémo commandes Linux et PowerShell](../references/memo-commandes-linux-powershell.md).
     Côté Windows, les commandes sont en PowerShell (à lancer en administrateur quand il faut des droits).
 
 ## Où suis-je, qui suis-je ?
@@ -26,10 +26,10 @@ tags: [bonnes pratiques, mémo, commandes, linux, windows, powershell]
 | Besoin | Windows | Linux |
 |---|---|---|
 | Vue d'ensemble en direct | `taskmgr` · `resmon` | `top` · `htop` |
-| Mémoire libre | `Get-CimInstance Win32_OperatingSystem \| Select FreePhysicalMemory, TotalVisibleMemorySize` | `free -h` |
+| Mémoire libre | <code>Get-CimInstance Win32_OperatingSystem &#124; Select FreePhysicalMemory, TotalVisibleMemorySize</code> | `free -h` |
 | Espace disque | `Get-Volume` · `Get-PSDrive -PSProvider FileSystem` | `df -h` |
-| Qui prend la place dans un dossier | `Get-ChildItem C:\Dossier -Recurse \| Measure-Object Length -Sum` | `sudo du -sh /var/* \| sort -h` |
-| Plus gros fichiers | `Get-ChildItem C:\ -Recurse -File -EA 0 \| Sort Length -Desc \| Select -First 10 FullName, Length` | `sudo find / -xdev -type f -size +500M -exec ls -lh {} +` |
+| Qui prend la place dans un dossier | <code>Get-ChildItem C:&#92;Dossier -Recurse &#124; Measure-Object Length -Sum</code> | <code>sudo du -sh /var/* &#124; sort -h</code> |
+| Plus gros fichiers | <code>Get-ChildItem C:&#92; -Recurse -File -EA 0 &#124; Sort Length -Desc &#124; Select -First 10 FullName, Length</code> | `sudo find / -xdev -type f -size +500M -exec ls -lh {} +` |
 | Disques et partitions | `Get-Disk` · `Get-Partition` | `lsblk` · `sudo fdisk -l` |
 
 ## Processus
@@ -37,7 +37,7 @@ tags: [bonnes pratiques, mémo, commandes, linux, windows, powershell]
 | Besoin | Windows | Linux |
 |---|---|---|
 | Lister les processus | `Get-Process` · `tasklist` | `ps aux` |
-| Les plus gourmands | `Get-Process \| Sort CPU -Desc \| Select -First 10` | `ps aux --sort=-%cpu \| head` · `ps aux --sort=-%mem \| head` |
+| Les plus gourmands | <code>Get-Process &#124; Sort CPU -Desc &#124; Select -First 10</code> | <code>ps aux --sort=-%cpu &#124; head</code> · <code>ps aux --sort=-%mem &#124; head</code> |
 | Trouver un processus | `Get-Process -Name *nginx*` | `pgrep -a nginx` |
 | Arrêter un processus | `Stop-Process -Name notepad` · `taskkill /PID 1234 /F` | `kill 1234` · `kill -9 1234` (en dernier recours) |
 
@@ -46,10 +46,10 @@ tags: [bonnes pratiques, mémo, commandes, linux, windows, powershell]
 | Besoin | Windows | Linux (systemd) |
 |---|---|---|
 | État d'un service | `Get-Service Spooler` | `systemctl status nginx` |
-| Démarrer / arrêter / redémarrer | `Start-Service` · `Stop-Service` · `Restart-Service Spooler` | `sudo systemctl start\|stop\|restart nginx` |
+| Démarrer / arrêter / redémarrer | `Start-Service` · `Stop-Service` · `Restart-Service Spooler` | <code>sudo systemctl start&#124;stop&#124;restart nginx</code> |
 | Recharger la conf sans couper | (selon le service) | `sudo systemctl reload nginx` |
 | Activer au démarrage | `Set-Service Spooler -StartupType Automatic` | `sudo systemctl enable --now nginx` |
-| Services en échec | `Get-Service \| Where Status -eq Stopped \| Where StartType -eq Automatic` | `systemctl --failed` |
+| Services en échec | <code>Get-Service &#124; Where Status -eq Stopped &#124; Where StartType -eq Automatic</code> | `systemctl --failed` |
 | Tester une conf avant de recharger | — | `sudo nginx -t` · `sudo apachectl configtest` · `sudo sshd -t` |
 
 ## Journaux (logs)
@@ -97,8 +97,8 @@ Pour le détail des droits Linux : 🛠️ [Gérer utilisateurs, groupes et perm
 | Comparer deux versions | `Compare-Object (gc a.conf) (gc b.conf)` | `diff -u a.conf b.conf` |
 | Chercher un texte dans des fichiers | `Select-String -Path C:\Logs\*.log -Pattern "error"` | `grep -ri "error" /var/log/` |
 | Voir la fin d'un fichier | `Get-Content fichier.log -Tail 20 -Wait` | `tail -n 20 -f fichier.log` |
-| Fichiers modifiés récemment | `Get-ChildItem -Recurse \| Where LastWriteTime -gt (Get-Date).AddDays(-1)` | `find /etc -mtime -1` |
-| Droits d'un fichier | `Get-Acl fichier \| Format-List` · `icacls fichier` | `ls -l fichier` · `stat fichier` |
+| Fichiers modifiés récemment | <code>Get-ChildItem -Recurse &#124; Where LastWriteTime -gt (Get-Date).AddDays(-1)</code> | `find /etc -mtime -1` |
+| Droits d'un fichier | <code>Get-Acl fichier &#124; Format-List</code> · `icacls fichier` | `ls -l fichier` · `stat fichier` |
 
 ## Arrêt, redémarrage, accès distant
 

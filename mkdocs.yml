@@ -147,3 +147,5 @@ nav:
           - "Mémo ports et protocoles": references/memo-ports-protocoles.md
       - Tableaux réseau:
           - "Mémo références réseau": references/memo-references-reseau.md
+      - Commandes et options:
+          - "Mémo commandes Linux et PowerShell": references/memo-commandes-linux-powershell.md

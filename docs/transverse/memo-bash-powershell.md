@@ -7,7 +7,7 @@ tags: [transverse, mémo, scripting, bash, powershell]
 # 📋 Mémo scripting Bash & PowerShell
 
 !!! abstract "Usage"
-    Retrouver en 10 secondes la syntaxe d'une variable, d'une condition ou d'une boucle, côte à côte en **Bash** (Linux) et **PowerShell** (Windows). Pour mettre un script en tâche planifiée : 🛠️ [Automatiser une tâche avec cron et le Planificateur de tâches](tuto-taches-planifiees.md).
+    Retrouver en 10 secondes la syntaxe d'une variable, d'une condition ou d'une boucle, côte à côte en **Bash** (Linux) et **PowerShell** (Windows). Pour mettre un script en tâche planifiée : 🛠️ [Automatiser une tâche avec cron et le Planificateur de tâches](tuto-taches-planifiees.md). Pour les options des commandes elles-mêmes : 📋 [Mémo commandes Linux et PowerShell](../references/memo-commandes-linux-powershell.md).
 
 **Niveau :** 🟢 Bases → 🟡 Intermédiaire
 
@@ -226,6 +226,8 @@ tags: [transverse, mémo, scripting, bash, powershell]
 
 ## Pour aller plus loin
 
+- 📋 [Mémo commandes Linux et PowerShell](../references/memo-commandes-linux-powershell.md) : `grep`, `sed`, `awk`, `find`, `curl`… et leurs options, avec l'équivalent de l'autre côté
+- 📋 [Mémo commandes du quotidien](../pratiques/memo-commandes-quotidien.md) : les commandes d'admin classées par besoin
 - 🛠️ [Automatiser une tâche avec cron et le Planificateur de tâches](tuto-taches-planifiees.md)
 - 🛠️ [Sauvegarder et restaurer ses VM avec Proxmox](tuto-proxmox-backup.md)
 - 🛠️ [Gérer utilisateurs, groupes et permissions sous Linux](../systeme/tuto-permissions-linux.md)

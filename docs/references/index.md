@@ -38,6 +38,14 @@ Les pages à garder sous la main, quel que soit le sujet : le vocabulaire, les p
 
     - :material-clipboard-text-outline: [Mémo références réseau](memo-references-reseau.md) <span class="kb-badge kb-bases">Bases</span>
 
+-   :material-numeric-4-circle-outline:{ .lg .middle } __Commandes et options__
+
+    ---
+
+    `curl`, `grep`, `sed -i`, `find`, `tar`, `ssh`… : les options utiles expliquées, un exemple et l'équivalent PowerShell.
+
+    - :material-clipboard-text-outline: [Mémo commandes Linux et PowerShell](memo-commandes-linux-powershell.md) <span class="kb-badge kb-bases">Bases</span>
+
 </div>
 
 !!! tip "Infobulles"

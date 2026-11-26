@@ -77,6 +77,9 @@ tags: [référence, glossaire, vocabulaire]
 **Cluster** · 📦
 : Plusieurs serveurs qui travaillent ensemble comme un seul, pour la puissance ou la haute disponibilité.
 
+**Compte de service** · 🖥️🔒
+: Compte dédié à une application ou un script (ex. `svc-backup`), jamais à une personne. Il n'a que les droits nécessaires à sa tâche. :material-arrow-right: [Nommage et documentation](../pratiques/memo-nommage-documentation.md)
+
 **Conteneur** · 📦
 : Environnement isolé qui partage le noyau de l'hôte : plus léger qu'une VM (Docker, LXC). :material-arrow-right: [VM ou conteneur LXC](../systeme/concept-virtualisation.md)
 
@@ -105,6 +108,9 @@ tags: [référence, glossaire, vocabulaire]
 
 **DORA** · 🌐
 : Les 4 étapes du DHCP : Discover, Offer, Request, Acknowledge. :material-arrow-right: [DHCP et DNS](../reseau/concept-dhcp-dns.md)
+
+**Durcissement** (*hardening*) · 🔒
+: Réduire la surface d'attaque d'une machine : désactiver ce qui ne sert pas, fermer les ports inutiles, interdire `root` en SSH, imposer les clés. :material-arrow-right: [Faire une intervention propre](../pratiques/tuto-intervention-propre.md)
 
 ## E
 
@@ -164,6 +170,11 @@ tags: [référence, glossaire, vocabulaire]
 **ISO** · 📦
 : Image d'un disque d'installation (ex. l'ISO Debian qu'on monte dans une VM pour l'installer).
 
+## J
+
+**Journal des changements** (*changelog*) · 🖥️
+: Registre daté de toutes les modifications faites sur l'infrastructure : qui, quoi, pourquoi, comment revenir en arrière. Premier endroit à lire quand quelque chose casse. :material-arrow-right: [Nommage et documentation](../pratiques/memo-nommage-documentation.md)
+
 ## K
 
 **Kerberos** · 🔒🖥️
@@ -202,6 +213,9 @@ tags: [référence, glossaire, vocabulaire]
 
 **MFA** · 🔒
 : Authentification à plusieurs facteurs : mot de passe plus un second élément (code sur le téléphone, clé physique).
+
+**Moindre privilège** · 🔒
+: Principe qui consiste à ne donner à chaque compte, personne ou programme que les droits strictement nécessaires. Limite les dégâts d'une erreur ou d'un piratage. :material-arrow-right: [Les réflexes de l'admin](../pratiques/concept-reflexes-admin.md)
 
 **Montage** (*mount*) · 💾
 : Rattacher un disque ou un partage réseau à un dossier pour pouvoir l'utiliser (`mount`, `/etc/fstab`).
@@ -282,6 +296,9 @@ tags: [référence, glossaire, vocabulaire]
 
 **Redirection de port** (*port forwarding*) · 🌐
 : Règle de NAT qui renvoie un port de l'IP publique vers un serveur interne. :material-arrow-right: [Pare-feu et NAT](../reseau/concept-pare-feu-nat.md)
+
+**Retour arrière** (*rollback*) · 🖥️
+: Moyen prévu à l'avance d'annuler une modification (supprimer le fichier ajouté, remettre la copie `.bak`, revenir au snapshot). Pas de retour arrière écrit, pas d'intervention. :material-arrow-right: [Faire une intervention propre](../pratiques/tuto-intervention-propre.md)
 
 **root** · 🖥️
 : Super-administrateur de Linux, qui a tous les droits. On l'utilise via `sudo`. :material-arrow-right: [Permissions Linux](../systeme/concept-permissions-linux.md)

@@ -93,5 +93,8 @@ nav:
       - Virtualisation:
           - "Comprendre": systeme/concept-virtualisation.md
           - "Préparer un clone de VM": systeme/tuto-preparer-clone-vm.md
+      - Comptes et droits Linux:
+          - "Comprendre": systeme/concept-permissions-linux.md
+          - "Mettre en pratique": systeme/tuto-permissions-linux.md
   - Transverse:
       - transverse/index.md

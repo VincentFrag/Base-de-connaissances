@@ -50,11 +50,13 @@ Les fondations : sans réseau qui fonctionne, rien d'autre ne fonctionne. Suis l
 
     ---
 
-    Administrer une machine à distance, de façon chiffrée.
+    Administrer une machine ou joindre tout un réseau à distance, de façon chiffrée.
 
     - :material-book-open-variant: [Comprendre SSH](concept-ssh.md) <span class="kb-badge kb-bases">Bases</span>
     - :material-wrench-outline: [Se connecter en SSH à une VM par son nom](tuto-ssh-nom-vm.md) <span class="kb-badge kb-bases">Bases</span>
     - :material-wrench-outline: [SSH par rebond vers un réseau interne](tuto-ssh-rebond.md) <span class="kb-badge kb-inter">Intermédiaire</span>
+    - :material-book-open-variant: [Comprendre les VPN (site-à-site, nomade)](concept-vpn.md) <span class="kb-badge kb-inter">Intermédiaire</span>
+    - :material-wrench-outline: [Accéder à son homelab avec WireGuard](tuto-wireguard-acces-distant.md) <span class="kb-badge kb-inter">Intermédiaire</span>
 
 -   :material-numeric-5-circle-outline:{ .lg .middle } __Dépannage__
 

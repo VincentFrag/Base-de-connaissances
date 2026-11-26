@@ -52,14 +52,19 @@ Réseau `10.10.10.0/24` · passerelle `10.10.10.1` · DNS `10.10.10.5` (`srv-ad.
 Dans la VM clonée : **Hardware → Network Device** (double-clic) :
 
 - la case **Disconnect** doit être **décochée** ;
-- le **Bridge** doit être le même que celui des autres VM du lab (ex. `vmbr1`).
+- le **Bridge** doit être le même que celui des autres VM du lab (ex. `vmbr1`) ;
+- la case **Firewall** : si elle est cochée, le pare-feu Proxmox s'applique à la VM (on voit alors un pont `fwbr…` côté hôte). Ce n'est pas bloquant en soi, mais si un service reste injoignable alors que tout tourne dans la VM, c'est un suspect à éliminer en la décochant.
 
 !!! warning "Un clone à la fois"
     Démarre les clones **un par un** : tant qu'ils ne sont pas personnalisés, ils ont tous l'IP du template (`10.10.10.21`).
 
 ## Étape 3 — Personnaliser la VM
 
-Démarre la VM, ouvre sa **Console** dans Proxmox et connecte-toi en root :
+Démarre la VM, ouvre **sa** Console dans Proxmox (la VM dans la colonne de gauche → **Console**), connecte-toi avec ton utilisateur puis passe root avec `su -`.
+
+!!! danger "Vérifie l'invite avant de taper quoi que ce soit"
+    L'invite doit afficher le nom de la VM (`root@debian-template` ou `root@srv-fic`), **pas `root@pve`**. Sinon, tu es sur l'**hôte Proxmox** : ouvrir la console via le nœud (`pve` → *Shell*) au lieu de la VM est une erreur fréquente, et ces commandes modifieraient l'hôte.
+
 
 ```bash
 # 1. Nom d'hôte
@@ -84,9 +89,11 @@ iface ens18 inet static
 rm -f /etc/machine-id /var/lib/dbus/machine-id
 systemd-machine-id-setup
 
-# 4. Nouvelles clés d'hôte SSH
+# 4. Nouvelles clés d'hôte SSH : supprimer PUIS régénérer
 rm -f /etc/ssh/ssh_host_*
-dpkg-reconfigure openssh-server
+ssh-keygen -A                   # recrée toutes les clés manquantes
+systemctl restart ssh
+systemctl status ssh --no-pager # doit afficher « active (running) »
 
 # 5. Redémarrer pour tout appliquer
 reboot
@@ -98,6 +105,7 @@ reboot
 
 ```bash
 hostname                        # srv-fic
+systemctl is-active ssh         # active
 ip a                            # 10.10.10.40/24, interface « UP »
 cat /etc/resolv.conf            # nameserver 10.10.10.5
 ping -c 2 10.10.10.1            # la passerelle
@@ -110,8 +118,21 @@ ping -c 2 srv-ad.lab.local      # le DNS interne
 | L'IP est encore `10.10.10.21` | Fichier non modifié ou pas de redémarrage | Revoir `/etc/network/interfaces`, puis `reboot` |
 | Passerelle OK, nom DNS KO | Mauvais DNS | Vérifier `nameserver` dans `/etc/resolv.conf` |
 | Rien ne répond, même la passerelle | Mauvais bridge | Proxmox : même **Bridge** que les autres VM |
+| `systemctl status ssh` en échec | Clés d'hôte supprimées mais pas régénérées | `ssh-keygen -A` puis `systemctl restart ssh` |
 
 ## 🔧 Dépannage courant
+
+!!! question "« Connection refused » sur le port 22 alors que la VM répond au ping ?"
+    Le service SSH ne tourne pas. Cause classique après un clone : les clés d'hôte ont été **supprimées sans être régénérées**, et `sshd` refuse de démarrer sans elles. Dans la console **de la VM** :
+    ```bash
+    ssh-keygen -A
+    systemctl restart ssh
+    systemctl status ssh --no-pager
+    ```
+    Si le service n'existe pas du tout : `apt install -y openssh-server`.
+
+!!! question "Tout tourne dans la VM, mais un service reste injoignable ?"
+    Vérifie la case **Firewall** de la carte réseau (*Hardware → Network Device*) : le pare-feu Proxmox filtre peut-être le trafic. Décoche-la pour tester.
 
 !!! question "« REMOTE HOST IDENTIFICATION HAS CHANGED » en me connectant en SSH ?"
     C'est normal après l'étape 3 : les clés d'hôte ont changé. Sur ton PC : `ssh-keygen -R 10.10.10.40`.

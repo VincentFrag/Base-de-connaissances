@@ -66,6 +66,7 @@ nav:
       - "🧠 Adressage IP et masque": reseau/concept-adressage-ip.md
       - "🛠️ Découper en sous-réseaux": reseau/tuto-sous-reseaux.md
       - "🧠 DHCP et DNS": reseau/concept-dhcp-dns.md
+      - "🛠️ Installer DHCP et DNS": reseau/tuto-dhcp-dns.md
       - "🧠 Les VLAN": reseau/concept-vlan.md
       - "🛠️ Créer et configurer des VLAN": reseau/tuto-creer-vlan.md
       - "🛠️ Diagnostiquer une connexion": reseau/tuto-diagnostic-connexion.md

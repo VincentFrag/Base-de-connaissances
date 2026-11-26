@@ -65,6 +65,15 @@ Les fondations : sans réseau qui fonctionne, rien d'autre ne fonctionne. Suis l
     - :material-wrench-outline: [Diagnostiquer une connexion de A à Z](tuto-diagnostic-connexion.md) <span class="kb-badge kb-bases">Bases</span>
     - :material-clipboard-text-outline: [Mémo commandes réseau](memo-commandes-reseau.md)
 
+-   :material-numeric-6-circle-outline:{ .lg .middle } __Pare-feu et NAT__
+
+    ---
+
+    Décider qui parle à qui, et faire sortir ou entrer le trafic avec une seule IP publique.
+
+    - :material-book-open-variant: [Comprendre le pare-feu et le NAT](concept-pare-feu-nat.md) <span class="kb-badge kb-bases">Bases</span>
+    - :material-wrench-outline: [Filtrer et faire du NAT avec pfSense](tuto-pfsense-pare-feu-nat.md) <span class="kb-badge kb-inter">Intermédiaire</span>
+
 -   :material-flask-outline:{ .lg .middle } __S'entraîner__
 
     ---

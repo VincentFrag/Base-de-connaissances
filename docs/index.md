@@ -33,6 +33,14 @@ Fiches, tutos et TP d'**administration systèmes et réseaux**, du niveau début
 
     *Bientôt*
 
+-   :material-book-alphabet:{ .lg .middle } __Références__
+
+    ---
+
+    Glossaire, ports et protocoles, plages IP, codes HTTP.
+
+    [:octicons-arrow-right-24: Consulter](references/index.md)
+
 </div>
 
 ## Comment c'est organisé

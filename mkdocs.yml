@@ -33,6 +33,7 @@ theme:
     - search.suggest
     - search.highlight
     - content.code.copy
+    - content.tooltips
     - content.tabs.link
     - toc.follow
 
@@ -46,7 +47,9 @@ plugins:
 
 markdown_extensions:
   - admonition
+  - abbr
   - attr_list
+  - def_list
   - md_in_html
   - tables
   - toc:
@@ -56,6 +59,9 @@ markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.emoji:
@@ -80,6 +86,8 @@ nav:
           - "Comprendre SSH": reseau/concept-ssh.md
           - "SSH par le nom d'une VM": reseau/tuto-ssh-nom-vm.md
           - "SSH par rebond (réseau interne)": reseau/tuto-ssh-rebond.md
+          - "Comprendre les VPN": reseau/concept-vpn.md
+          - "VPN WireGuard vers le homelab": reseau/tuto-wireguard-acces-distant.md
       - Dépannage:
           - "Diagnostiquer une connexion": reseau/tuto-diagnostic-connexion.md
           - "Mémo commandes réseau": reseau/memo-commandes-reseau.md
@@ -99,6 +107,11 @@ nav:
       - Active Directory:
           - "Comprendre": systeme/concept-active-directory.md
           - "Mettre en pratique": systeme/tuto-monter-ad-proxmox.md
+      - Conteneurs Docker:
+          - "Comprendre": systeme/concept-docker.md
+          - "Mettre en pratique": systeme/tuto-docker-compose-proxmox.md
+      - S'entraîner:
+          - "TP : infra PME sur Proxmox": systeme/tp-infra-pme-proxmox.md
   - Transverse:
       - transverse/index.md
       - Sauvegarde:
@@ -109,3 +122,11 @@ nav:
           - "Avec Uptime Kuma": transverse/tuto-uptime-kuma.md
           - "Avec Zabbix": transverse/tuto-zabbix.md
           - "Avec Centreon": transverse/tuto-centreon.md
+  - Références:
+      - references/index.md
+      - Vocabulaire:
+          - "Glossaire": references/glossaire.md
+      - Ports et protocoles:
+          - "Mémo ports et protocoles": references/memo-ports-protocoles.md
+      - Tableaux réseau:
+          - "Mémo références réseau": references/memo-references-reseau.md

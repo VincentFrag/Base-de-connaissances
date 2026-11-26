@@ -104,3 +104,6 @@ nav:
       - Sauvegarde:
           - "Comprendre": transverse/concept-sauvegardes.md
           - "Mettre en pratique": transverse/tuto-proxmox-backup.md
+      - Supervision:
+          - "Comprendre": transverse/concept-supervision.md
+          - "Mettre en pratique": transverse/tuto-uptime-kuma.md

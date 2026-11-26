@@ -27,4 +27,13 @@ Ce qui concerne toute l'infrastructure, quel que soit le système ou le réseau 
     - :material-book-open-variant: [Comprendre les sauvegardes et la règle 3-2-1](concept-sauvegardes.md) <span class="kb-badge kb-bases">Bases</span>
     - :material-wrench-outline: [Sauvegarder et restaurer ses VM avec Proxmox](tuto-proxmox-backup.md) <span class="kb-badge kb-inter">Intermédiaire</span>
 
+-   :material-numeric-2-circle-outline:{ .lg .middle } __Supervision__
+
+    ---
+
+    Être prévenu d'une panne avant les utilisateurs : métriques, logs et alertes.
+
+    - :material-book-open-variant: [Comprendre la supervision](concept-supervision.md) <span class="kb-badge kb-bases">Bases</span>
+    - :material-wrench-outline: [Superviser ses VM avec Uptime Kuma](tuto-uptime-kuma.md) <span class="kb-badge kb-inter">Intermédiaire</span>
+
 </div>

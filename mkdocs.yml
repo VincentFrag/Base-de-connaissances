@@ -96,6 +96,9 @@ nav:
       - Comptes et droits Linux:
           - "Comprendre": systeme/concept-permissions-linux.md
           - "Mettre en pratique": systeme/tuto-permissions-linux.md
+      - Active Directory:
+          - "Comprendre": systeme/concept-active-directory.md
+          - "Mettre en pratique": systeme/tuto-monter-ad-proxmox.md
   - Transverse:
       - transverse/index.md
       - Sauvegarde:

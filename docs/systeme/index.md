@@ -36,4 +36,13 @@ Windows Server, Active Directory, GPO, Linux, virtualisation, sauvegarde. Suis l
     - :material-book-open-variant: [Comptes, droits et permissions Linux](concept-permissions-linux.md) <span class="kb-badge kb-bases">Bases</span>
     - :material-wrench-outline: [Gérer utilisateurs, groupes et permissions](tuto-permissions-linux.md) <span class="kb-badge kb-bases">Bases</span>
 
+-   :material-numeric-3-circle-outline:{ .lg .middle } __Active Directory__
+
+    ---
+
+    Centraliser comptes, postes et règles avec un domaine Windows Server.
+
+    - :material-book-open-variant: [Domaine, OU et GPO](concept-active-directory.md) <span class="kb-badge kb-bases">Bases</span>
+    - :material-wrench-outline: [Monter un AD sur une VM Proxmox](tuto-monter-ad-proxmox.md) <span class="kb-badge kb-inter">Intermédiaire</span>
+
 </div>

@@ -76,6 +76,9 @@ nav:
       - VLAN:
           - "Comprendre": reseau/concept-vlan.md
           - "Mettre en pratique": reseau/tuto-creer-vlan.md
+      - Accès distant:
+          - "Comprendre SSH": reseau/concept-ssh.md
+          - "SSH par le nom d'une VM": reseau/tuto-ssh-nom-vm.md
       - Dépannage:
           - "Diagnostiquer une connexion": reseau/tuto-diagnostic-connexion.md
           - "Mémo commandes réseau": reseau/memo-commandes-reseau.md

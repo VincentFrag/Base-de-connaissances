@@ -23,9 +23,9 @@ tags: [réseau, tuto, vpn, wireguard, proxmox, accès distant, debian]
 
 ```
  [PC portable / smartphone]          Internet           [Box]           [pve01]                [srv-vpn01]
-  client WireGuard                                  IP publique      192.168.1.20            10.0.0.40
+  client WireGuard                                  IP publique      192.168.1.20            10.0.0.41
   wg0 : 10.8.0.2   ════════ tunnel UDP 51820 ═══════▶ redirige ──▶  redirige vers ──▶   wg0 : 10.8.0.1
-                                                     UDP 51820      10.0.0.40               │
+                                                     UDP 51820      10.0.0.41               │
                                                                                             ▼
                                                                                  réseau du lab 10.0.0.0/24
                                                                          srv-dc01, srv-web01, srv-files01…
@@ -43,7 +43,7 @@ tags: [réseau, tuto, vpn, wireguard, proxmox, accès distant, debian]
 | Machine | Rôle | IP lab | IP tunnel |
 |---|---|---|---|
 | `pve01` | Hôte Proxmox, passerelle | `192.168.1.20` et `10.0.0.1` | — |
-| `srv-vpn01` | Serveur WireGuard (nouvelle VM) | `10.0.0.40` | `10.8.0.1` |
+| `srv-vpn01` | Serveur WireGuard (nouvelle VM) | `10.0.0.41` | `10.8.0.1` |
 | `srv-dc01` | DNS du lab (`lab.local`) | `10.0.0.10` | — |
 | PC portable | Client | réseau de l'école, de l'hôtel… | `10.8.0.2` |
 | Smartphone | Client | 4G | `10.8.0.3` |
@@ -68,7 +68,7 @@ sudo nano /etc/network/interfaces
 ```text
 auto ens18
 iface ens18 inet static
-    address 10.0.0.40/24
+    address 10.0.0.41/24
     gateway 10.0.0.1
     dns-nameservers 10.0.0.10
 ```
@@ -178,14 +178,14 @@ nano /etc/network/interfaces
 Sous le bloc `iface vmbr2 inet static` existant (celui du réseau interne, qui porte souvent déjà la ligne `MASQUERADE` donnant Internet aux VM), ajoute :
 
 ```text
-    post-up   iptables -t nat -A PREROUTING -i vmbr0 -p udp --dport 51820 -j DNAT --to-destination 10.0.0.40:51820
-    post-down iptables -t nat -D PREROUTING -i vmbr0 -p udp --dport 51820 -j DNAT --to-destination 10.0.0.40:51820
+    post-up   iptables -t nat -A PREROUTING -i vmbr0 -p udp --dport 51820 -j DNAT --to-destination 10.0.0.41:51820
+    post-down iptables -t nat -D PREROUTING -i vmbr0 -p udp --dport 51820 -j DNAT --to-destination 10.0.0.41:51820
 ```
 
 Applique sans redémarrer, puis vérifie :
 
 ```bash
-iptables -t nat -A PREROUTING -i vmbr0 -p udp --dport 51820 -j DNAT --to-destination 10.0.0.40:51820
+iptables -t nat -A PREROUTING -i vmbr0 -p udp --dport 51820 -j DNAT --to-destination 10.0.0.41:51820
 iptables -t nat -L PREROUTING -n -v | grep 51820
 ```
 

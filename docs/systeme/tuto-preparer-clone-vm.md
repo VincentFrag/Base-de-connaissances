@@ -13,6 +13,7 @@ tags: [système, tuto, proxmox, virtualisation, template, clone, debian]
 
 ## Prérequis
 
+- Savoir ce qu'est un template et un clone : 🧠 [Virtualisation et hyperviseurs](concept-virtualisation.md)
 - Un hôte Proxmox avec un **template** Debian (VM convertie en modèle : clic droit → *Convert to template*)
 - Le template configuré en IP fixe (ici `10.10.10.21`, nom `debian-template`)
 

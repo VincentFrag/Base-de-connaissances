@@ -88,6 +88,7 @@ nav:
   - Système:
       - systeme/index.md
       - Virtualisation:
+          - "Comprendre": systeme/concept-virtualisation.md
           - "Préparer un clone de VM": systeme/tuto-preparer-clone-vm.md
   - Transverse:
       - transverse/index.md

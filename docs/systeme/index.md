@@ -45,4 +45,12 @@ Windows Server, Active Directory, GPO, Linux, virtualisation, sauvegarde. Suis l
     - :material-book-open-variant: [Domaine, OU et GPO](concept-active-directory.md) <span class="kb-badge kb-bases">Bases</span>
     - :material-wrench-outline: [Monter un AD sur une VM Proxmox](tuto-monter-ad-proxmox.md) <span class="kb-badge kb-inter">Intermédiaire</span>
 
+-   :material-flask-outline:{ .lg .middle } __S'entraîner__
+
+    ---
+
+    Mettre tout bout à bout sur un cas réel, avec indices et solutions.
+
+    - :material-flask-outline: [TP : monter l'infra d'une PME sur Proxmox](tp-infra-pme-proxmox.md) <span class="kb-badge kb-inter">Intermédiaire</span>
+
 </div>

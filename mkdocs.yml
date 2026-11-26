@@ -33,6 +33,7 @@ theme:
     - search.suggest
     - search.highlight
     - content.code.copy
+    - content.tooltips
     - content.tabs.link
     - toc.follow
 
@@ -46,7 +47,9 @@ plugins:
 
 markdown_extensions:
   - admonition
+  - abbr
   - attr_list
+  - def_list
   - md_in_html
   - tables
   - toc:
@@ -56,6 +59,9 @@ markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.emoji:
@@ -107,3 +113,11 @@ nav:
       - Sauvegarde:
           - "Comprendre": transverse/concept-sauvegardes.md
           - "Mettre en pratique": transverse/tuto-proxmox-backup.md
+  - Références:
+      - references/index.md
+      - Vocabulaire:
+          - "Glossaire": references/glossaire.md
+      - Ports et protocoles:
+          - "Mémo ports et protocoles": references/memo-ports-protocoles.md
+      - Tableaux réseau:
+          - "Mémo références réseau": references/memo-references-reseau.md

@@ -1,4 +1,5 @@
 ---
+icon: material/book-open-variant
 title: Le modèle OSI et TCP/IP
 tags: [réseau, bases, concept]
 ---

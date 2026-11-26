@@ -17,7 +17,7 @@ URL : https://vincentfrag.github.io/Base-de-connaissances/
 - 🧪 TP (`tp-<sujet>.md`, en fin de parcours d'un bloc) : contexte d'entreprise, cahier des charges, matériel, tâches numérotées ; sous chaque tâche `??? tip "💡 Indice"` puis `??? success "✅ Solution"` (commandes complètes) ; grille de validation finale ; « Si un test échoue ». Carte « S'entraîner » dans l'index du bloc.
 - 📋 Mémo : tableaux commande par besoin (colonnes Windows / Linux si pertinent)
 - **Règle : toute fiche concept doit avoir son tuto pratique associé** (ex. concept-vlan → tuto-creer-vlan), avec les commandes réelles par plateforme en onglets (Cisco IOS, pfSense, Windows Server/PowerShell, Linux). La fiche concept renvoie vers son tuto en premier dans « Pour aller plus loin ».
-- Niveaux (dans les articles) : 🟢 Bases · 🟡 Intermédiaire. Front matter : `title` et `tags`.
+- Niveaux (dans les articles) : 🟢 Bases · 🟡 Intermédiaire. Front matter : `icon` (concept `material/book-open-variant`, tuto `material/wrench-outline`, tp `material/flask-outline`, memo `material/clipboard-text-outline`), `title` et `tags`.
 
 ## Publier un article
 1. Écrire le fichier dans le bon dossier

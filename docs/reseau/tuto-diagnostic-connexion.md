@@ -1,4 +1,5 @@
 ---
+icon: material/wrench-outline
 title: Diagnostiquer un problème de connexion de A à Z
 tags: [réseau, bases, tuto, dépannage]
 ---

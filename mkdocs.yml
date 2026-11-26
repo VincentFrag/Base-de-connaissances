@@ -98,3 +98,6 @@ nav:
           - "Mettre en pratique": systeme/tuto-permissions-linux.md
   - Transverse:
       - transverse/index.md
+      - Sauvegarde:
+          - "Comprendre": transverse/concept-sauvegardes.md
+          - "Mettre en pratique": transverse/tuto-proxmox-backup.md

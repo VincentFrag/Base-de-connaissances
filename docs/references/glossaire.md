@@ -310,7 +310,7 @@ tags: [référence, glossaire, vocabulaire]
 : Photo de l'état d'une VM à un instant, pour revenir en arrière vite. Ce n'est **pas** une sauvegarde : il reste sur le même disque. :material-arrow-right: [Snapshot ou sauvegarde](../transverse/concept-sauvegardes.md)
 
 **SNMP** · 🌐
-: Protocole de supervision qui lit l'état des équipements réseau (ports 161/162).
+: Protocole de supervision qui lit l'état des équipements et des serveurs (port 161, alertes *traps* sur le port 162). En v2c, une **communauté** sert de mot de passe en lecture. :material-arrow-right: [Superviser avec Centreon](../transverse/tuto-centreon.md)
 
 **Sous-réseau** · 🌐
 : Découpage d'un réseau en morceaux plus petits. :material-arrow-right: [Découper en sous-réseaux](../reseau/tuto-sous-reseaux.md)
@@ -325,7 +325,7 @@ tags: [référence, glossaire, vocabulaire]
 : Commande Linux pour lancer une action avec les droits root, en étant tracé. :material-arrow-right: [Permissions Linux](../systeme/concept-permissions-linux.md)
 
 **Supervision** (*monitoring*) · 🖥️
-: Surveillance continue des serveurs et services avec alertes en cas de panne (Zabbix, Uptime Kuma).
+: Surveillance continue des serveurs et services avec alertes en cas de panne (Uptime Kuma, Zabbix, Centreon). Les **métriques** disent que ça ne va pas, les **logs** disent pourquoi, l'**alerte** prévient quelqu'un. :material-arrow-right: [La supervision](../transverse/concept-supervision.md)
 
 **Switch** (commutateur) · 🌐
 : Équipement qui relie les machines d'un même réseau local et aiguille les trames selon les adresses MAC (couche 2). :material-arrow-right: [VLAN](../reseau/concept-vlan.md)

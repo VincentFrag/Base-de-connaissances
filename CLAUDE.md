@@ -5,11 +5,13 @@ URL : https://vincentfrag.github.io/Base-de-connaissances/
 
 ## Arborescence
 - `docs/reseau/`, `docs/systeme/`, `docs/transverse/` : un dossier par bloc, chacun avec un `index.md` (parcours conseillé)
-- Noms de fichiers : `concept-<sujet>.md`, `tuto-<sujet>.md`, `memo-<sujet>.md`
+- Noms de fichiers : `concept-<sujet>.md`, `tuto-<sujet>.md`, `memo-<sujet>.md`, `tp-<sujet>.md`
+- Couleurs d'encadrés adoucies dans `docs/stylesheets/extra.css` (question, success)
 
 ## Types d'articles (en français, digestes, pédagogiques)
 - 🧠 Fiche concept (1 page max) : encadré « En une phrase », analogie, explication avec tableaux, « À quoi ça sert concrètement », encadré « Pièges fréquents », liens « Pour aller plus loin »
 - 🛠️ Tuto de A à Z : encadré « Objectif », niveau et durée, prérequis (liens vers les fiches concept), étapes numérotées avec commandes (onglets `=== "Windows"` / `=== "Linux"` si besoin), tableau « ce que tu vois / ce que ça veut dire / action », vérification finale, dépannage courant
+- 🧪 TP (`tp-<sujet>.md`, en fin de parcours d'un bloc) : contexte d'entreprise, cahier des charges, matériel, tâches numérotées ; sous chaque tâche `??? tip "💡 Indice"` puis `??? success "✅ Solution"` (commandes complètes) ; grille de validation finale ; « Si un test échoue ». Section « TP » dans l'index du bloc.
 - 📋 Mémo : tableaux commande par besoin (colonnes Windows / Linux si pertinent)
 - **Règle : toute fiche concept doit avoir son tuto pratique associé** (ex. concept-vlan → tuto-creer-vlan), avec les commandes réelles par plateforme en onglets (Cisco IOS, pfSense, Windows Server/PowerShell, Linux). La fiche concept renvoie vers son tuto en premier dans « Pour aller plus loin ».
 - Niveaux : 🟢 Bases · 🟡 Intermédiaire. Front matter : `title` et `tags`.

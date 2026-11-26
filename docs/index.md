@@ -9,6 +9,7 @@ Fiches, tutos et mémos d'**administration systèmes et réseaux**, du niveau d�
 | 🧠 **Fiche concept** | Comprendre une notion en une page |
 | 🛠️ **Tuto de A à Z** | Atteindre un objectif, étape par étape, avec les commandes |
 | 📋 **Mémo** | Retrouver une commande en 10 secondes |
+| 🧪 **TP** | S'entraîner sur un cas réel, avec indices et solutions |
 
 **Niveaux :** 🟢 Bases · 🟡 Intermédiaire
 

@@ -1,0 +1,39 @@
+/* Couleurs d'encadrés plus douces (surtout en mode sombre) */
+
+:root {
+  --kb-question: #7986cb;   /* bleu lavande à la place du vert citron */
+  --kb-success: #4db6ac;    /* vert d'eau à la place du vert vif */
+}
+
+[data-md-color-scheme="slate"] {
+  --kb-question: #8c9eff;
+  --kb-success: #5fb3a8;
+}
+
+/* Encadrés « question » (Dépannage courant, exercices) */
+.md-typeset .admonition.question,
+.md-typeset details.question {
+  border-color: var(--kb-question);
+}
+.md-typeset .question > .admonition-title,
+.md-typeset .question > summary {
+  background-color: color-mix(in srgb, var(--kb-question) 12%, transparent);
+}
+.md-typeset .question > .admonition-title::before,
+.md-typeset .question > summary::before {
+  background-color: var(--kb-question);
+}
+
+/* Encadrés « success » (Solutions des TP) */
+.md-typeset .admonition.success,
+.md-typeset details.success {
+  border-color: var(--kb-success);
+}
+.md-typeset .success > .admonition-title,
+.md-typeset .success > summary {
+  background-color: color-mix(in srgb, var(--kb-success) 12%, transparent);
+}
+.md-typeset .success > .admonition-title::before,
+.md-typeset .success > summary::before {
+  background-color: var(--kb-success);
+}

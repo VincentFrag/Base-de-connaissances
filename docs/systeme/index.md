@@ -24,6 +24,7 @@ Windows Server, Active Directory, GPO, Linux, virtualisation, sauvegarde. Suis l
 
     Créer et gérer des machines virtuelles avec Proxmox.
 
+    - :material-book-open-variant: [Virtualisation et hyperviseurs](concept-virtualisation.md) <span class="kb-badge kb-bases">Bases</span>
     - :material-wrench-outline: [Préparer une VM clonée depuis un template](tuto-preparer-clone-vm.md) <span class="kb-badge kb-bases">Bases</span>
 
 </div>

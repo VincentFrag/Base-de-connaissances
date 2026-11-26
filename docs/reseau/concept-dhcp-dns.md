@@ -94,5 +94,6 @@ Chaque réponse est gardée en **cache** pendant une durée appelée **TTL**.
 
 ## Pour aller plus loin
 
+- 🛠️ **[Installer et configurer DHCP et DNS](tuto-dhcp-dns.md)** : la mise en pratique (Windows Server, Linux)
 - 🛠️ [Diagnostiquer un problème de connexion de A à Z](tuto-diagnostic-connexion.md) (étapes 1 et 5)
 - 📋 [Mémo commandes réseau](memo-commandes-reseau.md) (sections Configuration IP et DNS)

@@ -79,6 +79,7 @@ nav:
       - Accès distant:
           - "Comprendre SSH": reseau/concept-ssh.md
           - "SSH par le nom d'une VM": reseau/tuto-ssh-nom-vm.md
+          - "SSH par rebond (réseau interne)": reseau/tuto-ssh-rebond.md
       - Dépannage:
           - "Diagnostiquer une connexion": reseau/tuto-diagnostic-connexion.md
           - "Mémo commandes réseau": reseau/memo-commandes-reseau.md
@@ -86,5 +87,7 @@ nav:
           - "TP : PME multi-VLAN": reseau/tp-pme-multi-vlan.md
   - Système:
       - systeme/index.md
+      - Virtualisation:
+          - "Préparer un clone de VM": systeme/tuto-preparer-clone-vm.md
   - Transverse:
       - transverse/index.md

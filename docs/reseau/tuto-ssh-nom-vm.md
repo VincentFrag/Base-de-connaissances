@@ -25,6 +25,9 @@ tags: [réseau, tuto, ssh, accès distant, linux, windows, vm]
 | **B. `~/.ssh/config`** ⭐ | Nom + utilisateur + clé en un seul alias | SSH uniquement | **Le quotidien** |
 | **C. mDNS (`.local`)** | Automatique, suit l'IP même si elle change | Réseau local uniquement | Lab avec IP en DHCP |
 
+!!! info "Les VM sont sur un réseau interne que ton PC ne joint pas ?"
+    Ces méthodes ne suffisent pas : il faut passer par un hôte de rebond → 🛠️ [SSH par rebond vers un réseau interne](tuto-ssh-rebond.md).
+
 👉 La combinaison la plus confortable : **C + B** (la VM s'annonce toute seule, et l'alias SSH ajoute l'utilisateur et la clé).
 
 ---

@@ -1,9 +1,9 @@
 site_name: Base de connaissances
 site_description: Fiches, tutos et mémos d'administration systèmes et réseaux
 site_author: Vincent
-site_url: https://vincentfrag.github.io/Base-de-connaissances/
-repo_url: https://github.com/VincentFrag/Base-de-connaissances
-repo_name: VincentFrag/Base-de-connaissances
+site_url: https://vincentfrag.github.io/knowledge-base/
+repo_url: https://github.com/VincentFrag/knowledge-base
+repo_name: VincentFrag/knowledge-base
 
 theme:
   name: material

@@ -9,6 +9,7 @@ URL : https://vincentfrag.github.io/Base-de-connaissances/
   - `index.md` du bloc : légende + `grid cards` (une carte par thème : icône numérotée, titre, une phrase, liste de liens avec icône de type `:material-book-open-variant:` Comprendre / `:material-wrench-outline:` Pratiquer / `:material-flask-outline:` TP / `:material-clipboard-text-outline:` Mémo, et badge `<span class="kb-badge kb-bases">Bases</span>` ou `kb-inter` Intermédiaire)
   - `nav` de `mkdocs.yml` : une sous-section par thème ; pour un couple concept/tuto, libellés courts « Comprendre » et « Mettre en pratique »
 - Noms de fichiers : `concept-<sujet>.md`, `tuto-<sujet>.md`, `memo-<sujet>.md`, `tp-<sujet>.md`
+- `docs/references/` : onglet Références (glossaire A–Z, mémos ports/protocoles et références réseau). Nouveau terme ou sigle : l'ajouter au glossaire et, si c'est un sigle, à `includes/abbreviations.md` (infobulle au survol sur tout le site)
 - Couleurs d'encadrés adoucies dans `docs/stylesheets/extra.css` (question, success)
 
 ## Types d'articles (en français, digestes, pédagogiques)
@@ -29,6 +30,8 @@ Ne jamais publier les vrais noms d'hôtes, domaine, IP, noms de VM ou comptes du
 | Serveur de fichiers | `srv-files01` | `10.0.0.20` |
 | Répartiteur de charge | `srv-lb01` | `10.0.0.30` |
 | Serveurs web | `srv-web01`, `srv-web02` | `10.0.0.31`, `10.0.0.32` |
+| Serveur VPN WireGuard | `srv-vpn01` | `10.0.0.41` (tunnel `10.8.0.0/24`) |
+| Supervision (Uptime Kuma, Zabbix, Centreon) | `srv-mon01`, `srv-zabbix01`, `srv-centreon01` | `10.0.0.60`, `10.0.0.61`, `10.0.0.62` |
 | Template Debian | `tpl-debian01` | `10.0.0.200` |
 | Postes clients | `PC-01`, `PC-02`… | DHCP |
 

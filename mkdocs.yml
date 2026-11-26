@@ -91,3 +91,6 @@ nav:
           - "Préparer un clone de VM": systeme/tuto-preparer-clone-vm.md
   - Transverse:
       - transverse/index.md
+      - Sauvegarde:
+          - "Comprendre": transverse/concept-sauvegardes.md
+          - "Mettre en pratique": transverse/tuto-proxmox-backup.md

@@ -50,7 +50,7 @@ Quand les VM sont sur un **réseau interne** que ton PC ne joint pas, SSH peut *
 
 - Administrer des serveurs Linux, des switchs, des pare-feux sans être devant.
 - Copier des fichiers (`scp`, `sftp`) de façon chiffrée.
-- Gagner du temps : `ssh vm-debian` au lieu de `ssh vincent@192.168.56.101`.
+- Gagner du temps : `ssh vm-debian` au lieu de `ssh admin@192.168.56.101`.
 
 !!! warning "Pièges fréquents"
     - **VM en mode NAT** : elle n'est pas joignable depuis ton poste. Utiliser le mode **pont** (*bridged*) ou **réseau privé hôte** (*host-only*).

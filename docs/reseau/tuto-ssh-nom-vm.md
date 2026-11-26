@@ -7,7 +7,7 @@ tags: [réseau, tuto, ssh, accès distant, linux, windows, vm]
 # 🛠️ Se connecter en SSH à une VM par son nom
 
 !!! abstract "Objectif"
-    Taper `ssh vm-debian` au lieu de `ssh vincent@192.168.56.101`, sans mot de passe, depuis Windows ou Linux.
+    Taper `ssh vm-debian` au lieu de `ssh admin@192.168.56.101`, sans mot de passe, depuis Windows ou Linux.
 
 **Niveau :** 🟢 Bases · **Durée :** 15 à 20 min
 
@@ -51,7 +51,7 @@ ip -4 a
 Teste une première fois **avec l'IP**, depuis ton poste :
 
 ```bash
-ssh vincent@192.168.56.101
+ssh admin@192.168.56.101
 ```
 
 Accepte l'empreinte (`yes`), entre le mot de passe, puis `exit`.
@@ -66,16 +66,16 @@ Accepte l'empreinte (`yes`), entre le mot de passe, puis `exit`.
     ssh-keygen -t ed25519
 
     # Envoyer la clé publique sur la VM
-    type $env:USERPROFILE\.ssh\id_ed25519.pub | ssh vincent@192.168.56.101 "mkdir -p ~/.ssh && chmod 700 ~/.ssh && cat >> ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys"
+    type $env:USERPROFILE\.ssh\id_ed25519.pub | ssh admin@192.168.56.101 "mkdir -p ~/.ssh && chmod 700 ~/.ssh && cat >> ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys"
     ```
 
 === "Linux"
     ```bash
     ssh-keygen -t ed25519
-    ssh-copy-id vincent@192.168.56.101
+    ssh-copy-id admin@192.168.56.101
     ```
 
-Vérifie : `ssh vincent@192.168.56.101` doit se connecter **sans mot de passe** (ou seulement avec la phrase de passe de la clé).
+Vérifie : `ssh admin@192.168.56.101` doit se connecter **sans mot de passe** (ou seulement avec la phrase de passe de la clé).
 
 ---
 
@@ -106,7 +106,7 @@ Vérifie : `ssh vincent@192.168.56.101` doit se connecter **sans mot de passe** 
 
     Connexion :
     ```bash
-    ssh vincent@vm-debian
+    ssh admin@vm-debian
     ```
 
 === "B. ~/.ssh/config ⭐"
@@ -119,7 +119,7 @@ Vérifie : `ssh vincent@192.168.56.101` doit se connecter **sans mot de passe** 
     ```text
     Host vm-debian
         HostName 192.168.56.101
-        User vincent
+        User admin
         IdentityFile ~/.ssh/id_ed25519
 
     # Autre exemple : un serveur sur un port différent
@@ -157,7 +157,7 @@ Vérifie : `ssh vincent@192.168.56.101` doit se connecter **sans mot de passe** 
 
     Connexion :
     ```bash
-    ssh vincent@vm-debian.local
+    ssh admin@vm-debian.local
     ```
 
     !!! note "Et à l'échelle d'une entreprise ?"

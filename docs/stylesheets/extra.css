@@ -70,3 +70,21 @@
   margin-bottom: .35em;
 }
 .md-typeset .grid.cards > ul > li > ul > li::marker { content: none; }
+
+/* Menu latéral : titres de thème bien distincts des articles */
+.md-nav--primary .md-nav__item--section > .md-nav__link {
+  margin-top: 1.1em;
+  font-size: .62rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--md-accent-fg-color);
+}
+.md-nav--primary .md-nav__item--section > .md-nav > .md-nav__list {
+  border-left: 2px solid var(--md-default-fg-color--lightest);
+  margin-left: .2em;
+  padding-left: .5em;
+}
+/* Icônes de type devant les articles */
+.md-nav__link .md-nav__icon.md-icon,
+.md-nav__link > .md-icon { opacity: .75; }

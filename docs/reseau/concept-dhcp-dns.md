@@ -1,4 +1,5 @@
 ---
+icon: material/book-open-variant
 title: DHCP et DNS
 tags: [réseau, bases, concept, dhcp, dns]
 ---

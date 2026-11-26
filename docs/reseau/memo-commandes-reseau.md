@@ -1,4 +1,5 @@
 ---
+icon: material/clipboard-text-outline
 title: Mémo commandes réseau Windows & Linux
 tags: [réseau, mémo, commandes]
 ---

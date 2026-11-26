@@ -1,4 +1,5 @@
 ---
+icon: material/book-open-variant
 title: Les VLAN
 tags: [réseau, bases, concept, vlan, switch]
 ---

@@ -1,4 +1,5 @@
 ---
+icon: material/wrench-outline
 title: Installer et configurer DHCP et DNS
 tags: [réseau, tuto, dhcp, dns, windows server, powershell, linux]
 ---

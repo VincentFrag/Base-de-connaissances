@@ -1,4 +1,5 @@
 ---
+icon: material/book-open-variant
 title: Adressage IP et masque de sous-réseau
 tags: [réseau, bases, concept]
 ---

@@ -42,6 +42,10 @@ SSH, c'est un **tunnel blindé** entre ton clavier et le serveur : tout ce que t
 | Fichier **`~/.ssh/config`** | Sur ton poste | SSH uniquement, avec utilisateur et clé en prime |
 | **mDNS** (`nom.local`) ou **DNS** | Sur la VM ou sur le serveur DNS | Tout le réseau |
 
+## Joindre une machine qu'on ne voit pas directement
+
+Quand les VM sont sur un **réseau interne** que ton PC ne joint pas, SSH peut **rebondir** par une machine qui voit les deux réseaux (hôte Proxmox, serveur « bastion ») : c'est l'option **ProxyJump** (`ssh -J`). La connexion reste chiffrée de bout en bout.
+
 ## À quoi ça sert concrètement
 
 - Administrer des serveurs Linux, des switchs, des pare-feux sans être devant.
@@ -57,4 +61,5 @@ SSH, c'est un **tunnel blindé** entre ton clavier et le serveur : tout ce que t
 ## Pour aller plus loin
 
 - 🛠️ **[Se connecter en SSH à une VM par son nom](tuto-ssh-nom-vm.md)** : la mise en pratique
+- 🛠️ **[SSH par rebond vers un réseau interne](tuto-ssh-rebond.md)** : quand les VM ne sont pas joignables directement
 - 🧠 [DHCP et DNS](concept-dhcp-dns.md) (la méthode « DNS » à l'échelle d'un réseau)

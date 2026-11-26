@@ -23,7 +23,7 @@ Fiches, tutos et TP d'**administration systèmes et réseaux**, du niveau début
 
     Windows Server, Active Directory, GPO, Linux, virtualisation.
 
-    *Bientôt*
+    [:octicons-arrow-right-24: Commencer](systeme/index.md)
 
 -   :material-shield-lock-outline:{ .lg .middle } __Transverse__
 

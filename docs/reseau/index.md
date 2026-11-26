@@ -9,7 +9,8 @@ Les fondations : sans réseau qui fonctionne, rien d'autre ne fonctionne.
 3. 🛠️ [Calculer et découper un réseau en sous-réseaux](tuto-sous-reseaux.md) 🟢🟡
 4. 🧠 [DHCP et DNS](concept-dhcp-dns.md) 🟢
 5. 🧠 [Les VLAN](concept-vlan.md) 🟢
-6. 🛠️ [Diagnostiquer un problème de connexion de A à Z](tuto-diagnostic-connexion.md) 🟢
+6. 🛠️ [Créer et configurer des VLAN](tuto-creer-vlan.md) 🟢🟡
+7. 🛠️ [Diagnostiquer un problème de connexion de A à Z](tuto-diagnostic-connexion.md) 🟢
 
 ## Mémos
 

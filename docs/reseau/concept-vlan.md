@@ -75,6 +75,7 @@ Avec un pare-feu, on choisit précisément **qui a le droit de parler à qui** (
 
 ## Pour aller plus loin
 
+- 🛠️ **[Créer et configurer des VLAN](tuto-creer-vlan.md)** : la mise en pratique (Cisco, pfSense, Linux)
 - 🧠 [Adressage IP et masque de sous-réseau](concept-adressage-ip.md)
 - 🧠 [DHCP et DNS](concept-dhcp-dns.md) (le relais DHCP entre VLAN)
 - 🧠 [Le modèle OSI et TCP/IP](concept-modele-osi-tcpip.md) (VLAN = couche 2, routage = couche 3)

@@ -31,6 +31,7 @@ Ne jamais publier les vrais noms d'hôtes, domaine, IP, noms de VM ou comptes du
 | Répartiteur de charge | `srv-lb01` | `10.0.0.30` |
 | Serveurs web | `srv-web01`, `srv-web02` | `10.0.0.31`, `10.0.0.32` |
 | Serveur VPN WireGuard | `srv-vpn01` | `10.0.0.41` (tunnel `10.8.0.0/24`) |
+| Supervision (Uptime Kuma, Zabbix, Centreon) | `srv-mon01`, `srv-zabbix01`, `srv-centreon01` | `10.0.0.60`, `10.0.0.61`, `10.0.0.62` |
 | Template Debian | `tpl-debian01` | `10.0.0.200` |
 | Postes clients | `PC-01`, `PC-02`… | DHCP |
 

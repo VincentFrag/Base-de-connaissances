@@ -4,8 +4,9 @@ Les fondations : sans réseau qui fonctionne, rien d'autre ne fonctionne.
 
 ## Parcours conseillé
 
-1. 🧠 [Adressage IP et masque de sous-réseau](concept-adressage-ip.md) 🟢
-2. 🛠️ [Diagnostiquer un problème de connexion de A à Z](tuto-diagnostic-connexion.md) 🟢
+1. 🧠 [Le modèle OSI et TCP/IP](concept-modele-osi-tcpip.md) 🟢
+2. 🧠 [Adressage IP et masque de sous-réseau](concept-adressage-ip.md) 🟢
+3. 🛠️ [Diagnostiquer un problème de connexion de A à Z](tuto-diagnostic-connexion.md) 🟢
 
 ## Mémos
 

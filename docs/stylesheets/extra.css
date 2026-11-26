@@ -37,3 +37,36 @@
 .md-typeset .success > summary::before {
   background-color: var(--kb-success);
 }
+
+/* Badges de niveau */
+.md-typeset .kb-badge {
+  display: inline-block;
+  font-size: .62rem;
+  font-weight: 600;
+  line-height: 1.6;
+  padding: 0 .55em;
+  margin-left: .3em;
+  border-radius: 1em;
+  vertical-align: middle;
+  color: var(--md-default-fg-color--light);
+}
+.md-typeset .kb-bases { background: color-mix(in srgb, #4db6ac 20%, transparent); }
+.md-typeset .kb-inter { background: color-mix(in srgb, #ffb74d 24%, transparent); }
+
+/* Légende */
+.md-typeset .kb-legend {
+  font-size: .72rem;
+  color: var(--md-default-fg-color--light);
+}
+
+/* Listes dans les cartes : sans puces, icône alignée */
+.md-typeset .grid.cards > ul > li > ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+.md-typeset .grid.cards > ul > li > ul > li {
+  margin-left: 0;
+  margin-bottom: .35em;
+}
+.md-typeset .grid.cards > ul > li > ul > li::marker { content: none; }

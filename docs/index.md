@@ -1,23 +1,50 @@
+---
+hide:
+  - toc
+---
+
 # Base de connaissances
 
-Fiches, tutos et mémos d'**administration systèmes et réseaux**, du niveau débutant au niveau intermédiaire.
+Fiches, tutos et TP d'**administration systèmes et réseaux**, du niveau débutant au niveau intermédiaire.
 
-## Les types d'articles
+<div class="grid cards" markdown>
 
-| Type | Rôle |
-|---|---|
-| 🧠 **Fiche concept** | Comprendre une notion en une page |
-| 🛠️ **Tuto de A à Z** | Atteindre un objectif, étape par étape, avec les commandes |
-| 📋 **Mémo** | Retrouver une commande en 10 secondes |
-| 🧪 **TP** | S'entraîner sur un cas réel, avec indices et solutions |
+-   :material-lan:{ .lg .middle } __Réseau__
 
-**Niveaux :** 🟢 Bases · 🟡 Intermédiaire
+    ---
 
-## Les blocs
+    Adressage, sous-réseaux, DHCP, DNS, VLAN, dépannage.
 
-- [**Réseau**](reseau/index.md) : adressage, VLAN, routage, DNS/DHCP, pare-feu, VPN
-- [**Système**](systeme/index.md) : Windows Server, Active Directory, GPO, Linux, virtualisation
-- [**Transverse**](transverse/index.md) : sécurité, supervision, scripting, cloud
+    [:octicons-arrow-right-24: Commencer](reseau/index.md)
+
+-   :material-server-outline:{ .lg .middle } __Système__
+
+    ---
+
+    Windows Server, Active Directory, GPO, Linux, virtualisation.
+
+    *Bientôt*
+
+-   :material-shield-lock-outline:{ .lg .middle } __Transverse__
+
+    ---
+
+    Sécurité, supervision, scripting, cloud et Azure.
+
+    *Bientôt*
+
+</div>
+
+## Comment c'est organisé
+
+Chaque bloc est découpé en **thèmes**, à suivre dans l'ordre. Dans chaque thème :
+
+| | Type | Pour quoi faire |
+|---|---|---|
+| :material-book-open-variant: | **Comprendre** | La notion expliquée simplement, en une page |
+| :material-wrench-outline: | **Pratiquer** | Le tuto pas à pas, avec les commandes |
+| :material-flask-outline: | **TP** | Un cas réel à monter seul, avec indices et solutions |
+| :material-clipboard-text-outline: | **Mémo** | Retrouver une commande en 10 secondes |
 
 !!! tip "Astuce"
-    Utilise la recherche en haut de page (raccourci ++s++ ou ++slash++) pour trouver une commande ou une notion.
+    La recherche en haut de page (raccourci ++s++) trouve aussi les commandes.

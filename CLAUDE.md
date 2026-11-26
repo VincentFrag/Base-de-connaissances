@@ -1,7 +1,7 @@
 # Base de connaissances — consignes de rédaction et de publication
 
 Site MkDocs Material publié sur GitHub Pages par `.github/workflows/deploy.yml` à chaque push sur `main`.
-URL : https://vincentfrag.github.io/base-de-connaissances/
+URL : https://vincentfrag.github.io/Base-de-connaissances/
 
 ## Arborescence
 - `docs/reseau/`, `docs/systeme/`, `docs/transverse/` : un dossier par bloc, chacun avec un `index.md` (parcours conseillé)

@@ -29,9 +29,17 @@ Fiches, tutos et TP d'**administration systèmes et réseaux**, du niveau début
 
     ---
 
-    Sécurité, supervision, scripting, cloud et Azure.
+    Sauvegarde, supervision, sécurité, scripting, cloud et Azure.
 
-    *Bientôt*
+    [:octicons-arrow-right-24: Commencer](transverse/index.md)
+
+-   :material-check-decagram-outline:{ .lg .middle } __Bonnes pratiques__
+
+    ---
+
+    Réflexes avant une modif, commandes du quotidien, check-lists, nommage et documentation.
+
+    [:octicons-arrow-right-24: Adopter les bons réflexes](pratiques/index.md)
 
 -   :material-book-alphabet:{ .lg .middle } __Références__
 

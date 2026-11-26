@@ -62,6 +62,9 @@ markdown_extensions:
   - pymdownx.snippets:
       auto_append:
         - includes/abbreviations.md
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: true
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.emoji:
@@ -122,6 +125,17 @@ nav:
           - "Avec Uptime Kuma": transverse/tuto-uptime-kuma.md
           - "Avec Zabbix": transverse/tuto-zabbix.md
           - "Avec Centreon": transverse/tuto-centreon.md
+  - Bonnes pratiques:
+      - pratiques/index.md
+      - Réflexes:
+          - "Comprendre": pratiques/concept-reflexes-admin.md
+          - "Mettre en pratique": pratiques/tuto-intervention-propre.md
+      - Commandes du quotidien:
+          - "Mémo commandes du quotidien": pratiques/memo-commandes-quotidien.md
+      - Check-lists:
+          - "Check-lists de l'admin": pratiques/memo-checklists-admin.md
+      - Nommage et documentation:
+          - "Nommage et documentation": pratiques/memo-nommage-documentation.md
   - Références:
       - references/index.md
       - Vocabulaire:

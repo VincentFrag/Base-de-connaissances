@@ -6,9 +6,10 @@ Les fondations : sans réseau qui fonctionne, rien d'autre ne fonctionne.
 
 1. 🧠 [Le modèle OSI et TCP/IP](concept-modele-osi-tcpip.md) 🟢
 2. 🧠 [Adressage IP et masque de sous-réseau](concept-adressage-ip.md) 🟢
-3. 🧠 [DHCP et DNS](concept-dhcp-dns.md) 🟢
-4. 🧠 [Les VLAN](concept-vlan.md) 🟢
-5. 🛠️ [Diagnostiquer un problème de connexion de A à Z](tuto-diagnostic-connexion.md) 🟢
+3. 🛠️ [Calculer et découper un réseau en sous-réseaux](tuto-sous-reseaux.md) 🟢🟡
+4. 🧠 [DHCP et DNS](concept-dhcp-dns.md) 🟢
+5. 🧠 [Les VLAN](concept-vlan.md) 🟢
+6. 🛠️ [Diagnostiquer un problème de connexion de A à Z](tuto-diagnostic-connexion.md) 🟢
 
 ## Mémos
 

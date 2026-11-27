@@ -128,6 +128,8 @@ nav:
       - Scripting et automatisation:
           - "Mémo Bash et PowerShell": transverse/memo-bash-powershell.md
           - "Planifier une tâche": transverse/tuto-taches-planifiees.md
+          - "Comprendre Ansible": transverse/concept-ansible.md
+          - "Automatiser ses VM avec Ansible": transverse/tuto-ansible-homelab.md
   - Bonnes pratiques:
       - pratiques/index.md
       - Réflexes:

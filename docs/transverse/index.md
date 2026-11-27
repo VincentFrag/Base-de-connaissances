@@ -42,9 +42,11 @@ Ce qui concerne toute l'infrastructure, quel que soit le système ou le réseau 
 
     ---
 
-    Écrire de petits scripts d'admin et les faire tourner tout seuls, sous Linux comme sous Windows.
+    Écrire de petits scripts d'admin, les faire tourner tout seuls, puis configurer toutes les VM d'un coup avec Ansible.
 
     - :material-clipboard-text-outline: [Mémo scripting Bash & PowerShell](memo-bash-powershell.md) <span class="kb-badge kb-bases">Bases</span>
     - :material-wrench-outline: [Automatiser une tâche avec cron et le Planificateur de tâches](tuto-taches-planifiees.md) <span class="kb-badge kb-inter">Intermédiaire</span>
+    - :material-book-open-variant: [Comprendre Ansible : inventaire, playbook, idempotence](concept-ansible.md) <span class="kb-badge kb-bases">Bases</span>
+    - :material-wrench-outline: [Automatiser ses VM avec Ansible](tuto-ansible-homelab.md) <span class="kb-badge kb-inter">Intermédiaire</span>
 
 </div>

@@ -79,3 +79,9 @@ La **rétention**, c'est combien de sauvegardes on garde (ex. 7 quotidiennes, 4 
 
 - 🛠️ **[Sauvegarder et restaurer ses VM avec Proxmox](tuto-proxmox-backup.md)** : la mise en pratique (snapshot, vzdump, tâche planifiée, Proxmox Backup Server)
 - 🛠️ [Préparer une VM clonée depuis un template](../systeme/tuto-preparer-clone-vm.md)
+
+??? quote "Sources"
+    *La règle 3-2-1 n'est pas une norme : c'est une bonne pratique largement reprise, notamment par la CISA.*
+
+    - [CISA : Data Backup Options (PDF)](https://www.cisa.gov/sites/default/files/publications/data_backup_options.pdf)
+    - [Proxmox VE : sauvegarde et restauration](https://pve.proxmox.com/pve-docs/chapter-vzdump.html)

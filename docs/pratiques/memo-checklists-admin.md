@@ -94,3 +94,8 @@ Liens utiles : 🛠️ [Préparer un clone de VM](../systeme/tuto-preparer-clone
 - [ ] Comptes inactifs ou verrouillés vérifiés
 - [ ] Journaux d'erreurs parcourus (`journalctl -p err --since "7 days ago"`)
 - [ ] Documentation à jour des changements de la semaine
+
+??? quote "Sources"
+    *Pas de documentation officielle unique sur ce sujet : bonnes pratiques issues de l'expérience, recoupées avec le guide de l'ANSSI.*
+
+    - [ANSSI : guide d'hygiène informatique](https://cyber.gouv.fr/publications/guide-dhygiene-informatique)

@@ -93,3 +93,8 @@ Un script sur une VM qui doit lire un coffre de secrets ou écrire dans un stock
 - 🛠️ **[Prouver le RBAC avec une identité managée](tuto-rbac-identite-managee.md)** : la mise en pratique (attribution, test de refus, rôle personnalisé)
 - 🧠 [Active Directory](../systeme/concept-active-directory.md) : l'annuaire sur site, pour comparer
 - 🧠 [Le stockage dans Azure](concept-stockage-azure.md) : le plan de données en pratique
+
+??? quote "Sources"
+    - [Microsoft Learn : qu'est-ce que Microsoft Entra ID ?](https://learn.microsoft.com/fr-fr/entra/fundamentals/whatis)
+    - [Microsoft Learn : contrôle d'accès en fonction du rôle (RBAC)](https://learn.microsoft.com/fr-fr/azure/role-based-access-control/overview)
+    - [Microsoft Learn : identités managées](https://learn.microsoft.com/fr-fr/entra/identity/managed-identities-azure-resources/overview)

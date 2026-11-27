@@ -422,16 +422,6 @@ Le `--diff` montre la page modifiée sur `srv-web01` seulement, et `srv-web02` r
 | Lancer avec des variables chiffrées | `ansible-playbook web.yml -K --ask-vault-pass` |
 | Documentation d'un module | `ansible-doc ansible.builtin.template` |
 
-## Sources
-
-Documentation officielle d'Ansible, consultée le 27 novembre 2026 :
-
-- [Commandes ad hoc](https://docs.ansible.com/ansible/latest/command_guide/intro_adhoc.html) : module `command` par défaut, `-K`, 5 processus en parallèle
-- [Connexion et vérification des clés d'hôte](https://docs.ansible.com/ansible/latest/inventory_guide/connection_details.html)
-- [Handlers](https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_handlers.html)
-- [Configuration (`ansible.cfg`, `interpreter_python`, dossier accessible à tous)](https://docs.ansible.com/ansible/latest/reference_appendices/config.html)
-- Modules : [apt](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_module.html) · [lineinfile](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/lineinfile_module.html) · [community.general.timezone](https://docs.ansible.com/ansible/latest/collections/community/general/timezone_module.html)
-
 ## Voir aussi
 
 - 🧠 [Ansible : inventaire, playbook, idempotence](concept-ansible.md)
@@ -439,3 +429,12 @@ Documentation officielle d'Ansible, consultée le 27 novembre 2026 :
 - 🛠️ [SSH par rebond](../reseau/tuto-ssh-rebond.md) : piloter le lab depuis le PC
 - 🛠️ [Automatiser une tâche avec cron et le Planificateur de tâches](tuto-taches-planifiees.md) : relancer un playbook chaque nuit pour garder les VM conformes
 - 🧠 [Supervision](concept-supervision.md) : vérifier ensuite que les services déployés répondent
+
+??? quote "Sources"
+    Documentation officielle d'Ansible, consultée le 27 novembre 2026 :
+
+    - [Commandes ad hoc](https://docs.ansible.com/ansible/latest/command_guide/intro_adhoc.html) : module `command` par défaut, `-K`, 5 processus en parallèle
+    - [Connexion et vérification des clés d'hôte](https://docs.ansible.com/ansible/latest/inventory_guide/connection_details.html)
+    - [Handlers](https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_handlers.html)
+    - [Configuration (`ansible.cfg`, `interpreter_python`, dossier accessible à tous)](https://docs.ansible.com/ansible/latest/reference_appendices/config.html)
+    - Modules : [apt](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_module.html) · [lineinfile](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/lineinfile_module.html) · [community.general.timezone](https://docs.ansible.com/ansible/latest/collections/community/general/timezone_module.html)

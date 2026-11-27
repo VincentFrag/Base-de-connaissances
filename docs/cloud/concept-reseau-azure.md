@@ -104,3 +104,8 @@ Depuis 2026, les sous-réseaux des **nouveaux** VNet sont **privés par défaut*
 - 🧠 [Adressage IP et masque](../reseau/concept-adressage-ip.md) : préparer son plan d'adressage
 - 🧠 [Pare-feu et NAT](../reseau/concept-pare-feu-nat.md) : les mêmes principes sur pfSense
 - 🛠️ [SSH par rebond](../reseau/tuto-ssh-rebond.md) : la technique d'accès aux VM privées
+
+??? quote "Sources"
+    - [Microsoft Learn : réseau virtuel Azure](https://learn.microsoft.com/fr-fr/azure/virtual-network/virtual-networks-overview)
+    - [Microsoft Learn : groupes de sécurité réseau (NSG)](https://learn.microsoft.com/fr-fr/azure/virtual-network/network-security-groups-overview)
+    - [Microsoft Learn : appairage de réseaux virtuels](https://learn.microsoft.com/fr-fr/azure/virtual-network/virtual-network-peering-overview)

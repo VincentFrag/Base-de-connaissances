@@ -338,3 +338,8 @@ Pas besoin d'attendre 2 h du matin.
 - 📋 [Mémo scripting Bash & PowerShell](memo-bash-powershell.md)
 - 🧠 [Les sauvegardes et la règle 3-2-1](concept-sauvegardes.md) : une archive sur le même disque que la source ne compte pas comme une vraie sauvegarde
 - 🛠️ [Sauvegarder et restaurer ses VM avec Proxmox](tuto-proxmox-backup.md) : les jobs planifiés côté hyperviseur
+
+??? quote "Sources"
+    - [Page de manuel crontab(5)](https://man7.org/linux/man-pages/man5/crontab.5.html)
+    - [PowerShell : Register-ScheduledTask](https://learn.microsoft.com/powershell/module/scheduledtasks/register-scheduledtask)
+    - [Microsoft Learn : schtasks](https://learn.microsoft.com/fr-fr/windows-server/administration/windows-commands/schtasks)

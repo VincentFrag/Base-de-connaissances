@@ -90,3 +90,9 @@ Et pour les ressources internes (CPU, disque), il faut **un agent** installé su
 - 🛠️ [Superviser ses VM avec Centreon](tuto-centreon.md) : SNMP, connecteurs de supervision, export de configuration
 - 🧠 [Les sauvegardes et la règle 3-2-1](concept-sauvegardes.md) : la supervision sert aussi à vérifier qu'elles tournent
 - 🛠️ [Diagnostiquer une connexion](../reseau/tuto-diagnostic-connexion.md) : quand l'alerte tombe, par où commencer
+
+??? quote "Sources"
+    *Pas de norme unique pour la supervision : notions générales recoupées avec la documentation des outils.*
+
+    - [Zabbix : présentation du produit](https://www.zabbix.com/documentation/current/en/manual/introduction/overview)
+    - [Documentation Centreon](https://docs.centreon.com/)

@@ -101,3 +101,8 @@ On additionne les valeurs pour chaque catégorie : `rw-r-----` = **6** (4+2) **4
 - 🛠️ **[Gérer utilisateurs, groupes et permissions](tuto-permissions-linux.md)** : la mise en pratique
 - 🛠️ [Préparer une VM clonée depuis un template](tuto-preparer-clone-vm.md) (une VM Debian pour t'entraîner)
 - 🧠 [SSH](../reseau/concept-ssh.md) (pourquoi `~/.ssh` doit être en `700` et la clé en `600`)
+
+??? quote "Sources"
+    - [Page de manuel chmod(1)](https://man7.org/linux/man-pages/man1/chmod.1.html)
+    - [Page de manuel credentials(7) (UID, GID)](https://man7.org/linux/man-pages/man7/credentials.7.html)
+    - [Debian Reference : utilisateurs et permissions](https://www.debian.org/doc/manuals/debian-reference/ch01.en.html)

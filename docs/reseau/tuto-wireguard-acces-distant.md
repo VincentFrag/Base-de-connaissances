@@ -297,3 +297,9 @@ Sur le serveur, `sudo wg show` doit indiquer pour le pair un **`latest handshake
 - 🧠 [VPN](concept-vpn.md)
 - 🛠️ [SSH par rebond vers un réseau interne](tuto-ssh-rebond.md) (une fois le VPN allumé, `ssh 10.0.0.31` marche sans rebond)
 - 🛠️ [Sauvegarder et restaurer ses VM avec Proxmox](../transverse/tuto-proxmox-backup.md) (pense à inclure `srv-vpn01` dans le job)
+
+??? quote "Sources"
+    - [WireGuard : démarrage rapide](https://www.wireguard.com/quickstart/)
+    - [Page de manuel wg(8)](https://man7.org/linux/man-pages/man8/wg.8.html)
+    - [Page de manuel wg-quick(8)](https://man7.org/linux/man-pages/man8/wg-quick.8.html)
+    - [Wiki Debian : WireGuard](https://wiki.debian.org/WireGuard)

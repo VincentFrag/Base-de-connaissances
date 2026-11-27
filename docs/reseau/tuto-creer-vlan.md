@@ -192,3 +192,10 @@ ping 192.168.20.10      # un serveur du VLAN 20
 - 🛠️ [Calculer et découper un réseau en sous-réseaux](tuto-sous-reseaux.md)
 - 🛠️ [Diagnostiquer un problème de connexion](tuto-diagnostic-connexion.md)
 - 🛠️ [Filtrer et faire du NAT avec pfSense](tuto-pfsense-pare-feu-nat.md) : la suite, pour restreindre les flux entre VLAN
+
+??? quote "Sources"
+    *Commandes Cisco IOS : d'après les guides de configuration Cisco Catalyst (documentation éditeur, non liée page par page).*
+
+    - [Netgate : VLAN sur pfSense](https://docs.netgate.com/pfsense/en/latest/vlan/index.html)
+    - [Netplan : référence de configuration (VLAN)](https://netplan.readthedocs.io/en/stable/netplan-yaml/)
+    - [Page de manuel ip-link(8)](https://man7.org/linux/man-pages/man8/ip-link.8.html)

@@ -87,3 +87,8 @@ Un **template** est une VM « modèle » figée : déjà installée et configur�
 
 - 🛠️ **[Préparer une VM clonée depuis un template (Proxmox)](tuto-preparer-clone-vm.md)** : la mise en pratique
 - 🛠️ [SSH par rebond vers un réseau interne](../reseau/tuto-ssh-rebond.md) : joindre les VM d'un réseau isolé
+
+??? quote "Sources"
+    - [Proxmox VE : guide d'administration](https://pve.proxmox.com/pve-docs/pve-admin-guide.html)
+    - [Proxmox VE : machines virtuelles (qm)](https://pve.proxmox.com/pve-docs/chapter-qm.html)
+    - [Proxmox VE : conteneurs LXC (pct)](https://pve.proxmox.com/pve-docs/chapter-pct.html)

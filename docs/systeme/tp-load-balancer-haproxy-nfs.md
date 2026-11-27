@@ -255,6 +255,5 @@ Depuis `srv-lb01` :
 !!! note "Retour d'expérience"
     Les blocages rencontrés en montant ce lab : un PC Windows qui ne joignait pas le réseau interne à cause d'une ancienne carte VMware sur la même plage (résolu par le [rebond SSH](../reseau/tuto-ssh-rebond.md)), `samba-tool` lancé sans être root, `LDAPReferrals` placé hors du `<Location>`, et un mauvais mot de passe de compte de service, trouvé grâce à `LogLevel authnz_ldap:trace1`.
 
-## Sources
-
-Voir les sections « Sources » des tutos liés : [HAProxy](tuto-haproxy-repartition-charge.md#sources), [NFS](tuto-partage-nfs.md#sources), [Apache + AD](tuto-apache-auth-ad.md#sources).
+??? quote "Sources"
+    Voir les sources des tutos liés : [HAProxy](tuto-haproxy-repartition-charge.md), [NFS](tuto-partage-nfs.md), [Apache + AD](tuto-apache-auth-ad.md).

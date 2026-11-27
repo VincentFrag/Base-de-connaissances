@@ -207,3 +207,8 @@ ssh vm-debian
 
 - 🧠 [SSH](concept-ssh.md)
 - 🛠️ [Diagnostiquer un problème de connexion](tuto-diagnostic-connexion.md)
+
+??? quote "Sources"
+    - [OpenSSH : ssh_config(5)](https://man.openbsd.org/ssh_config)
+    - [OpenSSH : ssh-keygen(1)](https://man.openbsd.org/ssh-keygen)
+    - [Microsoft Learn : OpenSSH pour Windows](https://learn.microsoft.com/fr-fr/windows-server/administration/openssh/openssh_overview)

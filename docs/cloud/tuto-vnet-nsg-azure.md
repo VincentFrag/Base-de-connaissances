@@ -209,3 +209,9 @@ La NAT Gateway et les IP publiques coûtent **à l'heure**, même sans trafic : 
 - 🧠 [Le réseau dans Azure](concept-reseau-azure.md) : hub & spoke, appairage et autres sorties Internet
 - 🧠 [Identités et droits dans Azure](concept-identite-azure.md) : qui a le droit de modifier ce réseau
 - 🛠️ [Déployer une infrastructure Azure avec Terraform](tuto-terraform-azure.md) : le même réseau, décrit en code
+
+??? quote "Sources"
+    - [Microsoft Learn : réseau virtuel Azure](https://learn.microsoft.com/fr-fr/azure/virtual-network/virtual-networks-overview)
+    - [Microsoft Learn : groupes de sécurité réseau (NSG)](https://learn.microsoft.com/fr-fr/azure/virtual-network/network-security-groups-overview)
+    - [Azure CLI : az network vnet](https://learn.microsoft.com/fr-fr/cli/azure/network/vnet)
+    - [Azure CLI : az vm](https://learn.microsoft.com/fr-fr/cli/azure/vm)

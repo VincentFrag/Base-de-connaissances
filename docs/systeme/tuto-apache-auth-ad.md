@@ -255,13 +255,12 @@ for i in $(seq 1 20); do curl -sI http://10.0.0.30/ | grep -i x-backend; done | 
 - 🧠 [Active Directory](concept-active-directory.md)
 - 🧪 [TP : Load balancer HAProxy et pages web sur NFS](tp-load-balancer-haproxy-nfs.md)
 
-## Sources
-
-- [Apache : mod_authnz_ldap](https://httpd.apache.org/docs/2.4/mod/mod_authnz_ldap.html) : `AuthLDAPURL`, `AuthLDAPBindDN`, `AuthLDAPGroupAttribute`, `Require ldap-group`
-- [Apache : mod_ldap](https://httpd.apache.org/docs/2.4/mod/mod_ldap.html) : `LDAPVerifyServerCert`, `LDAPReferrals` (contexte « directory »), `LDAPTrustedGlobalCert`
-- [Apache : LogLevel par module](https://httpd.apache.org/docs/2.4/mod/core.html#loglevel)
-- [Samba : page de manuel `samba-tool(8)`](https://www.samba.org/samba/docs/current/man-html/samba-tool.8.html)
-- [Samba : paramètre `ldap server require strong auth` (`smb.conf(5)`)](https://www.samba.org/samba/docs/current/man-html/smb.conf.5.html)
-- [Microsoft : New-ADUser](https://learn.microsoft.com/powershell/module/activedirectory/new-aduser) et [Add-ADGroupMember](https://learn.microsoft.com/powershell/module/activedirectory/add-adgroupmember)
-- [HAProxy : manuel de configuration](https://docs.haproxy.org/) : `acl`, `path_beg`, `use_backend`
-- [OpenLDAP : `ldapwhoami(1)`](https://www.openldap.org/software/man.cgi?query=ldapwhoami) et [`ldap.conf(5)`](https://www.openldap.org/software/man.cgi?query=ldap.conf) (`TLS_REQCERT`)
+??? quote "Sources"
+    - [Apache : mod_authnz_ldap](https://httpd.apache.org/docs/2.4/mod/mod_authnz_ldap.html) : `AuthLDAPURL`, `AuthLDAPBindDN`, `AuthLDAPGroupAttribute`, `Require ldap-group`
+    - [Apache : mod_ldap](https://httpd.apache.org/docs/2.4/mod/mod_ldap.html) : `LDAPVerifyServerCert`, `LDAPReferrals` (contexte « directory »), `LDAPTrustedGlobalCert`
+    - [Apache : LogLevel par module](https://httpd.apache.org/docs/2.4/mod/core.html#loglevel)
+    - [Samba : page de manuel `samba-tool(8)`](https://www.samba.org/samba/docs/current/man-html/samba-tool.8.html)
+    - [Samba : paramètre `ldap server require strong auth` (`smb.conf(5)`)](https://www.samba.org/samba/docs/current/man-html/smb.conf.5.html)
+    - [Microsoft : New-ADUser](https://learn.microsoft.com/powershell/module/activedirectory/new-aduser) et [Add-ADGroupMember](https://learn.microsoft.com/powershell/module/activedirectory/add-adgroupmember)
+    - [HAProxy : manuel de configuration](https://docs.haproxy.org/) : `acl`, `path_beg`, `use_backend`
+    - [OpenLDAP : `ldapwhoami(1)`](https://www.openldap.org/software/man.cgi?query=ldapwhoami) et [`ldap.conf(5)`](https://www.openldap.org/software/man.cgi?query=ldap.conf) (`TLS_REQCERT`)

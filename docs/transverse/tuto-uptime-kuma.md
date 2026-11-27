@@ -309,3 +309,9 @@ Dans l'interface : toutes les sondes en vert, une notification de test reçue, l
 - 🛠️ [Sauvegarder et restaurer ses VM avec Proxmox](tuto-proxmox-backup.md)
 - 🛠️ [Diagnostiquer une connexion](../reseau/tuto-diagnostic-connexion.md)
 - 🛠️ [SSH par rebond](../reseau/tuto-ssh-rebond.md)
+
+??? quote "Sources"
+    *Uptime Kuma n'a pas de site de documentation séparé : la référence est le dépôt GitHub du projet et son wiki.*
+
+    - [Uptime Kuma : dépôt officiel](https://github.com/louislam/uptime-kuma)
+    - [Uptime Kuma : wiki officiel](https://github.com/louislam/uptime-kuma/wiki)

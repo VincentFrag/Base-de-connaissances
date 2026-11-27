@@ -231,3 +231,7 @@ tags: [transverse, mémo, scripting, bash, powershell]
 - 🛠️ [Automatiser une tâche avec cron et le Planificateur de tâches](tuto-taches-planifiees.md)
 - 🛠️ [Sauvegarder et restaurer ses VM avec Proxmox](tuto-proxmox-backup.md)
 - 🛠️ [Gérer utilisateurs, groupes et permissions sous Linux](../systeme/tuto-permissions-linux.md)
+
+??? quote "Sources"
+    - [Manuel GNU Bash](https://www.gnu.org/software/bash/manual/)
+    - [Microsoft Learn : documentation PowerShell](https://learn.microsoft.com/fr-fr/powershell/)

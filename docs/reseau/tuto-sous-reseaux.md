@@ -134,3 +134,7 @@ Vérifie tes calculs avec un outil :
 ## Voir aussi
 
 - 🧠 [Les VLAN](concept-vlan.md) (un VLAN = un sous-réseau)
+
+??? quote "Sources"
+    - [RFC 950 : sous-réseaux](https://www.rfc-editor.org/rfc/rfc950)
+    - [RFC 4632 : CIDR](https://www.rfc-editor.org/rfc/rfc4632)

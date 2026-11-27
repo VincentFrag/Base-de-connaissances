@@ -90,3 +90,8 @@ Le transport maritime :
 - 🧠 [Virtualisation et hyperviseurs](concept-virtualisation.md) : VM et LXC, où faire tourner Docker
 - 🛠️ [Préparer une VM clonée depuis un template](tuto-preparer-clone-vm.md) : créer la VM `srv-docker01`
 - 🧠 [Sauvegardes](../transverse/concept-sauvegardes.md) : ne pas oublier les volumes
+
+??? quote "Sources"
+    - [Docker : vue d'ensemble](https://docs.docker.com/get-started/docker-overview/)
+    - [Docker : volumes](https://docs.docker.com/engine/storage/volumes/)
+    - [Docker : réseau](https://docs.docker.com/engine/network/)

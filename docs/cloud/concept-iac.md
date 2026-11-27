@@ -88,3 +88,8 @@ Quelqu'un modifie une règle de pare-feu à la main dans le portail : la réalit
 - 🛠️ **[Déployer une infrastructure Azure avec Terraform](tuto-terraform-azure.md)** : la mise en pratique (VNet, NSG, VM, plan, dérive, destroy)
 - 🧠 [Ansible](../transverse/concept-ansible.md) : configurer les machines une fois créées
 - 🧠 [Le réseau dans Azure](concept-reseau-azure.md) : ce qu'on va décrire en code
+
+??? quote "Sources"
+    - [Terraform : introduction](https://developer.hashicorp.com/terraform/intro)
+    - [Terraform : l'état (state)](https://developer.hashicorp.com/terraform/language/state)
+    - [Provider Terraform azurerm](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)

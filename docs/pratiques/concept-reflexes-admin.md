@@ -70,3 +70,8 @@ Toute modification, même « juste une ligne », suit le même cycle :
 - 📋 [Mémo Bash et PowerShell](../transverse/memo-bash-powershell.md) : automatiser ce qu'on fait deux fois
 - 🧠 [Comprendre les sauvegardes et la règle 3-2-1](../transverse/concept-sauvegardes.md)
 - 🧠 [Comptes, droits et permissions Linux](../systeme/concept-permissions-linux.md)
+
+??? quote "Sources"
+    *Pas de documentation officielle unique sur ce sujet : bonnes pratiques issues de l'expérience, recoupées avec le guide de l'ANSSI.*
+
+    - [ANSSI : guide d'hygiène informatique](https://cyber.gouv.fr/publications/guide-dhygiene-informatique)

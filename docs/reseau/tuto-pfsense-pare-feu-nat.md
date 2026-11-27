@@ -297,3 +297,10 @@ La même politique (filtrage du VLAN 10, NAT sortant, publication du port 443) s
 - 🧠 [Pare-feu et NAT](concept-pare-feu-nat.md)
 - 🛠️ [Créer et configurer des VLAN](tuto-creer-vlan.md)
 - 🛠️ [Diagnostiquer une connexion de A à Z](tuto-diagnostic-connexion.md)
+
+??? quote "Sources"
+    *Commandes Cisco IOS : d'après les guides de configuration Cisco Catalyst (documentation éditeur, non liée page par page).*
+
+    - [Netgate : pare-feu pfSense](https://docs.netgate.com/pfsense/en/latest/firewall/index.html)
+    - [Netgate : NAT pfSense](https://docs.netgate.com/pfsense/en/latest/nat/index.html)
+    - [Wiki nftables](https://wiki.nftables.org/)

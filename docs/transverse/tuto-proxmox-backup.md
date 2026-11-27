@@ -252,3 +252,8 @@ Dans l'interface : **Datacenter → Backup → Job Detail** et le journal des t�
 - 🧠 [Les sauvegardes et la règle 3-2-1](concept-sauvegardes.md)
 - 🛠️ [Préparer une VM clonée depuis un template](../systeme/tuto-preparer-clone-vm.md)
 - 🛠️ [Se connecter en SSH à une VM par son nom](../reseau/tuto-ssh-nom-vm.md)
+
+??? quote "Sources"
+    - [Proxmox VE : sauvegarde et restauration](https://pve.proxmox.com/pve-docs/chapter-vzdump.html)
+    - [Page de manuel vzdump(1)](https://pve.proxmox.com/pve-docs/vzdump.1.html)
+    - [Page de manuel qmrestore(1)](https://pve.proxmox.com/pve-docs/qmrestore.1.html)

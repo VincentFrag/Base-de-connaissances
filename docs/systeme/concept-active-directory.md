@@ -81,3 +81,8 @@ Les paramètres **Ordinateur** s'appliquent au démarrage, les paramètres **Uti
 - 🛠️ **[Monter un Active Directory sur une VM Proxmox](tuto-monter-ad-proxmox.md)** : la mise en pratique (domaine, OU, utilisateurs, GPO)
 - 🧠 [DHCP et DNS](../reseau/concept-dhcp-dns.md) : enregistrements SRV et rôle du DNS dans AD
 - 🛠️ [Installer et configurer DHCP et DNS](../reseau/tuto-dhcp-dns.md) : ajouter le DHCP sur le contrôleur de domaine
+
+??? quote "Sources"
+    - [Microsoft Learn : vue d'ensemble d'AD DS](https://learn.microsoft.com/fr-fr/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview)
+    - [Microsoft Learn : stratégies de groupe (GPO)](https://learn.microsoft.com/fr-fr/windows-server/identity/ad-ds/manage/group-policy/group-policy-overview)
+    - [Wiki Samba : Samba comme contrôleur de domaine AD](https://wiki.samba.org/index.php/Setting_up_Samba_as_an_Active_Directory_Domain_Controller)

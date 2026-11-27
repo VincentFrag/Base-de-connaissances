@@ -158,3 +158,9 @@ az group create -n rg-demo --tags projet=demo owner=alice env=lab
 
 - 🧠 [Le cloud computing](concept-cloud-computing.md) : modèles, régions, SLA, coûts
 - 🧠 [Le réseau dans Azure](concept-reseau-azure.md) : l'étape suivante, avant ta première VM
+
+??? quote "Sources"
+    - [Compte gratuit Azure](https://azure.microsoft.com/fr-fr/pricing/free-services/)
+    - [Microsoft Learn : créer et gérer des budgets](https://learn.microsoft.com/fr-fr/azure/cost-management-billing/costs/tutorial-acm-create-budgets)
+    - [Microsoft Learn : groupes de ressources](https://learn.microsoft.com/fr-fr/azure/azure-resource-manager/management/manage-resource-groups-portal)
+    - [Documentation Azure CLI](https://learn.microsoft.com/fr-fr/cli/azure/)

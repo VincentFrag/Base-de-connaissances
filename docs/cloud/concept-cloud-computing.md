@@ -98,3 +98,8 @@ La démarche **FinOps** consiste à rendre ces coûts visibles et maîtrisés : 
 - 🛠️ **[Démarrer sur Azure sans exploser son crédit](tuto-demarrer-azure.md)** : la mise en pratique (compte étudiant, budget, tags, Azure CLI)
 - 🧠 [Virtualisation et hyperviseurs](../systeme/concept-virtualisation.md) : la brique sur laquelle repose tout l'IaaS
 - 🧠 [Sauvegardes](../transverse/concept-sauvegardes.md) : RPO, RTO et règle 3-2-1, aussi valables dans le cloud
+
+??? quote "Sources"
+    - [NIST SP 800-145 : The NIST Definition of Cloud Computing](https://csrc.nist.gov/pubs/sp/800/145/final)
+    - [Microsoft Learn : régions Azure](https://learn.microsoft.com/fr-fr/azure/reliability/regions-overview)
+    - [Calculatrice de prix Azure](https://azure.microsoft.com/fr-fr/pricing/calculator/)

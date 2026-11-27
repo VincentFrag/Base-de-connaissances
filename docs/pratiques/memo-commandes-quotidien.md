@@ -123,3 +123,7 @@ Pour le détail des droits Linux : 🛠️ [Gérer utilisateurs, groupes et perm
 
 !!! info "Pour écrire des scripts"
     Variables, conditions, boucles et fonctions en Bash et PowerShell côte à côte : 📋 [Mémo Bash et PowerShell](../transverse/memo-bash-powershell.md). Pour lancer un script à heure fixe : 🛠️ [Planifier une tâche](../transverse/tuto-taches-planifiees.md).
+
+??? quote "Sources"
+    - [Pages de manuel Linux (man7.org)](https://man7.org/linux/man-pages/)
+    - [Microsoft Learn : documentation PowerShell](https://learn.microsoft.com/fr-fr/powershell/)

@@ -577,3 +577,8 @@ Scénario : alice dépose `bilan-2026.txt` dans `P:`, la sauvegarde passe, puis 
 - Faire le TP **dans les deux variantes** et comparer : droits POSIX + `smb.conf` d'un côté, NTFS + partage de l'autre.
 - Envoyer une troisième copie vers un **Proxmox Backup Server** et tester la restauration d'un seul fichier (bonus du 🛠️ [tuto sauvegarde](../transverse/tuto-proxmox-backup.md)), pour respecter la 🧠 [règle 3-2-1](../transverse/concept-sauvegardes.md).
 - Revoir les notions : 🧠 [Virtualisation](concept-virtualisation.md) · 🧠 [Active Directory](concept-active-directory.md) · 🧠 [Permissions Linux](concept-permissions-linux.md)
+
+??? quote "Sources"
+    Voir les sources des tutos liés : [Active Directory](tuto-monter-ad-proxmox.md), [permissions Linux](tuto-permissions-linux.md), [sauvegarde Proxmox](../transverse/tuto-proxmox-backup.md).
+
+    - [Wiki Samba : partages de fichiers](https://wiki.samba.org/index.php/Setting_up_Samba_as_a_Standalone_Server)

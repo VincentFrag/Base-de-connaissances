@@ -198,8 +198,7 @@ Sur la page de stats, `nginx` passe au **rouge** (*DOWN*). Relance-le (`systemct
 - 🛠️ [Protéger une page web par un groupe AD](tuto-apache-auth-ad.md) : router `/admin` vers un seul backend
 - 🧪 [TP : Load balancer HAProxy et pages web sur NFS](tp-load-balancer-haproxy-nfs.md)
 
-## Sources
-
-- [HAProxy : manuel de configuration](https://docs.haproxy.org/) : `frontend`, `backend`, `balance roundrobin`, `option httpchk`, `http-response set-header`, `stats`, format de log `%s` (nom du serveur), option `h1-case-adjust` (casse des en-têtes)
-- [ApacheBench (`ab`)](https://httpd.apache.org/docs/2.4/programs/ab.html) : documentation Apache
-- [Paquet Debian `haproxy`](https://packages.debian.org/stable/haproxy)
+??? quote "Sources"
+    - [HAProxy : manuel de configuration](https://docs.haproxy.org/) : `frontend`, `backend`, `balance roundrobin`, `option httpchk`, `http-response set-header`, `stats`, format de log `%s` (nom du serveur), option `h1-case-adjust` (casse des en-têtes)
+    - [ApacheBench (`ab`)](https://httpd.apache.org/docs/2.4/programs/ab.html) : documentation Apache
+    - [Paquet Debian `haproxy`](https://packages.debian.org/stable/haproxy)

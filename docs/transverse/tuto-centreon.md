@@ -261,3 +261,7 @@ Dans l'interface : **Supervision → Statut des ressources**, tous les hôtes **
 - 🧠 [La supervision : métriques, logs et alertes](concept-supervision.md)
 - 🛠️ [Superviser ses VM avec Zabbix](tuto-zabbix.md) : l'autre grand outil d'entreprise, avec agents
 - 🛠️ [Superviser ses VM avec Uptime Kuma](tuto-uptime-kuma.md) : plus simple, pour la disponibilité
+
+??? quote "Sources"
+    - [Documentation Centreon](https://docs.centreon.com/)
+    - [Net-SNMP : snmpd.conf(5)](http://www.net-snmp.org/docs/man/snmpd.conf.html)

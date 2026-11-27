@@ -257,3 +257,8 @@ Dans l'interface : **Collecte de données → Hôtes**, pastilles **ZBX** vertes
 - 🛠️ [Superviser ses VM avec Uptime Kuma](tuto-uptime-kuma.md) : plus simple, pour la disponibilité
 - 🛠️ [Superviser ses VM avec Centreon](tuto-centreon.md) : l'autre grand outil d'entreprise, basé sur SNMP
 - 🛠️ [Monter un Active Directory sur une VM Proxmox](../systeme/tuto-monter-ad-proxmox.md)
+
+??? quote "Sources"
+    - [Zabbix 7.0 : manuel](https://www.zabbix.com/documentation/7.0/en/manual)
+    - [Zabbix : téléchargement et installation](https://www.zabbix.com/download)
+    - [Zabbix : supervision de Proxmox par HTTP](https://www.zabbix.com/integrations/proxmox)

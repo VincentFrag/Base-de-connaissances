@@ -124,3 +124,11 @@ curl -I http://srv-lb01.lab.local
 | 1 octet (o, B) | 8 bits (b) | Les débits sont en **bits**, les fichiers en **octets** : 1 Gbit/s ≈ 125 Mo/s |
 | 1 Ko / 1 Kio | 1 000 / 1 024 octets | Un disque de 1 To affiche ≈ 931 Gio dans l'OS |
 | 1 ms | Latence | < 1 ms en local, 10 à 40 ms vers Internet |
+
+??? quote "Sources"
+    - [RFC 1918 : adresses privées](https://www.rfc-editor.org/rfc/rfc1918)
+    - [RFC 4632 : CIDR](https://www.rfc-editor.org/rfc/rfc4632)
+    - [RFC 6890 : adresses à usage spécial](https://www.rfc-editor.org/rfc/rfc6890)
+    - [RFC 1035 : DNS](https://www.rfc-editor.org/rfc/rfc1035)
+    - [RFC 9110 : HTTP (codes de statut)](https://www.rfc-editor.org/rfc/rfc9110)
+    - [IANA : registre IPv4 à usage spécial](https://www.iana.org/assignments/iana-ipv4-special-registry/)

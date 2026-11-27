@@ -147,3 +147,8 @@ ping -c 2 srv-dc01.lab.local      # le DNS interne
 ## Voir aussi
 
 - 🛠️ [Se connecter en SSH aux VM d'un réseau interne (rebond)](../reseau/tuto-ssh-rebond.md)
+
+??? quote "Sources"
+    - [Proxmox VE : templates et clones](https://pve.proxmox.com/wiki/VM_Templates_and_Clones)
+    - [Page de manuel machine-id(5)](https://man7.org/linux/man-pages/man5/machine-id.5.html)
+    - [Page de manuel hostnamectl(1)](https://man7.org/linux/man-pages/man1/hostnamectl.1.html)

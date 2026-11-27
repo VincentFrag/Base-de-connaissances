@@ -77,3 +77,7 @@ Envoyer un colis :
 
 - 🧠 [Adressage IP et masque de sous-réseau](concept-adressage-ip.md)
 - 🛠️ [Diagnostiquer un problème de connexion de A à Z](tuto-diagnostic-connexion.md)
+
+??? quote "Sources"
+    - [UIT-T X.200 (ISO/IEC 7498-1) : modèle de référence OSI](https://www.itu.int/rec/T-REC-X.200)
+    - [RFC 1122 : couches de la suite TCP/IP](https://www.rfc-editor.org/rfc/rfc1122)

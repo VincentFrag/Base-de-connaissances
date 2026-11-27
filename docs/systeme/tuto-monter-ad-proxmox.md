@@ -237,3 +237,8 @@ Get-ADComputer PC-01 | Select-Object DistinguishedName   # dans OU=Ordinateurs,O
 - 🧠 [Active Directory : domaine, OU et GPO](concept-active-directory.md)
 - 🛠️ [Installer et configurer DHCP et DNS](../reseau/tuto-dhcp-dns.md) (ajouter le DHCP sur `srv-dc01`)
 - 🛠️ [Préparer une VM clonée depuis un template](tuto-preparer-clone-vm.md)
+
+??? quote "Sources"
+    - [PowerShell : Install-ADDSForest](https://learn.microsoft.com/powershell/module/addsdeployment/install-addsforest)
+    - [Proxmox VE : pilotes VirtIO pour Windows](https://pve.proxmox.com/wiki/Windows_VirtIO_Drivers)
+    - [Wiki Samba : Samba comme contrôleur de domaine AD](https://wiki.samba.org/index.php/Setting_up_Samba_as_an_Active_Directory_Domain_Controller)

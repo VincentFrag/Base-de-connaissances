@@ -79,3 +79,8 @@ Nomade :        [PC portable]════tunnel════[Serveur VPN]──[L
 - 🛠️ **[Accéder à son homelab avec WireGuard](tuto-wireguard-acces-distant.md)** : la mise en pratique (VPN nomade)
 - 🧠 [SSH](concept-ssh.md) et 🛠️ [SSH par rebond](tuto-ssh-rebond.md) (l'autre façon de joindre un réseau interne, machine par machine)
 - 🧠 [Pare-feu et NAT](concept-pare-feu-nat.md) (redirection de port, NAT de sortie)
+
+??? quote "Sources"
+    - [WireGuard : site officiel](https://www.wireguard.com/)
+    - [WireGuard : livre blanc (PDF)](https://www.wireguard.com/papers/wireguard.pdf)
+    - [RFC 4301 : architecture IPsec](https://www.rfc-editor.org/rfc/rfc4301)

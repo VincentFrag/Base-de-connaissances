@@ -104,3 +104,9 @@ Un **SAS** est une URL avec des paramètres : droits (`sp=r` lecture), début et
 - 🛠️ **[Stocker et partager des fichiers dans Azure](tuto-stockage-azure-sas.md)** : la mise en pratique (compte, SAS, cycle de vie, immuabilité, Private Endpoint)
 - 🧠 [Sauvegardes](../transverse/concept-sauvegardes.md) : la règle 3-2-1 et la copie hors site
 - 🧠 [Identités et droits dans Azure](concept-identite-azure.md) : plan de contrôle et plan de données
+
+??? quote "Sources"
+    - [Microsoft Learn : vue d'ensemble des comptes de stockage](https://learn.microsoft.com/fr-fr/azure/storage/common/storage-account-overview)
+    - [Microsoft Learn : niveaux d'accès des blobs](https://learn.microsoft.com/fr-fr/azure/storage/blobs/access-tiers-overview)
+    - [Microsoft Learn : redondance du stockage](https://learn.microsoft.com/fr-fr/azure/storage/common/storage-redundancy)
+    - [Microsoft Learn : signatures d'accès partagé (SAS)](https://learn.microsoft.com/fr-fr/azure/storage/common/storage-sas-overview)

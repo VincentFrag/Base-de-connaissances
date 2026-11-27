@@ -388,3 +388,8 @@ Le code reste dans Git : `terraform apply` recrée l'environnement à l'identiqu
 - 🧠 [L'Infrastructure as Code](concept-iac.md) : état, dérive, outils
 - 🧠 [Ansible](../transverse/concept-ansible.md) : la configuration après la création
 - 🛠️ [Monter un VNet avec une VM publique et une VM privée](tuto-vnet-nsg-azure.md) : la même chose en commandes, pour comparer
+
+??? quote "Sources"
+    - [Terraform : commandes de la CLI](https://developer.hashicorp.com/terraform/cli/commands)
+    - [Terraform : tutoriels Azure](https://developer.hashicorp.com/terraform/tutorials/azure-get-started)
+    - [Provider Terraform azurerm](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)

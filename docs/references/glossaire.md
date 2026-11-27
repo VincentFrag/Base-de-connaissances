@@ -476,3 +476,9 @@ tags: [référence, glossaire, vocabulaire]
 
 **Zero trust** · 🔒
 : Principe de sécurité : ne faire confiance à personne par défaut, même à l'intérieur du réseau, et vérifier chaque accès.
+
+??? quote "Sources"
+    Définitions de synthèse : chaque fiche liée du site cite ses propres sources officielles.
+
+    - [RFC Editor (normes des protocoles Internet)](https://www.rfc-editor.org/)
+    - [Microsoft Learn](https://learn.microsoft.com/fr-fr/)

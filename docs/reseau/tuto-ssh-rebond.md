@@ -207,3 +207,8 @@ ssh -v srv-lb01
 
 - 🧠 [SSH](concept-ssh.md)
 - 🛠️ [Se connecter en SSH à une VM par son nom](tuto-ssh-nom-vm.md) (VM joignables directement)
+
+??? quote "Sources"
+    - [OpenSSH : ssh_config(5), option ProxyJump](https://man.openbsd.org/ssh_config#ProxyJump)
+    - [OpenSSH : ssh(1), option -J](https://man.openbsd.org/ssh)
+    - [Proxmox VE : configuration réseau](https://pve.proxmox.com/wiki/Network_Configuration)

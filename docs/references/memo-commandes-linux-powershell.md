@@ -627,3 +627,7 @@ Côté Windows, la plupart des besoins se résolvent en enchaînant **une comman
 - 📋 [Mémo commandes réseau](../reseau/memo-commandes-reseau.md) : configuration IP, tests, DNS
 - 🛠️ [Gérer utilisateurs, groupes et permissions sous Linux](../systeme/tuto-permissions-linux.md)
 - 🛠️ [SSH par rebond](../reseau/tuto-ssh-rebond.md)
+
+??? quote "Sources"
+    - [Pages de manuel Linux (man7.org)](https://man7.org/linux/man-pages/)
+    - [Microsoft Learn : documentation PowerShell](https://learn.microsoft.com/fr-fr/powershell/)

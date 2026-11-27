@@ -267,3 +267,7 @@ Les invités doivent pouvoir faire des requêtes **DNS vers srv01**, mais ne doi
 
 - Remplacer R1 par un **pfSense** (voir l'onglet pfSense du 🛠️ [tuto VLAN](tuto-creer-vlan.md))
 - Déplacer le DHCP vers un **Windows Server**, avec `ip helper-address` sur R1 (voir 🛠️ [Installer DHCP et DNS](tuto-dhcp-dns.md))
+
+??? quote "Sources"
+    Voir les sources des tutos liés : [VLAN](tuto-creer-vlan.md), [DHCP et DNS](tuto-dhcp-dns.md), [pare-feu et NAT](tuto-pfsense-pare-feu-nat.md).
+

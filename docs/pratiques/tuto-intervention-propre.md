@@ -267,3 +267,9 @@ qm listsnapshot 100                           # plus de snapshot oublié
 
 ??? question "Le rollback du snapshot a fait disparaître d'autres modifications"
     C'est normal : un rollback ramène **toute** la VM à l'instant du snapshot. D'où l'ordre du retour arrière : d'abord annuler la modif elle-même, le snapshot seulement en dernier recours.
+
+??? quote "Sources"
+    *Pas de documentation officielle unique sur ce sujet : bonnes pratiques issues de l'expérience, recoupées avec le guide de l'ANSSI.*
+
+    - [ANSSI : guide d'hygiène informatique](https://cyber.gouv.fr/publications/guide-dhygiene-informatique)
+    - [Proxmox VE : instantanés et sauvegardes (vzdump)](https://pve.proxmox.com/pve-docs/chapter-vzdump.html)

@@ -98,3 +98,8 @@ Client Internet ──▶ 203.0.113.5:443 ──▶ pfSense ──▶ 192.168.20
 - 🧠 [Les VLAN](concept-vlan.md) (le pare-feu filtre le trafic entre VLAN)
 - 🧠 [Adressage IP et masque de sous-réseau](concept-adressage-ip.md) (adresses privées et publiques)
 - 🧠 [Le modèle OSI et TCP/IP](concept-modele-osi-tcpip.md) (filtrage en couches 3 et 4 : IP et ports)
+
+??? quote "Sources"
+    - [RFC 3022 : NAT traditionnel](https://www.rfc-editor.org/rfc/rfc3022)
+    - [Netgate : pare-feu pfSense](https://docs.netgate.com/pfsense/en/latest/firewall/index.html)
+    - [Netgate : NAT pfSense](https://docs.netgate.com/pfsense/en/latest/nat/index.html)

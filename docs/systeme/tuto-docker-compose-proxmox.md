@@ -292,3 +292,8 @@ Depuis un autre poste du lab : `http://10.0.0.40:8080` affiche le site. Et le po
 - 🧠 [Conteneurs Docker : image, conteneur, volume, réseau](concept-docker.md)
 - 🧠 [Virtualisation et hyperviseurs](concept-virtualisation.md) (VM ou LXC)
 - 🛠️ [Sauvegarder et restaurer ses VM avec Proxmox](../transverse/tuto-proxmox-backup.md)
+
+??? quote "Sources"
+    - [Docker : installation sur Debian](https://docs.docker.com/engine/install/debian/)
+    - [Docker Compose](https://docs.docker.com/compose/)
+    - [Proxmox VE : machines virtuelles (qm)](https://pve.proxmox.com/pve-docs/chapter-qm.html)

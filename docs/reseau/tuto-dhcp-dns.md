@@ -285,3 +285,9 @@ tags: [réseau, tuto, dhcp, dns, windows server, powershell, linux]
 - 🧠 [DHCP et DNS](concept-dhcp-dns.md)
 - 🛠️ [Créer et configurer des VLAN](tuto-creer-vlan.md)
 - 📋 [Mémo commandes réseau](memo-commandes-reseau.md)
+
+??? quote "Sources"
+    - [PowerShell : module DhcpServer](https://learn.microsoft.com/powershell/module/dhcpserver/)
+    - [PowerShell : module DnsServer](https://learn.microsoft.com/powershell/module/dnsserver/)
+    - [Page de manuel dnsmasq(8)](https://thekelleys.org.uk/dnsmasq/docs/dnsmasq-man.html)
+    - [Page de manuel dig(1)](https://manpages.debian.org/stable/bind9-dnsutils/dig.1.en.html)

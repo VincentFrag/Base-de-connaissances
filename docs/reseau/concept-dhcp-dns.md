@@ -99,3 +99,10 @@ Chaque réponse est gardée en **cache** pendant une durée appelée **TTL**.
 - 🛠️ [Diagnostiquer un problème de connexion de A à Z](tuto-diagnostic-connexion.md) (étapes 1 et 5)
 - 📋 [Mémo commandes réseau](memo-commandes-reseau.md) (sections Configuration IP et DNS)
 - 🧠 [Active Directory : domaine, OU et GPO](../systeme/concept-active-directory.md) : pourquoi AD dépend du DNS
+
+??? quote "Sources"
+    - [RFC 2131 : DHCP](https://www.rfc-editor.org/rfc/rfc2131)
+    - [RFC 1034 : DNS, concepts](https://www.rfc-editor.org/rfc/rfc1034)
+    - [RFC 1035 : DNS, implémentation](https://www.rfc-editor.org/rfc/rfc1035)
+    - [Microsoft Learn : DHCP dans Windows Server](https://learn.microsoft.com/fr-fr/windows-server/networking/technologies/dhcp/dhcp-top)
+    - [Microsoft Learn : DNS dans Windows Server](https://learn.microsoft.com/fr-fr/windows-server/networking/dns/dns-top)

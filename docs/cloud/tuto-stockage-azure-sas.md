@@ -240,3 +240,8 @@ Si des blobs sont encore sous immuabilité, le compte ne pourra être supprimé 
 - 🧠 [Le stockage dans Azure](concept-stockage-azure.md) : redondance, niveaux, accès privé
 - 🧠 [Sauvegardes](../transverse/concept-sauvegardes.md) : où cette copie s'inscrit dans la règle 3-2-1
 - 🛠️ [Déployer une infrastructure Azure avec Terraform](tuto-terraform-azure.md) : créer ce compte en code
+
+??? quote "Sources"
+    - [Microsoft Learn : signatures d'accès partagé (SAS)](https://learn.microsoft.com/fr-fr/azure/storage/common/storage-sas-overview)
+    - [Azure CLI : az storage blob](https://learn.microsoft.com/fr-fr/cli/azure/storage/blob)
+    - [Microsoft Learn : niveaux d'accès des blobs](https://learn.microsoft.com/fr-fr/azure/storage/blobs/access-tiers-overview)

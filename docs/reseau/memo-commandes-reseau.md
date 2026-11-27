@@ -52,3 +52,9 @@ tags: [réseau, mémo, commandes]
 !!! info "Anciennes commandes Linux"
     `ifconfig` → `ip a` · `route` → `ip r` · `netstat` → `ss` · `arp` → `ip neigh`.
     Les anciennes commandes (paquet `net-tools`) ne sont plus installées par défaut sur les distributions récentes.
+
+??? quote "Sources"
+    - [Microsoft Learn : commandes Windows](https://learn.microsoft.com/fr-fr/windows-server/administration/windows-commands/windows-commands)
+    - [PowerShell : module NetTCPIP](https://learn.microsoft.com/powershell/module/nettcpip/)
+    - [Page de manuel ip(8)](https://man7.org/linux/man-pages/man8/ip.8.html)
+    - [Page de manuel ss(8)](https://man7.org/linux/man-pages/man8/ss.8.html)

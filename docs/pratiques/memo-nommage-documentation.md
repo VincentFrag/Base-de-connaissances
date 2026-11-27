@@ -115,3 +115,9 @@ Exemple rempli dans 🛠️ [Faire une intervention propre de A à Z](tuto-inter
     - Écrire des **mots de passe** dans la doc : ils vont dans un **gestionnaire de mots de passe** (KeePassXC, Bitwarden, Vaultwarden), la doc dit seulement où les trouver.
     - Une doc stockée **uniquement** sur le serveur qu'elle décrit : le jour de la panne, elle est inaccessible.
     - Des noms différents pour la même machine dans le DNS, Proxmox et la doc.
+
+??? quote "Sources"
+    - [RFC 1178 : Choosing a Name for Your Computer](https://www.rfc-editor.org/rfc/rfc1178)
+    - [RFC 1123 : règles des noms d'hôte](https://www.rfc-editor.org/rfc/rfc1123)
+    - [Microsoft Learn : conventions de nommage dans Active Directory](https://learn.microsoft.com/fr-fr/troubleshoot/windows-server/active-directory/naming-conventions-for-computer-domain-site-ou)
+    - [Microsoft Learn : nommage des ressources Azure (CAF)](https://learn.microsoft.com/fr-fr/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming)

@@ -178,3 +178,8 @@ La suppression du groupe supprime la VM, donc son identité système et ses attr
 - 🧠 [Identités et droits dans Azure](concept-identite-azure.md) : rôles personnalisés, ABAC, accès conditionnel
 - 🛠️ [Stocker et partager des fichiers dans Azure](tuto-stockage-azure-sas.md) : SAS, cycle de vie et immuabilité
 - 🧠 [Comptes et droits Linux](../systeme/concept-permissions-linux.md) : le moindre privilège, version Linux
+
+??? quote "Sources"
+    - [Microsoft Learn : attribuer des rôles avec Azure CLI](https://learn.microsoft.com/fr-fr/azure/role-based-access-control/role-assignments-cli)
+    - [Microsoft Learn : rôles intégrés Azure](https://learn.microsoft.com/fr-fr/azure/role-based-access-control/built-in-roles)
+    - [Microsoft Learn : identités managées](https://learn.microsoft.com/fr-fr/entra/identity/managed-identities-azure-resources/overview)

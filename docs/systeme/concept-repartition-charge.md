@@ -67,7 +67,6 @@ HAProxy sait faire les deux ; pour un site web, on travaille en **HTTP**.
 - 🧠 [Le partage de fichiers NFS](concept-nfs.md) (servir le même contenu sur tous les backends)
 - 🧪 [TP : Load balancer HAProxy et pages web sur NFS](tp-load-balancer-haproxy-nfs.md)
 
-## Sources
-
-- [HAProxy : documentation officielle (manuel de configuration)](https://docs.haproxy.org/) : sections `balance`, `server`, `option httpchk`
-- [HAProxy : The Four Essential Sections of an HAProxy Configuration](https://www.haproxy.com/blog/the-four-essential-sections-of-an-haproxy-configuration) (blog de l'éditeur)
+??? quote "Sources"
+    - [HAProxy : documentation officielle (manuel de configuration)](https://docs.haproxy.org/) : sections `balance`, `server`, `option httpchk`
+    - [HAProxy : The Four Essential Sections of an HAProxy Configuration](https://www.haproxy.com/blog/the-four-essential-sections-of-an-haproxy-configuration) (blog de l'éditeur)

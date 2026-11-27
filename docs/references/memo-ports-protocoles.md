@@ -168,3 +168,6 @@ Certains protocoles n'utilisent pas TCP ni UDP, donc **pas de port** : on les fi
 
 !!! warning "Piège : UDP"
     `Test-NetConnection` et `nc -zv` testent en **TCP**. Pour un service UDP (DNS, DHCP, WireGuard), teste le service lui-même : `nslookup lab.local 10.0.0.10` pour le DNS, par exemple.
+
+??? quote "Sources"
+    - [IANA : registre des noms de services et numéros de port](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml)

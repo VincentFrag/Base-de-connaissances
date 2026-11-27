@@ -138,9 +138,8 @@ df -h | grep 10.0.0.20
 - 🧠 [Le partage de fichiers NFS](concept-nfs.md)
 - 🧪 [TP : Load balancer HAProxy et pages web sur NFS](tp-load-balancer-haproxy-nfs.md)
 
-## Sources
-
-- [Page de manuel `exports(5)`](https://manpages.debian.org/stable/nfs-kernel-server/exports.5.en.html) et [`exportfs(8)`](https://manpages.debian.org/stable/nfs-kernel-server/exportfs.8.en.html)
-- [Page de manuel `nfs(5)`](https://manpages.debian.org/stable/nfs-common/nfs.5.en.html) : options de montage, cache d'attributs `actimeo`
-- [Page de manuel `fstab(5)`](https://manpages.debian.org/stable/mount/fstab.5.en.html) : option `_netdev`
-- [Wiki Debian : NFSServerSetup](https://wiki.debian.org/NFSServerSetup)
+??? quote "Sources"
+    - [Page de manuel `exports(5)`](https://manpages.debian.org/stable/nfs-kernel-server/exports.5.en.html) et [`exportfs(8)`](https://manpages.debian.org/stable/nfs-kernel-server/exportfs.8.en.html)
+    - [Page de manuel `nfs(5)`](https://manpages.debian.org/stable/nfs-common/nfs.5.en.html) : options de montage, cache d'attributs `actimeo`
+    - [Page de manuel `fstab(5)`](https://manpages.debian.org/stable/mount/fstab.5.en.html) : option `_netdev`
+    - [Wiki Debian : NFSServerSetup](https://wiki.debian.org/NFSServerSetup)

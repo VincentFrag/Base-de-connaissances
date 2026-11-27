@@ -65,7 +65,6 @@ Une ligne de `/etc/exports` ressemble à : `/srv/web 10.0.0.31(ro,sync,no_subtre
 - 🧠 [La répartition de charge](concept-repartition-charge.md)
 - 🧪 [TP : Load balancer HAProxy et pages web sur NFS](tp-load-balancer-haproxy-nfs.md)
 
-## Sources
-
-- [Page de manuel `exports(5)`](https://manpages.debian.org/stable/nfs-kernel-server/exports.5.en.html) : options `ro`, `rw`, `sync`, `no_subtree_check`, `root_squash`
-- [Wiki Debian : NFSServerSetup](https://wiki.debian.org/NFSServerSetup)
+??? quote "Sources"
+    - [Page de manuel `exports(5)`](https://manpages.debian.org/stable/nfs-kernel-server/exports.5.en.html) : options `ro`, `rw`, `sync`, `no_subtree_check`, `root_squash`
+    - [Wiki Debian : NFSServerSetup](https://wiki.debian.org/NFSServerSetup)

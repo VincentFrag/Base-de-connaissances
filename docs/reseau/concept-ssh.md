@@ -63,3 +63,8 @@ Quand les VM sont sur un **réseau interne** que ton PC ne joint pas, SSH peut *
 - 🛠️ **[Se connecter en SSH à une VM par son nom](tuto-ssh-nom-vm.md)** : la mise en pratique
 - 🛠️ **[SSH par rebond vers un réseau interne](tuto-ssh-rebond.md)** : quand les VM ne sont pas joignables directement
 - 🧠 [DHCP et DNS](concept-dhcp-dns.md) (la méthode « DNS » à l'échelle d'un réseau)
+
+??? quote "Sources"
+    - [RFC 4251 : architecture du protocole SSH](https://www.rfc-editor.org/rfc/rfc4251)
+    - [RFC 4253 : couche transport SSH](https://www.rfc-editor.org/rfc/rfc4253)
+    - [Manuels OpenSSH](https://www.openssh.com/manual.html)

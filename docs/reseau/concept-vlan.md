@@ -80,3 +80,7 @@ Avec un pare-feu, on choisit précisément **qui a le droit de parler à qui** (
 - 🧠 [Adressage IP et masque de sous-réseau](concept-adressage-ip.md)
 - 🧠 [DHCP et DNS](concept-dhcp-dns.md) (le relais DHCP entre VLAN)
 - 🧠 [Le modèle OSI et TCP/IP](concept-modele-osi-tcpip.md) (VLAN = couche 2, routage = couche 3)
+
+??? quote "Sources"
+    - [IEEE 802.1Q (norme des VLAN)](https://standards.ieee.org/ieee/802.1Q/10323/)
+    - [Netgate : VLAN sur pfSense](https://docs.netgate.com/pfsense/en/latest/vlan/index.html)

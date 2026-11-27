@@ -196,3 +196,9 @@ exit
 - **Un fichier n'a pas le groupe `compta`** : il a été créé avant le setgid, ou copié avec `cp -p` / déplacé avec `mv` (qui garde le groupe d'origine). `sudo chown :compta fichier`.
 - **sudo ne fonctionne plus après une modification** : une erreur dans sudoers. Se connecter en root (console Proxmox) et lancer `visudo` pour corriger.
 - **Un utilisateur a perdu ses groupes** : `usermod -G` a été utilisé sans `-a`. Les rajouter un par un avec `usermod -aG`.
+
+??? quote "Sources"
+    - [Page de manuel useradd(8)](https://man7.org/linux/man-pages/man8/useradd.8.html)
+    - [Page de manuel usermod(8)](https://man7.org/linux/man-pages/man8/usermod.8.html)
+    - [Page de manuel chmod(1)](https://man7.org/linux/man-pages/man1/chmod.1.html)
+    - [Page de manuel chown(1)](https://man7.org/linux/man-pages/man1/chown.1.html)

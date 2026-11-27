@@ -153,3 +153,10 @@ ping google.com
 ## Voir aussi
 
 - 📋 [Mémo commandes réseau](memo-commandes-reseau.md)
+
+??? quote "Sources"
+    - [Microsoft Learn : commandes Windows (ipconfig, ping, tracert, nslookup)](https://learn.microsoft.com/fr-fr/windows-server/administration/windows-commands/windows-commands)
+    - [PowerShell : Test-NetConnection](https://learn.microsoft.com/powershell/module/nettcpip/test-netconnection)
+    - [Page de manuel ip(8)](https://man7.org/linux/man-pages/man8/ip.8.html)
+    - [Page de manuel ss(8)](https://man7.org/linux/man-pages/man8/ss.8.html)
+    - [NetworkManager : nmcli(1)](https://networkmanager.dev/docs/api/latest/nmcli.html)

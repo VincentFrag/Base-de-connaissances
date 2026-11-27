@@ -80,3 +80,9 @@ Les **adresses privées** ne circulent pas sur Internet (c'est le routeur qui fa
 
 - 🛠️ [Diagnostiquer un problème de connexion de A à Z](tuto-diagnostic-connexion.md)
 - 📋 [Mémo commandes réseau](memo-commandes-reseau.md)
+
+??? quote "Sources"
+    - [RFC 791 : IPv4](https://www.rfc-editor.org/rfc/rfc791)
+    - [RFC 950 : sous-réseaux](https://www.rfc-editor.org/rfc/rfc950)
+    - [RFC 1918 : adresses privées](https://www.rfc-editor.org/rfc/rfc1918)
+    - [RFC 4632 : CIDR](https://www.rfc-editor.org/rfc/rfc4632)

@@ -44,6 +44,7 @@ Windows Server, Active Directory, GPO, Linux, virtualisation, sauvegarde. Suis l
 
     - :material-book-open-variant: [Domaine, OU et GPO](concept-active-directory.md) <span class="kb-badge kb-bases">Bases</span>
     - :material-wrench-outline: [Monter un AD sur une VM Proxmox](tuto-monter-ad-proxmox.md) <span class="kb-badge kb-inter">Intermédiaire</span>
+    - :material-wrench-outline: [Protéger une page web par un groupe AD](tuto-apache-auth-ad.md) <span class="kb-badge kb-inter">Intermédiaire</span>
 
 -   :material-numeric-4-circle-outline:{ .lg .middle } __Conteneurs Docker__
 
@@ -54,6 +55,24 @@ Windows Server, Active Directory, GPO, Linux, virtualisation, sauvegarde. Suis l
     - :material-book-open-variant: [Image, conteneur, volume, réseau](concept-docker.md) <span class="kb-badge kb-bases">Bases</span>
     - :material-wrench-outline: [Déployer un service avec Docker Compose](tuto-docker-compose-proxmox.md) <span class="kb-badge kb-inter">Intermédiaire</span>
 
+-   :material-numeric-5-circle-outline:{ .lg .middle } __Répartition de charge__
+
+    ---
+
+    Répartir le trafic web entre plusieurs serveurs avec HAProxy.
+
+    - :material-book-open-variant: [La répartition de charge](concept-repartition-charge.md) <span class="kb-badge kb-bases">Bases</span>
+    - :material-wrench-outline: [Répartir la charge avec HAProxy](tuto-haproxy-repartition-charge.md) <span class="kb-badge kb-inter">Intermédiaire</span>
+
+-   :material-numeric-6-circle-outline:{ .lg .middle } __Partage de fichiers NFS__
+
+    ---
+
+    Partager un dossier sur le réseau entre serveurs Linux.
+
+    - :material-book-open-variant: [Le partage de fichiers NFS](concept-nfs.md) <span class="kb-badge kb-bases">Bases</span>
+    - :material-wrench-outline: [Partager un dossier en NFS](tuto-partage-nfs.md) <span class="kb-badge kb-inter">Intermédiaire</span>
+
 -   :material-flask-outline:{ .lg .middle } __S'entraîner__
 
     ---
@@ -61,5 +80,6 @@ Windows Server, Active Directory, GPO, Linux, virtualisation, sauvegarde. Suis l
     Mettre tout bout à bout sur un cas réel, avec indices et solutions.
 
     - :material-flask-outline: [TP : monter l'infra d'une PME sur Proxmox](tp-infra-pme-proxmox.md) <span class="kb-badge kb-inter">Intermédiaire</span>
+    - :material-flask-outline: [TP : load balancer HAProxy, NFS et accès admin AD](tp-load-balancer-haproxy-nfs.md) <span class="kb-badge kb-inter">Intermédiaire</span>
 
 </div>

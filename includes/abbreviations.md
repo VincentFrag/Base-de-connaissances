@@ -80,3 +80,4 @@
 *[VPN]: Virtual Private Network : tunnel chiffré vers un réseau distant
 *[WAN]: Wide Area Network : réseau étendu reliant des sites
 *[WinRM]: PowerShell à distance (ports 5985/5986)
+*[YAML]: Format texte de configuration fondé sur l'indentation (Ansible, Docker Compose)

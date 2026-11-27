@@ -28,6 +28,9 @@ tags: [référence, glossaire, vocabulaire]
 **Adresse MAC** · 🌐
 : Identifiant physique gravé dans une carte réseau (ex. `00:1A:2B:3C:4D:5E`). Sert à livrer les trames dans un même réseau local (couche 2).
 
+**Ansible** · 🖥️
+: Outil d'automatisation qui configure des machines par SSH, sans agent, à partir de fichiers YAML (inventaire, playbooks) décrivant l'état voulu. :material-arrow-right: [Ansible](../transverse/concept-ansible.md)
+
 **APIPA** · 🌐
 : Adresse `169.254.x.x` qu'un poste Windows s'attribue tout seul quand il ne trouve pas de serveur DHCP. Si tu la vois, le DHCP ne répond pas. :material-arrow-right: [Diagnostiquer une connexion](../reseau/tuto-diagnostic-connexion.md)
 
@@ -167,6 +170,9 @@ tags: [référence, glossaire, vocabulaire]
 **ICMP** · 🌐
 : Protocole des messages de contrôle réseau, utilisé par `ping` et `traceroute`.
 
+**Idempotence** · 🖥️
+: Propriété d'une opération qu'on peut relancer sans changer le résultat : un playbook Ansible relancé finit sur `changed=0`. :material-arrow-right: [Ansible](../transverse/concept-ansible.md#lidempotence-le-cur-dansible)
+
 **IDS / IPS** · 🔒
 : Système qui détecte (IDS) ou bloque (IPS) les attaques en analysant le trafic.
 
@@ -289,6 +295,9 @@ tags: [référence, glossaire, vocabulaire]
 **Pipeline** (tube, `|`) · 🖥️
 : Envoie le résultat d'une commande à la suivante : `ps aux | grep nginx`. En Bash il transporte du texte, en PowerShell des objets. :material-arrow-right: [Mémo commandes Linux et PowerShell](memo-commandes-linux-powershell.md#enchainer-et-rediriger)
 
+**Playbook** · 🖥️
+: Fichier YAML d'Ansible qui associe des groupes de machines à une liste de tâches à appliquer. :material-arrow-right: [Automatiser ses VM avec Ansible](../transverse/tuto-ansible-homelab.md)
+
 **Port** · 🌐
 : Numéro qui identifie un service sur une machine (22 pour SSH, 443 pour HTTPS). :material-arrow-right: [Mémo ports et protocoles](memo-ports-protocoles.md)
 
@@ -403,6 +412,11 @@ tags: [référence, glossaire, vocabulaire]
 
 **VPN** · 🔒
 : Tunnel chiffré qui relie un poste ou un site distant au réseau de l'entreprise (WireGuard, OpenVPN, IPsec).
+
+## Y
+
+**YAML** · 🖥️
+: Format texte de configuration fondé sur l'indentation (deux espaces, jamais de tabulation), utilisé par Ansible, Docker Compose et les pipelines CI. :material-arrow-right: [Ansible](../transverse/concept-ansible.md)
 
 ## Z
 

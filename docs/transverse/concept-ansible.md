@@ -90,6 +90,10 @@ Ils se complètent : **Terraform crée** les VM, **Ansible les configure**, et A
     - **Lancer sur tout l'inventaire par erreur** : tester d'abord avec `--check --diff` et limiter avec `--limit srv-web01`.
     - **Corriger à la main un serveur géré par Ansible** : la modification sera écrasée au prochain passage. On corrige le playbook, puis on le relance.
 
+## Sources
+
+- [Documentation officielle d'Ansible](https://docs.ansible.com/ansible/latest/) : [commandes ad hoc](https://docs.ansible.com/ansible/latest/command_guide/intro_adhoc.html), [handlers](https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_handlers.html), [connexion SSH](https://docs.ansible.com/ansible/latest/inventory_guide/connection_details.html) (consultée le 27 novembre 2026)
+
 ## Pour aller plus loin
 
 - 🛠️ **[Automatiser ses VM avec Ansible](tuto-ansible-homelab.md)** : la mise en pratique (inventaire, commandes ad hoc, playbook de base et serveurs web nginx sur le lab Proxmox)

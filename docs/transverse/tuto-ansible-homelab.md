@@ -85,7 +85,7 @@ tags: [transverse, tuto, ansible, automatisation, playbook, nginx, proxmox, debi
     Ansible utilise le client `ssh` du système : il profite donc automatiquement de ce rebond. Crée le projet dans ton dossier personnel WSL (`~/ansible-lab`), **pas** sous `/mnt/c/` (voir dépannage).
 
 !!! tip "Version"
-    Le paquet `ansible` de Debian ou d'Ubuntu suffit pour le lab : il contient `ansible-core` et les collections courantes (`community.general`, `ansible.posix`…). `ansible --version` affiche la version de `ansible-core` (2.14 sur Debian 12, plus récente sur Debian 13).
+    `ansible --version` affiche la version d'`ansible-core` installée. Le paquet `ansible` de la distribution suffit pour le lab. Selon la documentation, `ansible-core` seul **ne contient pas** les collections comme `community.general` (utilisée à l'étape 5). Si un module est introuvable, voir le dépannage.
 
 ## Étape 2 — Donner l'accès SSH par clé
 
@@ -385,8 +385,8 @@ Le `--diff` montre la page modifiée sur `srv-web01` seulement, et `srv-web02` r
 
 ## 🔧 Dépannage courant
 
-!!! question "`Ansible is being run in a world writable directory … ignoring it as an ansible.cfg source` ?"
-    Sous WSL, un projet placé dans `/mnt/c/…` hérite des droits Windows (tout le monde peut écrire) : Ansible ignore alors `ansible.cfg` par sécurité, et ne trouve plus l'inventaire. Déplace le projet dans ton dossier WSL : `mv /mnt/c/…/ansible-lab ~/`.
+!!! question "Sous WSL, Ansible ignore `ansible.cfg` et ne trouve plus l'inventaire ?"
+    Un projet placé dans `/mnt/c/…` hérite des droits Windows : le dossier est accessible en écriture à tous. Par sécurité, Ansible ne charge **pas** un `ansible.cfg` situé dans un tel dossier. Déplace le projet dans ton dossier WSL : `mv /mnt/c/…/ansible-lab ~/`.
 
 !!! question "`[WARNING]: provided hosts list is empty` ou `Could not match supplied host pattern` ?"
     Ansible ne trouve pas l'inventaire ou le groupe. Vérifier que tu lances la commande **depuis `~/ansible-lab`** (là où est `ansible.cfg`), l'orthographe du groupe, puis `ansible-inventory --graph`.
@@ -421,6 +421,16 @@ Le `--diff` montre la page modifiée sur `srv-web01` seulement, et `srv-web02` r
 | Chiffrer un fichier de variables secrètes | `ansible-vault encrypt group_vars/web_secrets.yml` |
 | Lancer avec des variables chiffrées | `ansible-playbook web.yml -K --ask-vault-pass` |
 | Documentation d'un module | `ansible-doc ansible.builtin.template` |
+
+## Sources
+
+Documentation officielle d'Ansible, consultée le 27 novembre 2026 :
+
+- [Commandes ad hoc](https://docs.ansible.com/ansible/latest/command_guide/intro_adhoc.html) : module `command` par défaut, `-K`, 5 processus en parallèle
+- [Connexion et vérification des clés d'hôte](https://docs.ansible.com/ansible/latest/inventory_guide/connection_details.html)
+- [Handlers](https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_handlers.html)
+- [Configuration (`ansible.cfg`, `interpreter_python`, dossier accessible à tous)](https://docs.ansible.com/ansible/latest/reference_appendices/config.html)
+- Modules : [apt](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_module.html) · [lineinfile](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/lineinfile_module.html) · [community.general.timezone](https://docs.ansible.com/ansible/latest/collections/community/general/timezone_module.html)
 
 ## Voir aussi
 

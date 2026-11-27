@@ -12,9 +12,12 @@ tags: [référence, glossaire, vocabulaire]
 
     Les sigles sont aussi expliqués **au survol** partout sur le site : passe la souris sur DHCP, VLAN ou NAT dans n'importe quel article.
 
-**Domaines** : 🌐 Réseau · 🖥️ Système · 🔒 Sécurité · 📦 Virtualisation · 🌍 Web · 💾 Stockage
+**Domaines** : 🌐 Réseau · 🖥️ Système · 🔒 Sécurité · 📦 Virtualisation · 🌍 Web · 💾 Stockage · ☁️ Cloud
 
 ## A
+
+**ABAC** (*Attribute-Based Access Control*) · ☁️🔒
+: Contrôle d'accès selon des attributs (poste d'entreprise ou personnel, horaire, étiquette d'une ressource), en complément des rôles du RBAC.
 
 **ACL** (*Access Control List*) · 🌐🔒
 : Liste de règles qui autorise ou bloque du trafic (sur un routeur, un pare-feu) ou l'accès à une ressource (sur un fichier). Les règles sont lues dans l'ordre, la première qui correspond gagne. :material-arrow-right: [Pare-feu et NAT](../reseau/concept-pare-feu-nat.md)
@@ -70,6 +73,9 @@ tags: [référence, glossaire, vocabulaire]
 
 **CIDR** · 🌐
 : Notation du masque par le nombre de bits réseau : `/24` équivaut à `255.255.255.0`. :material-arrow-right: [Sous-réseaux](../reseau/tuto-sous-reseaux.md)
+
+**CLI** (*Command Line Interface*) · 🖥️☁️
+: Outil en ligne de commande (ex. `az` pour Azure, `aws` pour AWS). Plus rapide à rejouer que le portail et base de toute automatisation.
 
 **Client / serveur** · 🌐
 : Le client demande un service (navigateur, poste), le serveur le rend (site web, DNS, partage de fichiers).
@@ -134,6 +140,9 @@ tags: [référence, glossaire, vocabulaire]
 
 ## F
 
+**FinOps** · ☁️
+: Pratique qui pilote les coûts du cloud : informer (budgets, tags), optimiser (tailles, réservations), opérer (arrêts planifiés). :material-arrow-right: [Le cloud computing](../cloud/concept-cloud-computing.md)
+
 **FQDN** · 🌐
 : Nom complet d'une machine, avec le domaine : `srv-dc01.lab.local`.
 
@@ -162,16 +171,28 @@ tags: [référence, glossaire, vocabulaire]
 **HTTP / HTTPS** · 🌍
 : Protocole du web. HTTPS est la version chiffrée par TLS (port 443). :material-arrow-right: [Codes HTTP](memo-references-reseau.md#codes-http)
 
+**Hub and spoke** · ☁️🌐
+: Architecture réseau en étoile : un réseau central (hub) porte les services partagés (pare-feu, VPN, bastion), les réseaux applicatifs (spokes) y sont appairés. :material-arrow-right: [Le réseau dans Azure](../cloud/concept-reseau-azure.md)
+
 **Hyperviseur** · 📦
 : Logiciel qui fait tourner des machines virtuelles. Type 1 directement sur le matériel (Proxmox, ESXi, Hyper-V), type 2 sur un OS (VirtualBox). :material-arrow-right: [Virtualisation](../systeme/concept-virtualisation.md)
 
 ## I
+
+**IaaS, PaaS, SaaS** · ☁️
+: Les trois modèles de service du cloud : on loue l'infrastructure (VM, réseau), une plateforme prête à l'emploi (base managée, conteneur), ou directement le logiciel (messagerie en ligne).
+
+**IaC** (*Infrastructure as Code*) · ☁️
+: Décrire l'infrastructure dans des fichiers versionnés (Terraform, Bicep) plutôt que de la créer à la main ; on la recrée ou la détruit en une commande. :material-arrow-right: [Infrastructure as Code](../cloud/concept-iac.md)
 
 **ICMP** · 🌐
 : Protocole des messages de contrôle réseau, utilisé par `ping` et `traceroute`.
 
 **Idempotence** · 🖥️
 : Propriété d'une opération qu'on peut relancer sans changer le résultat : un playbook Ansible relancé finit sur `changed=0`. :material-arrow-right: [Ansible](../transverse/concept-ansible.md#lidempotence-le-cur-dansible)
+
+**Identité managée** · ☁️🔒
+: Compte de service Azure attaché à une ressource (VM, conteneur) : elle s'authentifie auprès d'Azure sans mot de passe stocké. :material-arrow-right: [Identités et droits dans Azure](../cloud/concept-identite-azure.md)
 
 **IDS / IPS** · 🔒
 : Système qui détecte (IDS) ou bloque (IPS) les attaques en analysant le trafic.
@@ -255,13 +276,22 @@ tags: [référence, glossaire, vocabulaire]
 **NFS** · 💾
 : Protocole de partage de fichiers en réseau propre au monde Linux/Unix (port 2049).
 
+**NSG** (*Network Security Group*) · ☁️🔒
+: Pare-feu d'Azure appliqué à un sous-réseau ou à une carte réseau : des règles d'autorisation ou de refus lues par priorité croissante. :material-arrow-right: [Le réseau dans Azure](../cloud/concept-reseau-azure.md)
+
 **NTFS** · 🖥️💾
 : Système de fichiers de Windows. Ses droits (lecture, modification, contrôle total), hérités de dossier en dossier, s'ajoutent à ceux du partage SMB : l'accès réel est le plus restrictif des deux. :material-arrow-right: [TP infra PME](../systeme/tp-infra-pme-proxmox.md)
 
 **NTP** · 🌐
 : Protocole qui synchronise l'heure des machines. Indispensable pour Kerberos et les journaux.
 
+**NVA** (*Network Virtual Appliance*) · ☁️🌐
+: VM qui joue le rôle de routeur ou de pare-feu dans un réseau cloud (ex. une VM Linux passerelle à la place d'Azure Firewall).
+
 ## O
+
+**OIDC** (*OpenID Connect*) · 🔒🌍
+: Protocole d'authentification bâti sur OAuth 2.0, utilisé pour le SSO des applications web (Keycloak, Entra ID).
 
 **OS** (système d'exploitation) · 🖥️
 : Logiciel de base qui gère la machine : Windows, Linux (Debian, Rocky…), macOS.
@@ -304,6 +334,9 @@ tags: [référence, glossaire, vocabulaire]
 **Port access / trunk** · 🌐
 : Sur un switch, un port **access** appartient à un seul VLAN, un port **trunk** transporte plusieurs VLAN étiquetés. :material-arrow-right: [VLAN](../reseau/concept-vlan.md)
 
+**Private Endpoint** · ☁️🌐
+: Carte réseau privée dans ton VNet qui donne accès à un service Azure (stockage, base) sans passer par Internet. :material-arrow-right: [Le stockage dans Azure](../cloud/concept-stockage-azure.md)
+
 **Protocole** · 🌐
 : Ensemble de règles qu'utilisent deux machines pour se comprendre (HTTP, DNS, SSH…).
 
@@ -314,6 +347,9 @@ tags: [référence, glossaire, vocabulaire]
 
 **RAID** · 💾
 : Combinaison de plusieurs disques pour la performance ou la tolérance aux pannes (RAID 1 = miroir, RAID 5 = parité). Un RAID n'est **pas** une sauvegarde.
+
+**RBAC** (*Role-Based Access Control*) · ☁️🔒
+: Droits accordés par rôle (Lecteur, Contributeur, Propriétaire), à un principal, sur une portée (abonnement, groupe, ressource). :material-arrow-right: [Identités et droits dans Azure](../cloud/concept-identite-azure.md)
 
 **RDP** · 🖥️
 : Bureau à distance de Windows (port 3389).
@@ -338,6 +374,9 @@ tags: [référence, glossaire, vocabulaire]
 **Samba** · 💾🖥️
 : Logiciel libre qui fait parler SMB à Linux : partager des dossiers avec des postes Windows, et même rejoindre un domaine Active Directory. :material-arrow-right: [TP infra PME](../systeme/tp-infra-pme-proxmox.md)
 
+**SAS** (*Shared Access Signature*) · ☁️🔒
+: Lien signé qui donne un accès limité dans le temps et en droits à un compte de stockage Azure, sans partager la clé. :material-arrow-right: [Le stockage dans Azure](../cloud/concept-stockage-azure.md)
+
 **Sauvegarde 3-2-1** · 💾
 : 3 copies des données, sur 2 supports différents, dont 1 hors site. :material-arrow-right: [Sauvegardes](../transverse/concept-sauvegardes.md)
 
@@ -347,11 +386,17 @@ tags: [référence, glossaire, vocabulaire]
 **SID** · 🖥️
 : Security Identifier : identifiant unique d'un compte, d'un groupe ou d'une machine Windows. Deux clones Windows non passés par `sysprep` ont le même SID machine.
 
+**SLA** (*Service Level Agreement*) · ☁️
+: Engagement de disponibilité d'un service (ex. 99,9 % = 43 min d'arrêt par mois). Les SLA de composants en série se multiplient. :material-arrow-right: [Le cloud computing](../cloud/concept-cloud-computing.md)
+
 **SMB / CIFS** · 💾
 : Protocole de partage de fichiers et d'imprimantes de Windows (port 445).
 
 **Snapshot** · 📦💾
 : Photo de l'état d'une VM à un instant, pour revenir en arrière vite. Ce n'est **pas** une sauvegarde : il reste sur le même disque. :material-arrow-right: [Snapshot ou sauvegarde](../transverse/concept-sauvegardes.md)
+
+**SNAT** (*Source NAT*) · 🌐☁️
+: Traduction de l'adresse source d'un paquet sortant, pour qu'une machine privée sorte sur Internet avec une IP publique partagée.
 
 **SNMP** · 🌐
 : Protocole de supervision qui lit l'état des équipements et des serveurs (port 161, alertes *traps* sur le port 162). En v2c, une **communauté** sert de mot de passe en lecture. :material-arrow-right: [Superviser avec Centreon](../transverse/tuto-centreon.md)
@@ -394,6 +439,12 @@ tags: [référence, glossaire, vocabulaire]
 : Adresse d'une ressource web : protocole, nom, port, chemin (`https://pve01:8006/`).
 
 ## V
+
+**VMSS** (*Virtual Machine Scale Set*) · ☁️
+: Groupe de VM identiques dont Azure ajuste le nombre selon la charge (autoscaling). :material-arrow-right: [Infrastructure as Code](../cloud/concept-iac.md)
+
+**VNet** (*Virtual Network*) · ☁️🌐
+: Réseau privé virtuel dans Azure, découpé en sous-réseaux ; deux VNet communiquent par appairage (peering). :material-arrow-right: [Le réseau dans Azure](../cloud/concept-reseau-azure.md)
 
 **VSS** (clichés instantanés) · 💾
 : Volume Shadow Copy Service : copies ponctuelles d'un volume Windows, qui permettent de récupérer un fichier via *Versions précédentes*.

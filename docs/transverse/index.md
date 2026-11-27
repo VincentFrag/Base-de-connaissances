@@ -5,7 +5,7 @@ hide:
 
 # Transverse
 
-Ce qui concerne toute l'infrastructure, quel que soit le système ou le réseau : sauvegarde, sécurité, supervision, scripting (PowerShell, Bash), cloud et Azure.
+Ce qui concerne toute l'infrastructure, quel que soit le système ou le réseau : sauvegarde, sécurité, supervision, scripting (PowerShell, Bash). Le cloud a son propre onglet : [Cloud computing](../cloud/index.md).
 
 <p class="kb-legend" markdown>
 :material-book-open-variant: Comprendre &nbsp;·&nbsp;

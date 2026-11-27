@@ -128,6 +128,29 @@ nav:
       - Scripting et automatisation:
           - "Mémo Bash et PowerShell": transverse/memo-bash-powershell.md
           - "Planifier une tâche": transverse/tuto-taches-planifiees.md
+  - Cloud Azure:
+      - cloud/index.md
+      - Démarrer:
+          - "Démarrer le parcours Azure": cloud/memo-parcours-azure.md
+          - "Exercices papier (E1 à E7)": cloud/tp-exercices-papier.md
+      - Fondations:
+          - "TP1 à TP3": cloud/tp-azure-fondations.md
+      - Réseau avancé:
+          - "TP4 et TP5": cloud/tp-azure-reseau-avance.md
+      - Identité et conteneurs:
+          - "TP6 et TP7": cloud/tp-azure-identite-conteneurs.md
+      - Accès sécurisé:
+          - "TP8 à TP10": cloud/tp-azure-acces-securise.md
+      - Stockage et API:
+          - "TP11 et TP12 : stockage": cloud/tp-azure-stockage.md
+          - "TP13 et TP14 : API": cloud/tp-azure-api.md
+      - Exploitation:
+          - "TP15 et TP16": cloud/tp-azure-exploitation.md
+      - Automatisation:
+          - "TP17": cloud/tp-azure-automatisation.md
+      - S'entraîner:
+          - "TP18 et TP19 : hands-on": cloud/tp-azure-hands-on.md
+          - "Projet final": cloud/tp-azure-projet-final.md
   - Bonnes pratiques:
       - pratiques/index.md
       - Réflexes:

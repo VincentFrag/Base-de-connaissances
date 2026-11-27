@@ -29,9 +29,17 @@ Fiches, tutos et TP d'**administration systèmes et réseaux**, du niveau début
 
     ---
 
-    Sauvegarde, supervision, sécurité, scripting, cloud et Azure.
+    Sauvegarde, supervision, sécurité, scripting.
 
     [:octicons-arrow-right-24: Commencer](transverse/index.md)
+
+-   :material-microsoft-azure:{ .lg .middle } __Cloud Azure__
+
+    ---
+
+    Le parcours complet Azure for Students : réseau, identité, stockage, automatisation, 19 TP corrigés.
+
+    [:octicons-arrow-right-24: Se lancer](cloud/index.md)
 
 -   :material-check-decagram-outline:{ .lg .middle } __Bonnes pratiques__
 

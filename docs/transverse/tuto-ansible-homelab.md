@@ -435,7 +435,7 @@ Documentation officielle d'Ansible, consultée le 27 novembre 2026 :
 ## Voir aussi
 
 - 🧠 [Ansible : inventaire, playbook, idempotence](concept-ansible.md)
-- 🧪 [TP Azure : Automatisation (TP17)](https://vincentfrag.github.io/knowledge-base/cloud/tp-azure-automatisation/) : le même playbook nginx sur une VM créée par Terraform (partie C)
+- 🛠️ [Déployer une infrastructure Azure avec Terraform](../cloud/tuto-terraform-azure.md) : créer la VM avec Terraform, puis la configurer avec ce playbook
 - 🛠️ [SSH par rebond](../reseau/tuto-ssh-rebond.md) : piloter le lab depuis le PC
 - 🛠️ [Automatiser une tâche avec cron et le Planificateur de tâches](tuto-taches-planifiees.md) : relancer un playbook chaque nuit pour garder les VM conformes
 - 🧠 [Supervision](concept-supervision.md) : vérifier ensuite que les services déployés répondent

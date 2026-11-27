@@ -29,9 +29,17 @@ Fiches, tutos et TP d'**administration systèmes et réseaux**, du niveau début
 
     ---
 
-    Sauvegarde, supervision, sécurité, scripting, cloud et Azure.
+    Sauvegarde, supervision, sécurité, scripting.
 
     [:octicons-arrow-right-24: Commencer](transverse/index.md)
+
+-   :material-cloud-outline:{ .lg .middle } __Cloud computing__
+
+    ---
+
+    Modèles de service, coûts, puis Azure : réseau, identités, stockage, Terraform.
+
+    [:octicons-arrow-right-24: Commencer](cloud/index.md)
 
 -   :material-check-decagram-outline:{ .lg .middle } __Bonnes pratiques__
 

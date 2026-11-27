@@ -97,7 +97,7 @@ Ils se complètent : **Terraform crée** les VM, **Ansible les configure**, et A
 ## Pour aller plus loin
 
 - 🛠️ **[Automatiser ses VM avec Ansible](tuto-ansible-homelab.md)** : la mise en pratique (inventaire, commandes ad hoc, playbook de base et serveurs web nginx sur le lab Proxmox)
-- 🧪 [TP Azure : Automatisation (TP17)](https://vincentfrag.github.io/knowledge-base/cloud/tp-azure-automatisation/) : Ansible après Terraform, sur une VM Azure (partie C)
+- 🧠 [Infrastructure as Code](../cloud/concept-iac.md) : Terraform crée l'infrastructure, Ansible la configure
 - 🧠 [SSH : se connecter à distance](../reseau/concept-ssh.md) : le transport utilisé par Ansible
 - 📋 [Mémo scripting Bash & PowerShell](memo-bash-powershell.md) : quand un simple script suffit
 - 🧠 [Conteneurs Docker](../systeme/concept-docker.md) : l'autre façon de rendre un déploiement reproductible

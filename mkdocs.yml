@@ -130,6 +130,23 @@ nav:
           - "Planifier une tâche": transverse/tuto-taches-planifiees.md
           - "Comprendre Ansible": transverse/concept-ansible.md
           - "Automatiser ses VM avec Ansible": transverse/tuto-ansible-homelab.md
+  - Cloud computing:
+      - cloud/index.md
+      - Fondamentaux du cloud:
+          - "Comprendre": cloud/concept-cloud-computing.md
+          - "Démarrer sur Azure": cloud/tuto-demarrer-azure.md
+      - "Azure : réseau":
+          - "Comprendre": cloud/concept-reseau-azure.md
+          - "Mettre en pratique": cloud/tuto-vnet-nsg-azure.md
+      - "Azure : identités et droits":
+          - "Comprendre": cloud/concept-identite-azure.md
+          - "Mettre en pratique": cloud/tuto-rbac-identite-managee.md
+      - "Azure : stockage":
+          - "Comprendre": cloud/concept-stockage-azure.md
+          - "Mettre en pratique": cloud/tuto-stockage-azure-sas.md
+      - Infrastructure as Code:
+          - "Comprendre": cloud/concept-iac.md
+          - "Mettre en pratique": cloud/tuto-terraform-azure.md
   - Bonnes pratiques:
       - pratiques/index.md
       - Réflexes:

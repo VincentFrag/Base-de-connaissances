@@ -1,0 +1,18 @@
+# Test de migration : construit le site avec Zensical (sans rien publier).
+# Le déploiement réel reste assuré par deploy.yml (MkDocs Material).
+name: Test Zensical
+on:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+      - run: pip install zensical
+      - run: zensical build --clean -f mkdocs.yml
